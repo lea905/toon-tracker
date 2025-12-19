@@ -4,7 +4,10 @@ import MovieList from './components/MovieList';
 import './App.css';
 
 function App() {
-  const [movies] = useState(moviesData);
+  const [movies] = useState(() => {
+    return [...moviesData].sort((a, b) => a.year - b.year);
+  });
+
   const [seenState, setSeenState] = useState(() => {
     const saved = localStorage.getItem('disney-seen');
     return saved ? JSON.parse(saved) : {};

@@ -1,674 +1,3425 @@
 [
   {
     "id": 1,
-    "title": "Blanche-Neige et les Sept Nains",
-    "year": 1937,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Blanche-Neige"
+    "title": "Blanche Neige et les Sept Nains",
+    "year": 1938,
+    "studio": null,
+    "poster": "/posters/1.jpeg"
   },
   {
     "id": 2,
-    "title": "Pinocchio",
-    "year": 1940,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Pinocchio"
+    "title": "Victoire dans les airs",
+    "year": 1943,
+    "studio": null,
+    "poster": "/posters/2.jpg"
   },
   {
     "id": 3,
-    "title": "Fantasia",
-    "year": 1940,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Fantasia"
+    "title": "Pinocchio",
+    "year": 1946,
+    "studio": null,
+    "poster": "/posters/3.jpg"
   },
   {
     "id": 4,
-    "title": "Dumbo",
-    "year": 1941,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Dumbo"
+    "title": "Fantasia",
+    "year": 1946,
+    "studio": null,
+    "poster": "/posters/4.jpg"
   },
   {
     "id": 5,
-    "title": "Bambi",
-    "year": 1942,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Bambi"
+    "title": "Saludos Amigos",
+    "year": 1947,
+    "studio": null,
+    "poster": "/posters/5.jpg"
   },
   {
     "id": 6,
-    "title": "Saludos Amigos",
-    "year": 1942,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Saludos+Amigos"
+    "title": "Les Secrets de Walt Disney",
+    "year": 1947,
+    "studio": null,
+    "poster": "/posters/6.jpg"
   },
   {
     "id": 7,
-    "title": "Les Trois Caballeros",
-    "year": 1944,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Les+Trois+Caballeros"
+    "title": "Dumbo",
+    "year": 1947,
+    "studio": null,
+    "poster": "/posters/7.jpg"
   },
   {
     "id": 8,
-    "title": "La Boîte à musique",
-    "year": 1946,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Bo%C3%AEte+%C3%A0+musique"
+    "title": "Les Trois Caballeros",
+    "year": 1948,
+    "studio": null,
+    "poster": "/posters/8.jpg"
   },
   {
     "id": 9,
-    "title": "Mélodie du Sud",
-    "year": 1946,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=M%C3%A9lodie+du+Sud"
+    "title": "Bambi",
+    "year": 1948,
+    "studio": null,
+    "poster": "/posters/9.jpg"
   },
   {
     "id": 10,
-    "title": "Coquin de printemps",
-    "year": 1947,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Coquin+de+printemps"
+    "title": "La Boîte à musique",
+    "year": 1949,
+    "studio": null,
+    "poster": "/posters/10.jpg"
   },
   {
     "id": 11,
-    "title": "Mélodie Cocktail",
-    "year": 1948,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=M%C3%A9lodie+Cocktail"
+    "title": "Mélodie du Sud",
+    "year": 1949,
+    "studio": null,
+    "poster": "/posters/11.jpg"
   },
   {
     "id": 12,
-    "title": "Danny, le petit mouton noir",
-    "year": 1949,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Danny+le+petit+mouton"
+    "title": "Coquin de printemps",
+    "year": 1950,
+    "studio": null,
+    "poster": "/posters/12.jpg"
   },
   {
     "id": 13,
-    "title": "Le Crapaud et le Maître d'école",
-    "year": 1949,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Le+Crapaud"
+    "title": "Cendrillon",
+    "year": 1950,
+    "studio": null,
+    "poster": "/posters/13.jpg"
   },
   {
     "id": 14,
-    "title": "Cendrillon",
-    "year": 1950,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Cendrillon"
+    "title": "Mélodie cocktail",
+    "year": 1951,
+    "studio": null,
+    "poster": "/posters/14.jpg"
   },
   {
     "id": 15,
-    "title": "Alice au pays des merveilles",
+    "title": "L'île au trésor",
     "year": 1951,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Alice"
+    "studio": null,
+    "poster": "/posters/15.jpg"
   },
   {
     "id": 16,
-    "title": "Peter Pan",
-    "year": 1953,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Peter+Pan"
+    "title": "Alice au Pays des Merveilles",
+    "year": 1951,
+    "studio": null,
+    "poster": "/posters/16.jpg"
   },
   {
     "id": 17,
-    "title": "La Belle et le Clochard",
-    "year": 1955,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Belle+et+le+Clochard"
+    "title": "Robin des Bois et ses joyeux compagnons",
+    "year": 1952,
+    "studio": null,
+    "poster": "/posters/17.jpg"
   },
   {
     "id": 18,
-    "title": "La Belle au bois dormant",
-    "year": 1959,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Belle+au+bois+dormant"
+    "title": "Peter Pan",
+    "year": 1953,
+    "studio": null,
+    "poster": "/posters/18.jpg"
   },
   {
     "id": 19,
-    "title": "Les 101 Dalmatiens",
-    "year": 1961,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=101+Dalmatiens"
+    "title": "La Rose et l'Épée",
+    "year": 1954,
+    "studio": null,
+    "poster": "/posters/19.jpg"
   },
   {
     "id": 20,
-    "title": "Merlin l'Enchanteur",
-    "year": 1963,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Merlin"
+    "title": "Le Désert vivant",
+    "year": 1954,
+    "studio": null,
+    "poster": "/posters/20.jpg"
   },
   {
     "id": 21,
-    "title": "Mary Poppins",
-    "year": 1964,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Mary+Poppins"
+    "title": "Échec au Roi",
+    "year": 1955,
+    "studio": null,
+    "poster": "/posters/21.jpg"
   },
   {
     "id": 22,
-    "title": "Le Livre de la jungle",
-    "year": 1967,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Livre+de+la+jungle"
+    "title": "La Grande Prairie",
+    "year": 1955,
+    "studio": null,
+    "poster": "/posters/22.jpg"
   },
   {
     "id": 23,
-    "title": "Les Aristochats",
-    "year": 1970,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Aristochats"
+    "title": "20 000 lieues sous les mers",
+    "year": 1955,
+    "studio": null,
+    "poster": "/posters/23.jpg"
   },
   {
     "id": 24,
-    "title": "Robin des Bois",
-    "year": 1973,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Robin+des+Bois"
+    "title": "La Belle et le Clochard",
+    "year": 1955,
+    "studio": null,
+    "poster": "/posters/24.jpg"
   },
   {
     "id": 25,
-    "title": "Les Aventures de Winnie l'ourson",
-    "year": 1977,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Winnie+l%27ourson"
+    "title": "Davy Crockett, Roi Des Trappeurs",
+    "year": 1956,
+    "studio": null,
+    "poster": "/posters/25.jpg"
   },
   {
     "id": 26,
-    "title": "Les Aventures de Bernard et Bianca",
-    "year": 1977,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Bernard+et+Bianca"
+    "title": "La revanche de Pablito",
+    "year": 1956,
+    "studio": null,
+    "poster": "/posters/26.jpg"
   },
   {
     "id": 27,
-    "title": "Rox et Rouky",
-    "year": 1981,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Rox+et+Rouky"
+    "title": "Davy Crockett et les Pirates de la rivière",
+    "year": 1956,
+    "studio": null,
+    "poster": "/posters/27.jpg"
   },
   {
     "id": 28,
-    "title": "Taram et le Chaudron magique",
-    "year": 1985,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Taram"
+    "title": "Sur la piste de l'Orégon",
+    "year": 1957,
+    "studio": null,
+    "poster": "/posters/28.jpg"
   },
   {
     "id": 29,
-    "title": "Basil, détective privé",
-    "year": 1986,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Basil"
+    "title": "Les aventures de Perri",
+    "year": 1958,
+    "studio": null,
+    "poster": "/posters/29.jpg"
   },
   {
     "id": 30,
-    "title": "Oliver et Compagnie",
-    "year": 1988,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Oliver"
+    "title": "Fidèle vagabond",
+    "year": 1959,
+    "studio": null,
+    "poster": "/posters/30.jpg"
   },
   {
     "id": 31,
-    "title": "La Petite Sirène",
-    "year": 1989,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Petite+Sir%C3%A8ne"
+    "title": "Lueur dans la forêt",
+    "year": 1959,
+    "studio": null,
+    "poster": "/posters/31.jpg"
   },
   {
     "id": 32,
-    "title": "Bernard et Bianca au pays des kangourous",
-    "year": 1990,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Bernard+et+Bianca+2"
+    "title": "Signé Zorro",
+    "year": 1959,
+    "studio": null,
+    "poster": "/posters/32.jpg"
   },
   {
     "id": 33,
-    "title": "La Belle et la Bête",
-    "year": 1991,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Belle+et+la+B%C3%A8te"
+    "title": "Le troisième homme sur la montagne",
+    "year": 1959,
+    "studio": null,
+    "poster": "/posters/33.jpg"
   },
   {
     "id": 34,
-    "title": "Aladdin",
-    "year": 1992,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Aladdin"
+    "title": "Quelle vie de chien !",
+    "year": 1959,
+    "studio": null,
+    "poster": "/posters/34.jpg"
   },
   {
     "id": 35,
-    "title": "Le Roi lion",
-    "year": 1994,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Le+Roi+Lion"
+    "title": "La Belle au bois dormant",
+    "year": 1959,
+    "studio": null,
+    "poster": "/posters/35.jpg"
   },
   {
     "id": 36,
-    "title": "Pocahontas",
-    "year": 1995,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Pocahontas"
+    "title": "Tonka, cheval sauvage",
+    "year": 1960,
+    "studio": null,
+    "poster": "/posters/36.jpg"
   },
   {
     "id": 37,
-    "title": "Toy Story",
-    "year": 1995,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story"
+    "title": "Pollyanna",
+    "year": 1960,
+    "studio": null,
+    "poster": "/posters/37.jpg"
   },
   {
     "id": 38,
-    "title": "Le Bossu de Notre-Dame",
-    "year": 1996,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Le+Bossu"
+    "title": "Les Robinsons des mers du Sud",
+    "year": 1961,
+    "studio": null,
+    "poster": "/posters/38.jpg"
   },
   {
     "id": 39,
-    "title": "Hercule",
-    "year": 1997,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Hercule"
+    "title": "Les 101 Dalmatiens",
+    "year": 1961,
+    "studio": null,
+    "poster": "/posters/39.jpg"
   },
   {
     "id": 40,
-    "title": "Mulan",
-    "year": 1998,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Mulan"
+    "title": "Monte là-d'ssus",
+    "year": 1962,
+    "studio": null,
+    "poster": "/posters/40.jpg"
   },
   {
     "id": 41,
-    "title": "1001 Pattes",
-    "year": 1998,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=1001+Pattes"
+    "title": "La Fiancée de papa",
+    "year": 1962,
+    "studio": null,
+    "poster": "/posters/41.jpg"
   },
   {
     "id": 42,
-    "title": "Tarzan",
-    "year": 1999,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Tarzan"
+    "title": "Nomades du Nord",
+    "year": 1962,
+    "studio": null,
+    "poster": "/posters/42.jpg"
   },
   {
     "id": 43,
-    "title": "Toy Story 2",
-    "year": 1999,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story+2"
+    "title": "Le Pays des Jouets",
+    "year": 1962,
+    "studio": null,
+    "poster": "/posters/43.jpg"
   },
   {
     "id": 44,
-    "title": "Fantasia 2000",
-    "year": 1999,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Fantasia+2000"
+    "title": "Bon Voyage !",
+    "year": 1962,
+    "studio": null,
+    "poster": "/posters/44.jpg"
   },
   {
     "id": 45,
-    "title": "Dinosaure",
-    "year": 2000,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Dinosaure"
+    "title": "Un pilote dans la Lune",
+    "year": 1963,
+    "studio": null,
+    "poster": "/posters/45.jpg"
   },
   {
     "id": 46,
-    "title": "Kuzco, l'empereur mégalo",
-    "year": 2000,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Kuzco"
+    "title": "Les Enfants du capitaine Grant",
+    "year": 1963,
+    "studio": null,
+    "poster": "/posters/46.jpg"
   },
   {
     "id": 47,
-    "title": "Atlantide, l'empire perdu",
-    "year": 2001,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Atlantide"
+    "title": "L'incroyable randonnée",
+    "year": 1964,
+    "studio": null,
+    "poster": "/posters/47.jpg"
   },
   {
     "id": 48,
-    "title": "Monstres et Cie",
-    "year": 2001,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Monstres+et+Cie"
+    "title": "Après lui, le déluge",
+    "year": 1964,
+    "studio": null,
+    "poster": "/posters/48.jpg"
   },
   {
     "id": 49,
-    "title": "Lilo et Stitch",
-    "year": 2002,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Lilo+et+Stitch"
+    "title": "Le Grand Retour",
+    "year": 1964,
+    "studio": null,
+    "poster": "/posters/49.jpg"
   },
   {
     "id": 50,
-    "title": "La Planète au trésor",
-    "year": 2002,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Plan%C3%A8te+au+tr%C3%A9sor"
+    "title": "Merlin l'enchanteur",
+    "year": 1964,
+    "studio": null,
+    "poster": "/posters/50.jpg"
   },
   {
     "id": 51,
-    "title": "Frère des ours",
-    "year": 2003,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Fr%C3%A8re+des+ours"
+    "title": "Le Justicier aux deux visages",
+    "year": 1965,
+    "studio": null,
+    "poster": "/posters/51.jpg"
   },
   {
     "id": 52,
-    "title": "Le Monde de Nemo",
-    "year": 2003,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Le+Monde+de+Nemo"
+    "title": "Mary Poppins",
+    "year": 1965,
+    "studio": null,
+    "poster": "/posters/52.jpg"
   },
   {
     "id": 53,
-    "title": "La ferme se rebelle",
-    "year": 2004,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+ferme+se+rebelle"
+    "title": "La Baie aux émeraudes",
+    "year": 1965,
+    "studio": null,
+    "poster": "/posters/53.jpg"
   },
   {
     "id": 54,
-    "title": "Les Indestructibles",
-    "year": 2004,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Indestructibles"
+    "title": "Sam l'intrépide",
+    "year": 1966,
+    "studio": null,
+    "poster": "/posters/54.jpg"
   },
   {
     "id": 55,
-    "title": "Chicken Little",
-    "year": 2005,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Chicken+Little"
+    "title": "Les pas du tigre",
+    "year": 1966,
+    "studio": null,
+    "poster": "/posters/55.jpg"
   },
   {
     "id": 56,
-    "title": "Cars",
-    "year": 2006,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Cars"
+    "title": "Calloway le trappeur",
+    "year": 1966,
+    "studio": null,
+    "poster": "/posters/56.jpg"
   },
   {
     "id": 57,
-    "title": "Bienvenue chez les Robinson",
-    "year": 2007,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Robinson"
+    "title": "L'espion aux pattes de velours",
+    "year": 1966,
+    "studio": null,
+    "poster": "/posters/57.jpg"
   },
   {
     "id": 58,
-    "title": "Ratatouille",
-    "year": 2007,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Ratatouille"
+    "title": "Lieutenant Robinson Crusoé",
+    "year": 1967,
+    "studio": null,
+    "poster": "/posters/58.jpg"
   },
   {
     "id": 59,
-    "title": "WALL-E",
-    "year": 2008,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=WALL-E"
+    "title": "Quatre bassets pour un danois",
+    "year": 1967,
+    "studio": null,
+    "poster": "/posters/59.jpg"
   },
   {
     "id": 60,
-    "title": "Volt, star malgré lui",
-    "year": 2008,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Volt"
+    "title": "Les Chefs-d'Œuvre de Walt Disney",
+    "year": 1967,
+    "studio": null,
+    "poster": "/posters/60.jpg"
   },
   {
     "id": 61,
-    "title": "Là-haut",
-    "year": 2009,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=L%C3%A0-haut"
+    "title": "Le Prince Donegal",
+    "year": 1967,
+    "studio": null,
+    "poster": "/posters/61.jpg"
   },
   {
     "id": 62,
-    "title": "La Princesse et la Grenouille",
-    "year": 2009,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Princesse+Grenouille"
+    "title": "Le fantôme de Barbe Noire",
+    "year": 1968,
+    "studio": null,
+    "poster": "/posters/62.jpg"
   },
   {
     "id": 63,
-    "title": "Toy Story 3",
-    "year": 2010,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story+3"
+    "title": "Le Plus Heureux des milliardaires",
+    "year": 1968,
+    "studio": null,
+    "poster": "/posters/63.jpg"
   },
   {
     "id": 64,
-    "title": "Raiponce",
-    "year": 2010,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Raiponce"
+    "title": "Le Livre de la jungle",
+    "year": 1968,
+    "studio": null,
+    "poster": "/posters/64.jpg"
   },
   {
     "id": 65,
-    "title": "Winnie l'ourson",
-    "year": 2011,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Winnie"
+    "title": "Un amour de Coccinelle",
+    "year": 1969,
+    "studio": null,
+    "poster": "/posters/65.jpg"
   },
   {
     "id": 66,
-    "title": "Cars 2",
-    "year": 2011,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Cars+2"
+    "title": "Le Roi des grizzlis",
+    "year": 1970,
+    "studio": null,
+    "poster": "/posters/66.jpg"
   },
   {
     "id": 67,
-    "title": "Rebelle",
-    "year": 2012,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Rebelle"
+    "title": "Le cheval aux sabots d'or",
+    "year": 1970,
+    "studio": null,
+    "poster": "/posters/67.jpg"
   },
   {
     "id": 68,
-    "title": "Les Mondes de Ralph",
-    "year": 2012,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Ralph"
+    "title": "Frissons garantis",
+    "year": 1970,
+    "studio": null,
+    "poster": "/posters/68.jpg"
   },
   {
     "id": 69,
-    "title": "Monstres Academy",
-    "year": 2013,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Monstres+Academy"
+    "title": "Du vent dans les voiles",
+    "year": 1970,
+    "studio": null,
+    "poster": "/posters/69.jpg"
   },
   {
     "id": 70,
-    "title": "La Reine des neiges",
-    "year": 2013,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Reine+des+Neiges"
+    "title": "L'Ordinateur en folie",
+    "year": 1971,
+    "studio": null,
+    "poster": "/posters/70.jpg"
   },
   {
     "id": 71,
-    "title": "Les Nouveaux Héros",
-    "year": 2014,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Nouveaux+H%C3%A9ros"
+    "title": "La cane aux œufs d'or",
+    "year": 1971,
+    "studio": null,
+    "poster": "/posters/71.jpg"
   },
   {
     "id": 72,
-    "title": "Vice-versa",
-    "year": 2015,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Vice-versa"
+    "title": "Les Aristochats",
+    "year": 1971,
+    "studio": null,
+    "poster": "/posters/72.jpg"
   },
   {
     "id": 73,
-    "title": "Le Voyage d'Arlo",
-    "year": 2015,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Arlo"
+    "title": "Le Pays sauvage",
+    "year": 1972,
+    "studio": null,
+    "poster": "/posters/73.jpg"
   },
   {
     "id": 74,
-    "title": "Zootopie",
-    "year": 2016,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Zootopie"
+    "title": "Un singulier directeur",
+    "year": 1972,
+    "studio": null,
+    "poster": "/posters/74.jpg"
   },
   {
     "id": 75,
-    "title": "Le Monde de Dory",
-    "year": 2016,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Le+Monde+de+Dory"
+    "title": "L'Apprentie sorcière",
+    "year": 1972,
+    "studio": null,
+    "poster": "/posters/75.jpg"
   },
   {
     "id": 76,
-    "title": "Vaiana",
-    "year": 2016,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Vaiana"
+    "title": "Pas vu, pas pris",
+    "year": 1973,
+    "studio": null,
+    "poster": "/posters/76.jpg"
   },
   {
     "id": 77,
-    "title": "Cars 3",
-    "year": 2017,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Cars+3"
+    "title": "3 Etoiles... 36 Chandelles",
+    "year": 1973,
+    "studio": null,
+    "poster": "/posters/77.jpg"
   },
   {
     "id": 78,
-    "title": "Coco",
-    "year": 2017,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Coco"
+    "title": "Nanou, fils de la jungle",
+    "year": 1973,
+    "studio": null,
+    "poster": "/posters/78.jpg"
   },
   {
     "id": 79,
-    "title": "Les Indestructibles 2",
-    "year": 2018,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Indestructibles+2"
+    "title": "Un petit Indien",
+    "year": 1974,
+    "studio": null,
+    "poster": "/posters/79.jpg"
   },
   {
     "id": 80,
-    "title": "Ralph 2.0",
-    "year": 2018,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Ralph+2"
+    "title": "Robin des Bois",
+    "year": 1974,
+    "studio": null,
+    "poster": "/posters/80.jpg"
   },
   {
     "id": 81,
-    "title": "Toy Story 4",
-    "year": 2019,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story+4"
+    "title": "Mes amis les ours",
+    "year": 1974,
+    "studio": null,
+    "poster": "/posters/81.jpg"
   },
   {
     "id": 82,
-    "title": "La Reine des neiges 2",
-    "year": 2019,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Reine+des+neiges+2"
+    "title": "Le nouvel amour de Coccinelle",
+    "year": 1975,
+    "studio": null,
+    "poster": "/posters/82.jpg"
   },
   {
     "id": 83,
-    "title": "En avant",
-    "year": 2020,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=En+avant"
+    "title": "L'Île sur le toit du monde",
+    "year": 1975,
+    "studio": null,
+    "poster": "/posters/83.jpg"
   },
   {
     "id": 84,
-    "title": "Soul",
-    "year": 2020,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Soul"
+    "title": "La montagne ensorcelée",
+    "year": 1976,
+    "studio": null,
+    "poster": "/posters/84.jpg"
   },
   {
     "id": 85,
-    "title": "Raya et le Dernier Dragon",
-    "year": 2021,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Raya"
+    "title": "Gus",
+    "year": 1976,
+    "studio": null,
+    "poster": "/posters/85.jpg"
   },
   {
     "id": 86,
-    "title": "Luca",
-    "year": 2021,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Luca"
+    "title": "La Folle escapade",
+    "year": 1977,
+    "studio": null,
+    "poster": "/posters/86.jpg"
   },
   {
     "id": 87,
-    "title": "Encanto",
-    "year": 2021,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Encanto"
+    "title": "Les Aventures de Winnie l'Ourson",
+    "year": 1977,
+    "studio": null,
+    "poster": "/posters/87.jpg"
   },
   {
     "id": 88,
-    "title": "Alerte rouge",
-    "year": 2022,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Alerte+rouge"
+    "title": "Le gang des chaussons aux pommes",
+    "year": 1977,
+    "studio": null,
+    "poster": "/posters/88.jpg"
   },
   {
     "id": 89,
-    "title": "Buzz l'Éclair",
-    "year": 2022,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Buzz"
+    "title": "Star Wars, épisode IV : Un nouvel espoir",
+    "year": 1977,
+    "studio": null,
+    "poster": "/posters/89.jpg"
   },
   {
     "id": 90,
-    "title": "Avalonia",
-    "year": 2022,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Avalonia"
+    "title": "Les Aventures de Bernard et Bianca",
+    "year": 1977,
+    "studio": null,
+    "poster": "/posters/90.jpg"
   },
   {
     "id": 91,
-    "title": "Élémentaire",
-    "year": 2023,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=%C3%89l%C3%A9mentaire"
+    "title": "La coccinelle à Monte-Carlo",
+    "year": 1978,
+    "studio": null,
+    "poster": "/posters/91.jpg"
   },
   {
     "id": 92,
-    "title": "Wish",
-    "year": 2023,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Wish"
+    "title": "Un vendredi dingue, dingue, dingue",
+    "year": 1978,
+    "studio": null,
+    "poster": "/posters/92.jpg"
   },
   {
     "id": 93,
-    "title": "Vice-versa 2",
-    "year": 2024,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Vice-versa+2"
+    "title": "Un candidat au poil",
+    "year": 1978,
+    "studio": null,
+    "poster": "/posters/93.jpg"
   },
   {
     "id": 94,
-    "title": "Vaiana 2",
-    "year": 2024,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Vaiana+2"
+    "title": "Peter et Elliott le dragon",
+    "year": 1978,
+    "studio": null,
+    "poster": "/posters/94.jpg"
   },
   {
     "id": 95,
-    "title": "Elio",
-    "year": 2025,
-    "studio": "Pixar",
-    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Elio"
+    "title": "Le chat qui vient de l'espace",
+    "year": 1979,
+    "studio": null,
+    "poster": "/posters/95.jpg"
   },
   {
     "id": 96,
+    "title": "Le Trésor de Matacumba",
+    "year": 1979,
+    "studio": null,
+    "poster": "/posters/96.jpg"
+  },
+  {
+    "id": 97,
+    "title": "Les Visiteurs d'un autre monde",
+    "year": 1979,
+    "studio": null,
+    "poster": "/posters/97.jpg"
+  },
+  {
+    "id": 98,
+    "title": "La Course au trésor",
+    "year": 1979,
+    "studio": null,
+    "poster": "/posters/98.jpg"
+  },
+  {
+    "id": 99,
+    "title": "Star Wars, épisode V : L'Empire contre-attaque",
+    "year": 1980,
+    "studio": null,
+    "poster": "/posters/99.jpg"
+  },
+  {
+    "id": 100,
+    "title": "Le Trou noir",
+    "year": 1980,
+    "studio": null,
+    "poster": "/posters/100.jpg"
+  },
+  {
+    "id": 101,
+    "title": "La coccinelle à Mexico",
+    "year": 1981,
+    "studio": null,
+    "poster": "/posters/101.jpg"
+  },
+  {
+    "id": 102,
+    "title": "Un Cosmonaute chez le Roi Arthur",
+    "year": 1981,
+    "studio": null,
+    "poster": "/posters/102.jpg"
+  },
+  {
+    "id": 103,
+    "title": "Les aventuriers de l'arche perdue",
+    "year": 1981,
+    "studio": null,
+    "poster": "/posters/103.jpg"
+  },
+  {
+    "id": 104,
+    "title": "Condorman",
+    "year": 1981,
+    "studio": null,
+    "poster": "/posters/104.jpg"
+  },
+  {
+    "id": 105,
+    "title": "Rox et Rouky",
+    "year": 1981,
+    "studio": null,
+    "poster": "/posters/105.jpg"
+  },
+  {
+    "id": 106,
+    "title": "Popeye",
+    "year": 1981,
+    "studio": null,
+    "poster": "/posters/106.jpg"
+  },
+  {
+    "id": 107,
+    "title": "Le dernier vol de l'arche de Noé",
+    "year": 1982,
+    "studio": null,
+    "poster": "/posters/107.jpg"
+  },
+  {
+    "id": 108,
+    "title": "La nuit de l'évasion",
+    "year": 1982,
+    "studio": null,
+    "poster": "/posters/108.jpg"
+  },
+  {
+    "id": 109,
+    "title": "Les Yeux de la forêt",
+    "year": 1982,
+    "studio": null,
+    "poster": "/posters/109.jpg"
+  },
+  {
+    "id": 110,
+    "title": "Le Dragon du Lac de Feu",
+    "year": 1982,
+    "studio": null,
+    "poster": "/posters/110.jpg"
+  },
+  {
+    "id": 111,
+    "title": "Tron",
+    "year": 1982,
+    "studio": null,
+    "poster": "/posters/111.jpg"
+  },
+  {
+    "id": 112,
+    "title": "Star Wars, épisode VI : Le Retour du Jedi",
+    "year": 1983,
+    "studio": null,
+    "poster": "/posters/112.jpg"
+  },
+  {
+    "id": 113,
+    "title": "La Foire des ténèbres",
+    "year": 1984,
+    "studio": null,
+    "poster": "/posters/113.jpg"
+  },
+  {
+    "id": 114,
+    "title": "Un homme parmi les loups",
+    "year": 1984,
+    "studio": null,
+    "poster": "/posters/114.jpg"
+  },
+  {
+    "id": 115,
+    "title": "Indiana Jones et le temple maudit",
+    "year": 1984,
+    "studio": null,
+    "poster": "/posters/115.jpg"
+  },
+  {
+    "id": 116,
+    "title": "Les Aventures d'André & Wally B.",
+    "year": 1984,
+    "studio": null,
+    "poster": "/posters/116.jpg"
+  },
+  {
+    "id": 117,
+    "title": "Oz, un monde extraordinaire",
+    "year": 1985,
+    "studio": null,
+    "poster": "/posters/117.jpg"
+  },
+  {
+    "id": 118,
+    "title": "Taram et le Chaudron magique",
+    "year": 1985,
+    "studio": null,
+    "poster": "/posters/118.jpg"
+  },
+  {
+    "id": 119,
+    "title": "Natty Gann",
+    "year": 1986,
+    "studio": null,
+    "poster": "/posters/119.jpg"
+  },
+  {
+    "id": 120,
+    "title": "Luxo Jr",
+    "year": 1986,
+    "studio": null,
+    "poster": "/posters/120.jpg"
+  },
+  {
+    "id": 121,
+    "title": "Basil, détective privé",
+    "year": 1986,
+    "studio": null,
+    "poster": "/posters/121.jpg"
+  },
+  {
+    "id": 122,
+    "title": "Le Rêve de Rouge",
+    "year": 1987,
+    "studio": null,
+    "poster": "/posters/122.jpg"
+  },
+  {
+    "id": 123,
+    "title": "Benji la malice",
+    "year": 1988,
+    "studio": null,
+    "poster": "/posters/123.jpg"
+  },
+  {
+    "id": 124,
+    "title": "Tin Toy",
+    "year": 1988,
+    "studio": null,
+    "poster": "/posters/124.jpg"
+  },
+  {
+    "id": 125,
+    "title": "Indiana Jones et la dernière croisade",
+    "year": 1989,
+    "studio": null,
+    "poster": "/posters/125.jpg"
+  },
+  {
+    "id": 126,
+    "title": "Oliver et compagnie",
+    "year": 1989,
+    "studio": null,
+    "poster": "/posters/126.jpg"
+  },
+  {
+    "id": 127,
+    "title": "Chérie, j'ai rétréci les gosses",
+    "year": 1990,
+    "studio": null,
+    "poster": "/posters/127.jpg"
+  },
+  {
+    "id": 128,
+    "title": "La Petite Sirène",
+    "year": 1990,
+    "studio": null,
+    "poster": "/posters/128.jpg"
+  },
+  {
+    "id": 129,
+    "title": "La Bande à Picsou : Le film - Le trésor de la lampe perdue",
+    "year": 1991,
+    "studio": null,
+    "poster": "/posters/129.jpg"
+  },
+  {
+    "id": 130,
+    "title": "Croc-Blanc",
+    "year": 1991,
+    "studio": null,
+    "poster": "/posters/130.jpg"
+  },
+  {
+    "id": 131,
+    "title": "Bernard et Bianca au pays des kangourous",
+    "year": 1991,
+    "studio": null,
+    "poster": "/posters/131.jpg"
+  },
+  {
+    "id": 132,
+    "title": "Les Aventures de Rocketeer",
+    "year": 1991,
+    "studio": null,
+    "poster": "/posters/132.jpg"
+  },
+  {
+    "id": 133,
+    "title": "La Belle et la Bête",
+    "year": 1992,
+    "studio": null,
+    "poster": "/posters/133.jpg"
+  },
+  {
+    "id": 134,
+    "title": "Chérie, j'ai agrandi le bébé",
+    "year": 1993,
+    "studio": null,
+    "poster": "/posters/134.jpg"
+  },
+  {
+    "id": 135,
+    "title": "Les Petits Champions",
+    "year": 1993,
+    "studio": null,
+    "poster": "/posters/135.jpg"
+  },
+  {
+    "id": 136,
+    "title": "Kalahari",
+    "year": 1993,
+    "studio": null,
+    "poster": "/posters/136.jpg"
+  },
+  {
+    "id": 137,
+    "title": "L'Incroyable Voyage",
+    "year": 1993,
+    "studio": null,
+    "poster": "/posters/137.jpg"
+  },
+  {
+    "id": 138,
+    "title": "Aladdin",
+    "year": 1993,
+    "studio": null,
+    "poster": "/posters/138.jpg"
+  },
+  {
+    "id": 139,
+    "title": "Noël chez les Muppets",
+    "year": 1993,
+    "studio": null,
+    "poster": "/posters/139.jpg"
+  },
+  {
+    "id": 140,
+    "title": "Hocus Pocus : Les Trois Sorcières",
+    "year": 1994,
+    "studio": null,
+    "poster": "/posters/140.jpg"
+  },
+  {
+    "id": 141,
+    "title": "Les Trois Mousquetaires",
+    "year": 1994,
+    "studio": null,
+    "poster": "/posters/141.jpg"
+  },
+  {
+    "id": 142,
+    "title": "Rasta Rockett",
+    "year": 1994,
+    "studio": null,
+    "poster": "/posters/142.jpg"
+  },
+  {
+    "id": 143,
+    "title": "Les aventures de Huckleberry Finn",
+    "year": 1994,
+    "studio": null,
+    "poster": "/posters/143.jpg"
+  },
+  {
+    "id": 144,
+    "title": "Croc-Blanc 2 : Le mythe du loup blanc",
+    "year": 1994,
+    "studio": null,
+    "poster": "/posters/144.jpg"
+  },
+  {
+    "id": 145,
+    "title": "Les Petits Champions 2",
+    "year": 1994,
+    "studio": null,
+    "poster": "/posters/145.jpg"
+  },
+  {
+    "id": 146,
+    "title": "Le Roi Lion",
+    "year": 1994,
+    "studio": null,
+    "poster": "/posters/146.jpg"
+  },
+  {
+    "id": 147,
+    "title": "Le Livre de la Jungle",
+    "year": 1995,
+    "studio": null,
+    "poster": "/posters/147.jpg"
+  },
+  {
+    "id": 148,
+    "title": "Le Retour de Jafar",
+    "year": 1995,
+    "studio": null,
+    "poster": "/posters/148.jpg"
+  },
+  {
+    "id": 149,
+    "title": "Pocahontas, une légende indienne",
+    "year": 1995,
+    "studio": null,
+    "poster": "/posters/149.jpg"
+  },
+  {
+    "id": 150,
+    "title": "Super Noël",
+    "year": 1995,
+    "studio": null,
+    "poster": "/posters/150.jpg"
+  },
+  {
+    "id": 151,
+    "title": "Toy Story",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/151.jpg"
+  },
+  {
+    "id": 152,
+    "title": "Timon et Pumbaa - Les globe-trotters",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/152.jpg"
+  },
+  {
+    "id": 153,
+    "title": "Dingo et Max",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/153.jpg"
+  },
+  {
+    "id": 154,
+    "title": "Timon et Pumbaa - Les gourmets",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/154.jpg"
+  },
+  {
+    "id": 155,
+    "title": "Timon et Pumbaa - Les touristes",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/155.jpg"
+  },
+  {
+    "id": 156,
+    "title": "L'incroyable Voyage 2 à San Francisco",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/156.jpg"
+  },
+  {
+    "id": 157,
+    "title": "Aladdin et le Roi des voleurs",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/157.jpg"
+  },
+  {
+    "id": 158,
+    "title": "Le Bossu de Notre-Dame",
+    "year": 1996,
+    "studio": null,
+    "poster": "/posters/158.jpg"
+  },
+  {
+    "id": 159,
+    "title": "Les 101 Dalmatiens, le film",
+    "year": 1997,
+    "studio": null,
+    "poster": "/posters/159.jpg"
+  },
+  {
+    "id": 160,
+    "title": "James et la pêche géante",
+    "year": 1997,
+    "studio": null,
+    "poster": "/posters/160.jpg"
+  },
+  {
+    "id": 161,
+    "title": "Les Petits Champions 3",
+    "year": 1997,
+    "studio": null,
+    "poster": "/posters/161.jpg"
+  },
+  {
+    "id": 162,
+    "title": "George de la jungle",
+    "year": 1997,
+    "studio": null,
+    "poster": "/posters/162.jpg"
+  },
+  {
+    "id": 163,
+    "title": "Winnie l'Ourson 2 : le grand voyage",
+    "year": 1997,
+    "studio": null,
+    "poster": "/posters/163.jpg"
+  },
+  {
+    "id": 164,
+    "title": "Le joueur d'échecs",
+    "year": 1997,
+    "studio": null,
+    "poster": "/posters/164.jpg"
+  },
+  {
+    "id": 165,
+    "title": "Hercule",
+    "year": 1997,
+    "studio": null,
+    "poster": "/posters/165.jpg"
+  },
+  {
+    "id": 166,
+    "title": "Le Monde magique de la Belle et la Bête",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/166.jpg"
+  },
+  {
+    "id": 167,
+    "title": "Flubber",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/167.jpg"
+  },
+  {
+    "id": 168,
+    "title": "Mr. Magoo",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/168.jpg"
+  },
+  {
+    "id": 169,
+    "title": "Air Bud : Buddy star des paniers",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/169.jpg"
+  },
+  {
+    "id": 170,
+    "title": "Danny, le petit mouton noir",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/170.jpg"
+  },
+  {
+    "id": 171,
+    "title": "Un indien à New York",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/171.jpg"
+  },
+  {
+    "id": 172,
+    "title": "Mulan",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/172.jpg"
+  },
+  {
+    "id": 173,
+    "title": "La Belle et la Bête 2 : le Noël enchanté",
+    "year": 1998,
+    "studio": null,
+    "poster": "/posters/173.jpg"
+  },
+  {
+    "id": 174,
+    "title": "Pocahontas 2 : un monde nouveau",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/174.jpg"
+  },
+  {
+    "id": 175,
+    "title": "1001 pattes",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/175.jpg"
+  },
+  {
+    "id": 176,
+    "title": "À nous quatre",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/176.jpg"
+  },
+  {
+    "id": 177,
+    "title": "Le Roi Lion 2 : l'honneur de la tribu",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/177.jpg"
+  },
+  {
+    "id": 178,
+    "title": "Mon ami Joe",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/178.jpg"
+  },
+  {
+    "id": 179,
+    "title": "Doug, le film",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/179.jpg"
+  },
+  {
+    "id": 180,
+    "title": "Opération Dumbo Drop",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/180.jpg"
+  },
+  {
+    "id": 181,
+    "title": "Star Wars, épisode I : La Menace fantôme",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/181.jpg"
+  },
+  {
+    "id": 182,
+    "title": "Inspecteur Gadget",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/182.jpg"
+  },
+  {
+    "id": 183,
+    "title": "Tarzan",
+    "year": 1999,
+    "studio": null,
+    "poster": "/posters/183.jpg"
+  },
+  {
+    "id": 184,
+    "title": "Toy Story 2",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/184.jpg"
+  },
+  {
+    "id": 185,
+    "title": "Fantasia 2000",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/185.jpg"
+  },
+  {
+    "id": 186,
+    "title": "Dingo et Max 2 : les sportifs de l'extrême",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/186.jpg"
+  },
+  {
+    "id": 187,
+    "title": "Mon martien bien-aimé",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/187.jpg"
+  },
+  {
+    "id": 188,
+    "title": "Endurance",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/188.jpg"
+  },
+  {
+    "id": 189,
+    "title": "La Petite Sirène 2 : retour à l'océan",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/189.jpg"
+  },
+  {
+    "id": 190,
+    "title": "Les Aventures de Tigrou",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/190.jpg"
+  },
+  {
+    "id": 191,
+    "title": "Drôles d'oiseaux sur une ligne à haute tension",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/191.jpg"
+  },
+  {
+    "id": 192,
+    "title": "Dinosaure",
+    "year": 2000,
+    "studio": null,
+    "poster": "/posters/192.jpg"
+  },
+  {
+    "id": 193,
+    "title": "102 dalmatiens",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/193.jpg"
+  },
+  {
+    "id": 194,
+    "title": "Buzz l'Eclair - Le film : le début des aventures",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/194.jpg"
+  },
+  {
+    "id": 195,
+    "title": "La Belle et le Clochard 2 : l'appel de la rue",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/195.jpg"
+  },
+  {
+    "id": 196,
+    "title": "Kuzco, l'empereur mégalo",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/196.jpg"
+  },
+  {
+    "id": 197,
+    "title": "Le plus beau des combats",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/197.jpg"
+  },
+  {
+    "id": 198,
+    "title": "Sale môme",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/198.jpg"
+  },
+  {
+    "id": 199,
+    "title": "Princesse malgré elle",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/199.jpg"
+  },
+  {
+    "id": 200,
+    "title": "La Cour de récré - Vive les vacances !",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/200.jpg"
+  },
+  {
+    "id": 201,
+    "title": "Atlantide, l'empire perdu",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/201.jpg"
+  },
+  {
+    "id": 202,
+    "title": "Mickey - Il était une fois Noël",
+    "year": 2001,
+    "studio": null,
+    "poster": "/posters/202.jpg"
+  },
+  {
+    "id": 203,
+    "title": "La Cour de récré - Les vacances de Noël",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/203.jpg"
+  },
+  {
+    "id": 204,
+    "title": "Le Bossu de Notre-Dame 2 : le secret de Quasimodo",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/204.jpg"
+  },
+  {
+    "id": 205,
+    "title": "Cendrillon 2 : une vie de princesse",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/205.jpg"
+  },
+  {
+    "id": 206,
+    "title": "Monstres & Cie",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/206.jpg"
+  },
+  {
+    "id": 207,
+    "title": "Star Wars, épisode II : L'Attaque des clones",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/207.jpg"
+  },
+  {
+    "id": 208,
+    "title": "Lilo & Stitch",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/208.jpg"
+  },
+  {
+    "id": 209,
+    "title": "La Légende de Tarzan et Jane",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/209.jpg"
+  },
+  {
+    "id": 210,
+    "title": "Rêve de champion",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/210.jpg"
+  },
+  {
+    "id": 211,
+    "title": "Peter Pan 2 : retour au Pays Imaginaire",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/211.jpg"
+  },
+  {
+    "id": 212,
+    "title": "Mickey - Le club des méchants",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/212.jpg"
+  },
+  {
+    "id": 213,
+    "title": "La nouvelle voiture de Bob",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/213.jpg"
+  },
+  {
+    "id": 214,
+    "title": "Chiens des neiges",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/214.jpg"
+  },
+  {
+    "id": 215,
+    "title": "Les 101 Dalmatiens 2 : sur la trace des héros",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/215.jpg"
+  },
+  {
+    "id": 216,
+    "title": "Winnie l'Ourson - Bonne année !",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/216.jpg"
+  },
+  {
+    "id": 217,
+    "title": "La Planète au trésor : un nouvel univers",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/217.jpg"
+  },
+  {
+    "id": 218,
+    "title": "Mickey, la magie de Noël",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/218.jpg"
+  },
+  {
+    "id": 219,
+    "title": "Le Calendrier de Noël",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/219.jpg"
+  },
+  {
+    "id": 220,
+    "title": "Hyper Noël",
+    "year": 2002,
+    "studio": null,
+    "poster": "/posters/220.jpg"
+  },
+  {
+    "id": 221,
+    "title": "Le Livre de la jungle 2",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/221.jpg"
+  },
+  {
+    "id": 222,
+    "title": "Les Énigmes de l'Atlantide",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/222.jpg"
+  },
+  {
+    "id": 223,
+    "title": "L'enfer blanc",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/223.jpg"
+  },
+  {
+    "id": 224,
+    "title": "Pirates des Caraïbes : La Malédiction du Black Pearl",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/224.jpg"
+  },
+  {
+    "id": 225,
+    "title": "Kim Possible - Les dossiers secrets",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/225.jpg"
+  },
+  {
+    "id": 226,
+    "title": "Stitch ! Le film",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/226.jpg"
+  },
+  {
+    "id": 227,
+    "title": "Les Fantômes Du Titanic",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/227.jpg"
+  },
+  {
+    "id": 228,
+    "title": "Le Crapaud et le Maître d'école",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/228.jpg"
+  },
+  {
+    "id": 229,
+    "title": "Les Aventures de Porcinet",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/229.jpg"
+  },
+  {
+    "id": 230,
+    "title": "La Morsure du lézard",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/230.jpg"
+  },
+  {
+    "id": 231,
+    "title": "George de la jungle 2",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/231.jpg"
+  },
+  {
+    "id": 232,
+    "title": "Le Monde de Nemo",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/232.jpg"
+  },
+  {
+    "id": 233,
+    "title": "Kim Possible - La clé du temps",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/233.jpg"
+  },
+  {
+    "id": 234,
+    "title": "La Cour de récré - Les petits contre-attaquent",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/234.jpg"
+  },
+  {
+    "id": 235,
+    "title": "Freaky Friday : Dans la peau de ma mère",
+    "year": 2003,
+    "studio": null,
+    "poster": "/posters/235.jpg"
+  },
+  {
+    "id": 236,
+    "title": "Frère des ours",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/236.jpg"
+  },
+  {
+    "id": 237,
+    "title": "Le Manoir hanté et les 999 fantômes",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/237.jpg"
+  },
+  {
+    "id": 238,
+    "title": "Le Roi Lion 3 : Hakuna Matata",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/238.jpg"
+  },
+  {
+    "id": 239,
+    "title": "La légende de l'étalon noir",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/239.jpg"
+  },
+  {
+    "id": 240,
+    "title": "Knick Knack",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/240.jpg"
+  },
+  {
+    "id": 241,
+    "title": "La Ferme se rebelle",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/241.jpg"
+  },
+  {
+    "id": 242,
+    "title": "Mickey, Donald, Dingo - Les trois mousquetaires",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/242.jpg"
+  },
+  {
+    "id": 243,
+    "title": "Les Aventures de Petit Gourou",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/243.jpg"
+  },
+  {
+    "id": 244,
+    "title": "Lizzie McGuire, le film",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/244.jpg"
+  },
+  {
+    "id": 245,
+    "title": "Un mariage de princesse",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/245.jpg"
+  },
+  {
+    "id": 246,
+    "title": "Mickey - Il était deux fois Noël",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/246.jpg"
+  },
+  {
+    "id": 247,
+    "title": "Mulan 2 : la mission de l'empereur",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/247.jpg"
+  },
+  {
+    "id": 248,
+    "title": "Les Indestructibles",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/248.jpg"
+  },
+  {
+    "id": 249,
+    "title": "Saute-Mouton",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/249.jpg"
+  },
+  {
+    "id": 250,
+    "title": "Benjamin Gates et le Trésor des Templiers",
+    "year": 2004,
+    "studio": null,
+    "poster": "/posters/250.jpg"
+  },
+  {
+    "id": 251,
+    "title": "Le Nouvel Espion aux pattes de velours",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/251.jpg"
+  },
+  {
+    "id": 252,
+    "title": "Kim Possible - Face à ses ennemis",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/252.jpg"
+  },
+  {
+    "id": 253,
+    "title": "Aliens of the Deep",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/253.jpg"
+  },
+  {
+    "id": 254,
+    "title": "Winnie l'Ourson et l'Efélant",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/254.jpg"
+  },
+  {
+    "id": 255,
+    "title": "Star Wars, épisode III : La Revanche des Sith",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/255.jpg"
+  },
+  {
+    "id": 256,
+    "title": "Baby-sitting Jack-Jack",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/256.jpg"
+  },
+  {
+    "id": 257,
+    "title": "Baby-Sittor",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/257.jpg"
+  },
+  {
+    "id": 258,
+    "title": "L'Homme-Orchestre",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/258.jpg"
+  },
+  {
+    "id": 259,
+    "title": "Winnie l'Ourson : Joyeux Noël",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/259.jpg"
+  },
+  {
+    "id": 260,
+    "title": "La Coccinelle revient",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/260.jpg"
+  },
+  {
+    "id": 261,
+    "title": "Tarzan 2 : l'enfance d'un héros",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/261.jpg"
+  },
+  {
+    "id": 262,
+    "title": "Lilo & Stitch 2 : Hawaï nous avons un problème !",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/262.jpg"
+  },
+  {
+    "id": 263,
+    "title": "Chicken Little",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/263.jpg"
+  },
+  {
+    "id": 264,
+    "title": "Kuzco 2 : King Kronk !",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/264.jpg"
+  },
+  {
+    "id": 265,
+    "title": "Le monde de Narnia - Chapitre 1 : Le lion, la sorcière blanche et l'armoire magique",
+    "year": 2005,
+    "studio": null,
+    "poster": "/posters/265.jpg"
+  },
+  {
+    "id": 266,
+    "title": "Bambi 2",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/266.jpg"
+  },
+  {
+    "id": 267,
+    "title": "The Wild",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/267.jpeg"
+  },
+  {
+    "id": 268,
+    "title": "Antartica, prisonniers du froid",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/268.jpg"
+  },
+  {
+    "id": 269,
+    "title": "Cars - Quatre roues",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/269.jpg"
+  },
+  {
+    "id": 270,
+    "title": "Pirates des Caraïbes : Le Secret du coffre maudit",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/270.jpg"
+  },
+  {
+    "id": 271,
+    "title": "Raymond",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/271.jpg"
+  },
+  {
+    "id": 272,
+    "title": "Frère des ours 2",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/272.jpg"
+  },
+  {
+    "id": 273,
+    "title": "L'Île au trésor des Muppets",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/273.jpg"
+  },
+  {
+    "id": 274,
+    "title": "Martin et la lumière fantôme",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/274.jpg"
+  },
+  {
+    "id": 275,
+    "title": "Extra-Terrien",
+    "year": 2006,
+    "studio": null,
+    "poster": "/posters/275.jpg"
+  },
+  {
+    "id": 276,
+    "title": "Leroy & Stitch",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/276.jpg"
+  },
+  {
+    "id": 277,
+    "title": "Le Sortilège de Cendrillon",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/277.jpg"
+  },
+  {
+    "id": 278,
+    "title": "Le Secret de Térabithia",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/278.jpg"
+  },
+  {
+    "id": 279,
+    "title": "Rox et Rouky 2",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/279.jpg"
+  },
+  {
+    "id": 280,
+    "title": "Pirates des Caraïbes : Jusqu'au bout du monde",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/280.jpg"
+  },
+  {
+    "id": 281,
+    "title": "Ratatouille",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/281.jpg"
+  },
+  {
+    "id": 282,
+    "title": "Bienvenue chez les Robinson",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/282.jpg"
+  },
+  {
+    "id": 283,
+    "title": "Super Noël Méga Givré",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/283.jpg"
+  },
+  {
+    "id": 284,
+    "title": "Il était une fois",
+    "year": 2007,
+    "studio": null,
+    "poster": "/posters/284.jpg"
+  },
+  {
+    "id": 285,
+    "title": "Les Légendes de l'Ouest",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/285.jpg"
+  },
+  {
+    "id": 286,
+    "title": "Notre ami le rat",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/286.jpg"
+  },
+  {
+    "id": 287,
+    "title": "Benjamin Gates et le livre des secrets",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/287.jpg"
+  },
+  {
+    "id": 288,
+    "title": "Maxi Papa",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/288.jpg"
+  },
+  {
+    "id": 289,
+    "title": "Iron Man",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/289.jpg"
+  },
+  {
+    "id": 290,
+    "title": "Indiana Jones et le Royaume du crâne de cristal",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/290.jpg"
+  },
+  {
+    "id": 291,
+    "title": "L'Incroyable Hulk",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/291.jpg"
+  },
+  {
+    "id": 292,
+    "title": "Presto",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/292.jpg"
+  },
+  {
+    "id": 293,
+    "title": "WALL·E",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/293.jpg"
+  },
+  {
+    "id": 294,
+    "title": "Le Monde de Narnia - Chapitre 2 : Le Prince Caspian",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/294.jpg"
+  },
+  {
+    "id": 295,
+    "title": "Le Secret de la Petite Sirène",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/295.jpg"
+  },
+  {
+    "id": 296,
+    "title": "High School Musical 3 : Nos années lycée",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/296.jpg"
+  },
+  {
+    "id": 297,
+    "title": "La Fée Clochette",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/297.jpg"
+  },
+  {
+    "id": 298,
+    "title": "BURN·E",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/298.jpg"
+  },
+  {
+    "id": 299,
+    "title": "Les Ailes Pourpres : le mystère des flamants",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/299.jpg"
+  },
+  {
+    "id": 300,
+    "title": "Histoires enchantées",
+    "year": 2008,
+    "studio": null,
+    "poster": "/posters/300.jpg"
+  },
+  {
+    "id": 301,
+    "title": "Volt, star malgré lui",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/301.jpg"
+  },
+  {
+    "id": 302,
+    "title": "Le Chihuahua de Beverly Hills",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/302.jpg"
+  },
+  {
+    "id": 303,
+    "title": "Hannah Montana, le film",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/303.jpg"
+  },
+  {
+    "id": 304,
+    "title": "Passages Nuageux",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/304.jpg"
+  },
+  {
+    "id": 305,
+    "title": "Là-haut",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/305.jpg"
+  },
+  {
+    "id": 306,
+    "title": "La Montagne ensorcelée",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/306.jpg"
+  },
+  {
+    "id": 307,
+    "title": "Mission-G",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/307.jpg"
+  },
+  {
+    "id": 308,
+    "title": "Clochette et la Pierre de Lune",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/308.jpg"
+  },
+  {
+    "id": 309,
+    "title": "Doug en mission spéciale",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/309.jpg"
+  },
+  {
+    "id": 310,
+    "title": "Le Drôle de Noël de Scrooge",
+    "year": 2009,
+    "studio": null,
+    "poster": "/posters/310.jpg"
+  },
+  {
+    "id": 311,
+    "title": "La Princesse et la Grenouille",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/311.jpg"
+  },
+  {
+    "id": 312,
+    "title": "Alice au Pays des Merveilles",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/312.jpg"
+  },
+  {
+    "id": 313,
+    "title": "Iron Man 2",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/313.jpg"
+  },
+  {
+    "id": 314,
+    "title": "Prince of Persia : Les sables du temps",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/314.jpg"
+  },
+  {
+    "id": 315,
+    "title": "Toy Story 3",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/315.jpg"
+  },
+  {
+    "id": 316,
+    "title": "Jour Nuit",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/316.jpg"
+  },
+  {
+    "id": 317,
+    "title": "L'Apprenti Sorcier",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/317.jpg"
+  },
+  {
+    "id": 318,
+    "title": "Clochette et l'Expédition féerique",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/318.jpg"
+  },
+  {
+    "id": 319,
+    "title": "Raiponce",
+    "year": 2010,
+    "studio": null,
+    "poster": "/posters/319.jpg"
+  },
+  {
+    "id": 320,
+    "title": "Tron : L'héritage",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/320.jpg"
+  },
+  {
+    "id": 321,
+    "title": "Pollen",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/321.jpg"
+  },
+  {
+    "id": 322,
+    "title": "Winnie l'Ourson",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/322.jpg"
+  },
+  {
+    "id": 323,
+    "title": "La Ballade de Nessie",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/323.jpg"
+  },
+  {
+    "id": 324,
+    "title": "Thor",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/324.jpg"
+  },
+  {
+    "id": 325,
+    "title": "Pirates des Caraïbes : La Fontaine de Jouvence",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/325.jpg"
+  },
+  {
+    "id": 326,
+    "title": "Cars 2",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/326.jpg"
+  },
+  {
+    "id": 327,
+    "title": "Vacances à Hawaii",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/327.jpg"
+  },
+  {
+    "id": 328,
+    "title": "Captain America : First Avenger",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/328.jpg"
+  },
+  {
+    "id": 329,
+    "title": "Milo sur Mars",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/329.jpg"
+  },
+  {
+    "id": 330,
+    "title": "Clochette et le Tournoi des Fées",
+    "year": 2011,
+    "studio": null,
+    "poster": "/posters/330.jpg"
+  },
+  {
+    "id": 331,
+    "title": "Félins",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/331.jpg"
+  },
+  {
+    "id": 332,
+    "title": "John Carter",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/332.jpg"
+  },
+  {
+    "id": 333,
+    "title": "Mini Buzz",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/333.jpg"
+  },
+  {
+    "id": 334,
+    "title": "Le Mariage de Raiponce",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/334.jpg"
+  },
+  {
+    "id": 335,
+    "title": "Avengers",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/335.jpg"
+  },
+  {
+    "id": 336,
+    "title": "Les Muppets : Le retour",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/336.jpg"
+  },
+  {
+    "id": 337,
+    "title": "Rebelle",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/337.jpg"
+  },
+  {
+    "id": 338,
+    "title": "La Luna",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/338.jpg"
+  },
+  {
+    "id": 339,
+    "title": "Clochette et le Secret des Fées",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/339.jpg"
+  },
+  {
+    "id": 340,
+    "title": "Frankenweenie",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/340.jpg"
+  },
+  {
+    "id": 341,
+    "title": "La Légende de Mor'du",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/341.jpg"
+  },
+  {
+    "id": 342,
+    "title": "Les Mondes de Ralph",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/342.jpg"
+  },
+  {
+    "id": 343,
+    "title": "Paperman",
+    "year": 2012,
+    "studio": null,
+    "poster": "/posters/343.jpg"
+  },
+  {
+    "id": 344,
+    "title": "Rex, le roi de la fête",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/344.jpg"
+  },
+  {
+    "id": 345,
+    "title": "Chimpanzés",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/345.jpg"
+  },
+  {
+    "id": 346,
+    "title": "Le Monde Fantastique d'Oz",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/346.jpg"
+  },
+  {
+    "id": 347,
+    "title": "Iron Man 3",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/347.jpg"
+  },
+  {
+    "id": 348,
+    "title": "Monstres Academy",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/348.jpg"
+  },
+  {
+    "id": 349,
+    "title": "Le Parapluie Bleu",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/349.jpg"
+  },
+  {
+    "id": 350,
+    "title": "Lone Ranger : Naissance d'un héros",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/350.jpg"
+  },
+  {
+    "id": 351,
+    "title": "Planes",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/351.jpg"
+  },
+  {
+    "id": 352,
+    "title": "Thor : Le Monde des Ténèbres",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/352.jpg"
+  },
+  {
+    "id": 353,
+    "title": "Toy Story : Angoisse au Motel",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/353.jpg"
+  },
+  {
+    "id": 354,
+    "title": "La Reine des Neiges",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/354.jpg"
+  },
+  {
+    "id": 355,
+    "title": "À cheval !",
+    "year": 2013,
+    "studio": null,
+    "poster": "/posters/355.jpg"
+  },
+  {
+    "id": 356,
+    "title": "Dans l'ombre de Mary - La promesse de Walt Disney",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/356.jpg"
+  },
+  {
+    "id": 357,
+    "title": "QG de soirée",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/357.jpg"
+  },
+  {
+    "id": 358,
+    "title": "Captain America : Le soldat de l'hiver",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/358.jpg"
+  },
+  {
+    "id": 359,
+    "title": "Clochette et la Fée Pirate",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/359.jpg"
+  },
+  {
+    "id": 360,
+    "title": "Maléfique",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/360.jpg"
+  },
+  {
+    "id": 361,
+    "title": "Planes 2",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/361.jpg"
+  },
+  {
+    "id": 362,
+    "title": "Les Gardiens de la Galaxie",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/362.jpg"
+  },
+  {
+    "id": 363,
+    "title": "Grizzly",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/363.jpg"
+  },
+  {
+    "id": 364,
+    "title": "Toy Story : Hors du Temps",
+    "year": 2014,
+    "studio": null,
+    "poster": "/posters/364.jpeg"
+  },
+  {
+    "id": 365,
+    "title": "Into The Woods, promenons-nous dans les bois",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/365.jpg"
+  },
+  {
+    "id": 366,
+    "title": "Les Nouveaux Héros",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/366.jpg"
+  },
+  {
+    "id": 367,
+    "title": "Le festin",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/367.jpg"
+  },
+  {
+    "id": 368,
+    "title": "Cendrillon",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/368.jpg"
+  },
+  {
+    "id": 369,
+    "title": "La Reine des Neiges - Une fête givrée",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/369.jpg"
+  },
+  {
+    "id": 370,
+    "title": "Clochette et la Créature Légendaire",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/370.jpg"
+  },
+  {
+    "id": 371,
+    "title": "Avengers : L'ère d'Ultron",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/371.jpg"
+  },
+  {
+    "id": 372,
+    "title": "À la poursuite de demain",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/372.jpg"
+  },
+  {
+    "id": 373,
+    "title": "Vice-Versa",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/373.jpeg"
+  },
+  {
+    "id": 374,
+    "title": "Lava",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/374.jpg"
+  },
+  {
+    "id": 375,
+    "title": "Ant-Man",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/375.jpeg"
+  },
+  {
+    "id": 376,
+    "title": "Premier rendez-vous ?",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/376.jpg"
+  },
+  {
+    "id": 377,
+    "title": "Au Royaume des Singes",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/377.jpeg"
+  },
+  {
+    "id": 378,
+    "title": "Le Voyage d'Arlo",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/378.jpeg"
+  },
+  {
+    "id": 379,
+    "title": "Sanjay et sa super équipe",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/379.jpg"
+  },
+  {
+    "id": 380,
+    "title": "Star Wars, épisode VII : Le Réveil de la Force",
+    "year": 2015,
+    "studio": null,
+    "poster": "/posters/380.jpeg"
+  },
+  {
+    "id": 381,
+    "title": "Zootopie",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/381.jpeg"
+  },
+  {
+    "id": 382,
+    "title": "The Finest Hours",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/382.jpeg"
+  },
+  {
+    "id": 383,
+    "title": "Le Livre de la jungle",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/383.jpeg"
+  },
+  {
+    "id": 384,
+    "title": "Captain America : Civil War",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/384.jpeg"
+  },
+  {
+    "id": 385,
+    "title": "Alice de l'autre côté du miroir",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/385.jpeg"
+  },
+  {
+    "id": 386,
+    "title": "Le Monde de Dory",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/386.jpeg"
+  },
+  {
+    "id": 387,
+    "title": "Piper",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/387.jpg"
+  },
+  {
+    "id": 388,
+    "title": "Le BGG - Le Bon Gros Géant",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/388.jpg"
+  },
+  {
+    "id": 389,
+    "title": "Peter et Elliott le dragon",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/389.jpeg"
+  },
+  {
+    "id": 390,
+    "title": "Doctor Strange",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/390.jpeg"
+  },
+  {
+    "id": 391,
+    "title": "Vaiana, la légende du bout du monde",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/391.jpeg"
+  },
+  {
+    "id": 392,
+    "title": "Raison, Déraison",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/392.jpg"
+  },
+  {
+    "id": 393,
+    "title": "Rogue One : A Star Wars Story",
+    "year": 2016,
+    "studio": null,
+    "poster": "/posters/393.jpeg"
+  },
+  {
+    "id": 394,
+    "title": "L'Empereur",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/394.jpeg"
+  },
+  {
+    "id": 395,
+    "title": "La Belle et la Bête",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/395.jpeg"
+  },
+  {
+    "id": 396,
+    "title": "Les Gardiens de la Galaxie vol. 2",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/396.jpg"
+  },
+  {
+    "id": 397,
+    "title": "Pirates des Caraïbes : La vengeance de Salazar",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/397.jpeg"
+  },
+  {
+    "id": 398,
+    "title": "Spider-Man : Homecoming",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/398.jpg"
+  },
+  {
+    "id": 399,
+    "title": "Cars 3",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/399.jpeg"
+  },
+  {
+    "id": 400,
+    "title": "LOU",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/400.jpg"
+  },
+  {
+    "id": 401,
+    "title": "Nés en Chine",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/401.jpeg"
+  },
+  {
+    "id": 402,
+    "title": "Thor : Ragnarok",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/402.jpeg"
+  },
+  {
+    "id": 403,
+    "title": "Coco",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/403.jpg"
+  },
+  {
+    "id": 404,
+    "title": "L'école de pilotage de Miss Fritter",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/404.jpg"
+  },
+  {
+    "id": 405,
+    "title": "Star Wars, épisode VIII : Les Derniers Jedi",
+    "year": 2017,
+    "studio": null,
+    "poster": "/posters/405.jpg"
+  },
+  {
+    "id": 406,
+    "title": "Black Panther",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/406.jpg"
+  },
+  {
+    "id": 407,
+    "title": "Un Raccourci dans le temps",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/407.jpg"
+  },
+  {
+    "id": 408,
+    "title": "Blue",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/408.jpg"
+  },
+  {
+    "id": 409,
+    "title": "Avengers : Infinity War",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/409.jpg"
+  },
+  {
+    "id": 410,
+    "title": "Solo : A Star Wars Story",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/410.jpg"
+  },
+  {
+    "id": 411,
+    "title": "Bao",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/411.jpg"
+  },
+  {
+    "id": 412,
+    "title": "Les Indestructibles 2",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/412.jpg"
+  },
+  {
+    "id": 413,
+    "title": "Ant-Man et la Guêpe",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/413.jpg"
+  },
+  {
+    "id": 414,
+    "title": "Jean-Christophe & Winnie",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/414.jpg"
+  },
+  {
+    "id": 415,
+    "title": "Casse-Noisette et les Quatre Royaumes",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/415.jpg"
+  },
+  {
+    "id": 416,
+    "title": "Le Retour de Mary Poppins",
+    "year": 2018,
+    "studio": null,
+    "poster": "/posters/416.jpg"
+  },
+  {
+    "id": 417,
+    "title": "Ralph 2.0",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/417.jpg"
+  },
+  {
+    "id": 418,
+    "title": "Captain Marvel",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/418.jpg"
+  },
+  {
+    "id": 419,
+    "title": "Dumbo",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/419.jpg"
+  },
+  {
+    "id": 420,
+    "title": "Avengers : Endgame",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/420.jpg"
+  },
+  {
+    "id": 421,
+    "title": "Aladdin",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/421.jpg"
+  },
+  {
+    "id": 422,
+    "title": "Toy Story 4",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/422.jpg"
+  },
+  {
+    "id": 423,
+    "title": "Spider-Man : Far from Home",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/423.jpg"
+  },
+  {
+    "id": 424,
+    "title": "Le Roi Lion",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/424.jpg"
+  },
+  {
+    "id": 425,
+    "title": "Maléfique : Le Pouvoir du Mal",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/425.jpg"
+  },
+  {
+    "id": 426,
+    "title": "La Reine des Neiges 2",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/426.jpg"
+  },
+  {
+    "id": 427,
+    "title": "Star Wars, épisode IX : L'Ascension de Skywalker",
+    "year": 2019,
+    "studio": null,
+    "poster": "/posters/427.jpg"
+  },
+  {
+    "id": 428,
+    "title": "En avant",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/428.jpg"
+  },
+  {
+    "id": 429,
+    "title": "La Belle et le Clochard",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/429.jpg"
+  },
+  {
+    "id": 430,
+    "title": "Timmy Failure : Des erreurs ont été commises",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/430.jpg"
+  },
+  {
+    "id": 431,
+    "title": "Stargirl",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/431.jpg"
+  },
+  {
+    "id": 432,
+    "title": "Éléphants",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/432.jpg"
+  },
+  {
+    "id": 433,
+    "title": "Artemis Fowl",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/433.jpg"
+  },
+  {
+    "id": 434,
+    "title": "Phineas et Ferb - Le film : Candice face à l'univers",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/434.jpg"
+  },
+  {
+    "id": 435,
+    "title": "Le Seul et unique Ivan",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/435.jpg"
+  },
+  {
+    "id": 436,
+    "title": "Noëlle",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/436.jpg"
+  },
+  {
+    "id": 437,
+    "title": "Mulan",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/437.jpg"
+  },
+  {
+    "id": 438,
+    "title": "Soul",
+    "year": 2020,
+    "studio": null,
+    "poster": "/posters/438.jpg"
+  },
+  {
+    "id": 439,
+    "title": "Shang-Chi et la Légende des Dix Anneaux",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/439.jpg"
+  },
+  {
+    "id": 440,
+    "title": "Cruella",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/440.jpg"
+  },
+  {
+    "id": 441,
+    "title": "Raya et le Dernier Dragon",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/441.jpg"
+  },
+  {
+    "id": 442,
+    "title": "Luca",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/442.jpg"
+  },
+  {
+    "id": 443,
+    "title": "Black Widow",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/443.jpg"
+  },
+  {
+    "id": 444,
+    "title": "Jungle Cruise",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/444.jpg"
+  },
+  {
+    "id": 445,
+    "title": "Les Éternels",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/445.jpg"
+  },
+  {
+    "id": 446,
+    "title": "Encanto, la fantastique famille Madrigal",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/446.jpg"
+  },
+  {
+    "id": 447,
+    "title": "Spider-Man : No Way Home",
+    "year": 2021,
+    "studio": null,
+    "poster": "/posters/447.jpg"
+  },
+  {
+    "id": 448,
+    "title": "Alerte rouge",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/448.jpg"
+  },
+  {
+    "id": 449,
+    "title": "Ours polaire",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/449.jpg"
+  },
+  {
+    "id": 450,
+    "title": "Doctor Strange In the Multiverse of Madness",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/450.jpg"
+  },
+  {
+    "id": 451,
+    "title": "Buzz l'Éclair",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/451.jpg"
+  },
+  {
+    "id": 452,
+    "title": "Thor : Love and Thunder",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/452.jpg"
+  },
+  {
+    "id": 453,
+    "title": "Pinocchio",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/453.jpg"
+  },
+  {
+    "id": 454,
+    "title": "Hocus Pocus 2",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/454.jpg"
+  },
+  {
+    "id": 455,
+    "title": "Black Panther : Wakanda Forever",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/455.jpg"
+  },
+  {
+    "id": 456,
+    "title": "Il était une fois 2",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/456.jpg"
+  },
+  {
+    "id": 457,
+    "title": "Avalonia, l'étrange voyage",
+    "year": 2022,
+    "studio": null,
+    "poster": "/posters/457.jpg"
+  },
+  {
+    "id": 458,
+    "title": "Ant-Man et la Guêpe : Quantumania",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/458.jpg"
+  },
+  {
+    "id": 459,
+    "title": "Peter Pan & Wendy",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/459.jpg"
+  },
+  {
+    "id": 460,
+    "title": "Les Gardiens de la Galaxie Vol. 3",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/460.jpg"
+  },
+  {
+    "id": 461,
+    "title": "La Petite Sirène",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/461.jpg"
+  },
+  {
+    "id": 462,
+    "title": "Élémentaire",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/462.jpg"
+  },
+  {
+    "id": 463,
+    "title": "Indiana Jones et le Cadran de la Destinée",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/463.jpg"
+  },
+  {
+    "id": 464,
+    "title": "Le Manoir Hanté",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/464.jpg"
+  },
+  {
+    "id": 465,
+    "title": "Il était une fois un studio",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/465.jpg"
+  },
+  {
+    "id": 466,
+    "title": "The Marvels",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/466.jpg"
+  },
+  {
+    "id": 467,
+    "title": "Wish : Asha et la bonne étoile",
+    "year": 2023,
+    "studio": null,
+    "poster": "/posters/467.jpg"
+  },
+  {
+    "id": 468,
+    "title": "Vice-Versa 2",
+    "year": 2024,
+    "studio": null,
+    "poster": "/posters/468.jpg"
+  },
+  {
+    "id": 469,
+    "title": "Face à la mer : l’histoire de Trudy Ederle",
+    "year": 2024,
+    "studio": null,
+    "poster": "/posters/469.jpg"
+  },
+  {
+    "id": 470,
+    "title": "Vaiana 2",
+    "year": 2024,
+    "studio": null,
+    "poster": "/posters/470.jpg"
+  },
+  {
+    "id": 471,
+    "title": "Mufasa : Le Roi Lion",
+    "year": 2024,
+    "studio": null,
+    "poster": "/posters/471.jpg"
+  },
+  {
+    "id": 472,
+    "title": "Captain America : Brave New World",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/472.jpg"
+  },
+  {
+    "id": 473,
+    "title": "Blanche Neige",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/473.jpg"
+  },
+  {
+    "id": 474,
+    "title": "Thunderbolts*",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/474.jpg"
+  },
+  {
+    "id": 475,
+    "title": "Lilo & Stitch",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/475.jpg"
+  },
+  {
+    "id": 476,
+    "title": "Elio",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/476.jpg"
+  },
+  {
+    "id": 477,
+    "title": "Les 4 Fantastiques : Premiers pas",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/477.jpg"
+  },
+  {
+    "id": 478,
+    "title": "Freaky Friday 2 : Encore dans la peau de ma mère",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/478.jpg"
+  },
+  {
+    "id": 479,
+    "title": "Tron: Ares",
+    "year": 2025,
+    "studio": null,
+    "poster": "/posters/479.jpg"
+  },
+  {
+    "id": 480,
     "title": "Zootopie 2",
     "year": 2025,
-    "studio": "Disney",
-    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Zootopie+2"
+    "studio": null,
+    "poster": "/posters/480.jpg"
+  },
+  {
+    "id": 481,
+    "title": "Jumpers",
+    "year": 2026,
+    "studio": null,
+    "poster": "/posters/481.jpg"
+  },
+  {
+    "id": 482,
+    "title": "The Mandalorian and Grogu",
+    "year": 2026,
+    "studio": null,
+    "poster": "/posters/482.jpg"
+  },
+  {
+    "id": 483,
+    "title": "Toy Story 5",
+    "year": 2026,
+    "studio": null,
+    "poster": "/posters/483.jpg"
+  },
+  {
+    "id": 484,
+    "title": "Vaiana",
+    "year": 2026,
+    "studio": null,
+    "poster": "/posters/484.jpg"
+  },
+  {
+    "id": 485,
+    "title": "Hexed",
+    "year": 2026,
+    "studio": null,
+    "poster": "/posters/485.jpg"
+  },
+  {
+    "id": 486,
+    "title": "Avengers : Doomsday",
+    "year": 2026,
+    "studio": null,
+    "poster": "/posters/486.jpg"
+  },
+  {
+    "id": 487,
+    "title": "Gatto",
+    "year": 2027,
+    "studio": null,
+    "poster": "/posters/487.jpg"
+  },
+  {
+    "id": 488,
+    "title": "La Reine des neiges 3",
+    "year": 2027,
+    "studio": null,
+    "poster": "/posters/488.jpg"
+  },
+  {
+    "id": 489,
+    "title": "Avengers: Secret Wars",
+    "year": 2027,
+    "studio": null,
+    "poster": "/posters/489.jpg"
   }
 ]

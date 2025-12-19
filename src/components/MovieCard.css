@@ -72,14 +72,16 @@
 }
 
 .card-content {
-    padding: var(--spacing-md);
+    padding: 8px;
+    /* Reduced from spacing-md */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
 .card-content h3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    /* Reduced from 1.1rem */
     margin-bottom: 4px;
     white-space: nowrap;
     overflow: hidden;
@@ -88,8 +90,9 @@
 
 .year {
     color: var(--color-text-secondary);
-    font-size: 0.9rem;
-    margin: 0 0 var(--spacing-sm) 0;
+    font-size: 0.8rem;
+    /* Reduced from 0.9rem */
+    margin: 0 0 4px 0;
 }
 
 .rating-container {
@@ -101,7 +104,8 @@
 .star {
     cursor: pointer;
     color: #444;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    /* Reduced from 1.5rem */
     transition: color 0.2s;
 }
 
