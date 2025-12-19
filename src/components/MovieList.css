@@ -1,0 +1,14 @@
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+}
+
+@media (min-width: 600px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+}

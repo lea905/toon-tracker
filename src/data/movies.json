@@ -1,0 +1,674 @@
+[
+  {
+    "id": 1,
+    "title": "Blanche-Neige et les Sept Nains",
+    "year": 1937,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Blanche-Neige"
+  },
+  {
+    "id": 2,
+    "title": "Pinocchio",
+    "year": 1940,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Pinocchio"
+  },
+  {
+    "id": 3,
+    "title": "Fantasia",
+    "year": 1940,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Fantasia"
+  },
+  {
+    "id": 4,
+    "title": "Dumbo",
+    "year": 1941,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Dumbo"
+  },
+  {
+    "id": 5,
+    "title": "Bambi",
+    "year": 1942,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Bambi"
+  },
+  {
+    "id": 6,
+    "title": "Saludos Amigos",
+    "year": 1942,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Saludos+Amigos"
+  },
+  {
+    "id": 7,
+    "title": "Les Trois Caballeros",
+    "year": 1944,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Les+Trois+Caballeros"
+  },
+  {
+    "id": 8,
+    "title": "La Boîte à musique",
+    "year": 1946,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Bo%C3%AEte+%C3%A0+musique"
+  },
+  {
+    "id": 9,
+    "title": "Mélodie du Sud",
+    "year": 1946,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=M%C3%A9lodie+du+Sud"
+  },
+  {
+    "id": 10,
+    "title": "Coquin de printemps",
+    "year": 1947,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Coquin+de+printemps"
+  },
+  {
+    "id": 11,
+    "title": "Mélodie Cocktail",
+    "year": 1948,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=M%C3%A9lodie+Cocktail"
+  },
+  {
+    "id": 12,
+    "title": "Danny, le petit mouton noir",
+    "year": 1949,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Danny+le+petit+mouton"
+  },
+  {
+    "id": 13,
+    "title": "Le Crapaud et le Maître d'école",
+    "year": 1949,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Le+Crapaud"
+  },
+  {
+    "id": 14,
+    "title": "Cendrillon",
+    "year": 1950,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Cendrillon"
+  },
+  {
+    "id": 15,
+    "title": "Alice au pays des merveilles",
+    "year": 1951,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Alice"
+  },
+  {
+    "id": 16,
+    "title": "Peter Pan",
+    "year": 1953,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Peter+Pan"
+  },
+  {
+    "id": 17,
+    "title": "La Belle et le Clochard",
+    "year": 1955,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Belle+et+le+Clochard"
+  },
+  {
+    "id": 18,
+    "title": "La Belle au bois dormant",
+    "year": 1959,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Belle+au+bois+dormant"
+  },
+  {
+    "id": 19,
+    "title": "Les 101 Dalmatiens",
+    "year": 1961,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=101+Dalmatiens"
+  },
+  {
+    "id": 20,
+    "title": "Merlin l'Enchanteur",
+    "year": 1963,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Merlin"
+  },
+  {
+    "id": 21,
+    "title": "Mary Poppins",
+    "year": 1964,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Mary+Poppins"
+  },
+  {
+    "id": 22,
+    "title": "Le Livre de la jungle",
+    "year": 1967,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Livre+de+la+jungle"
+  },
+  {
+    "id": 23,
+    "title": "Les Aristochats",
+    "year": 1970,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Aristochats"
+  },
+  {
+    "id": 24,
+    "title": "Robin des Bois",
+    "year": 1973,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Robin+des+Bois"
+  },
+  {
+    "id": 25,
+    "title": "Les Aventures de Winnie l'ourson",
+    "year": 1977,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Winnie+l%27ourson"
+  },
+  {
+    "id": 26,
+    "title": "Les Aventures de Bernard et Bianca",
+    "year": 1977,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Bernard+et+Bianca"
+  },
+  {
+    "id": 27,
+    "title": "Rox et Rouky",
+    "year": 1981,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Rox+et+Rouky"
+  },
+  {
+    "id": 28,
+    "title": "Taram et le Chaudron magique",
+    "year": 1985,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Taram"
+  },
+  {
+    "id": 29,
+    "title": "Basil, détective privé",
+    "year": 1986,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Basil"
+  },
+  {
+    "id": 30,
+    "title": "Oliver et Compagnie",
+    "year": 1988,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Oliver"
+  },
+  {
+    "id": 31,
+    "title": "La Petite Sirène",
+    "year": 1989,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Petite+Sir%C3%A8ne"
+  },
+  {
+    "id": 32,
+    "title": "Bernard et Bianca au pays des kangourous",
+    "year": 1990,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Bernard+et+Bianca+2"
+  },
+  {
+    "id": 33,
+    "title": "La Belle et la Bête",
+    "year": 1991,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+Belle+et+la+B%C3%A8te"
+  },
+  {
+    "id": 34,
+    "title": "Aladdin",
+    "year": 1992,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Aladdin"
+  },
+  {
+    "id": 35,
+    "title": "Le Roi lion",
+    "year": 1994,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Le+Roi+Lion"
+  },
+  {
+    "id": 36,
+    "title": "Pocahontas",
+    "year": 1995,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Pocahontas"
+  },
+  {
+    "id": 37,
+    "title": "Toy Story",
+    "year": 1995,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story"
+  },
+  {
+    "id": 38,
+    "title": "Le Bossu de Notre-Dame",
+    "year": 1996,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Le+Bossu"
+  },
+  {
+    "id": 39,
+    "title": "Hercule",
+    "year": 1997,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Hercule"
+  },
+  {
+    "id": 40,
+    "title": "Mulan",
+    "year": 1998,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Mulan"
+  },
+  {
+    "id": 41,
+    "title": "1001 Pattes",
+    "year": 1998,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=1001+Pattes"
+  },
+  {
+    "id": 42,
+    "title": "Tarzan",
+    "year": 1999,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Tarzan"
+  },
+  {
+    "id": 43,
+    "title": "Toy Story 2",
+    "year": 1999,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story+2"
+  },
+  {
+    "id": 44,
+    "title": "Fantasia 2000",
+    "year": 1999,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Fantasia+2000"
+  },
+  {
+    "id": 45,
+    "title": "Dinosaure",
+    "year": 2000,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Dinosaure"
+  },
+  {
+    "id": 46,
+    "title": "Kuzco, l'empereur mégalo",
+    "year": 2000,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Kuzco"
+  },
+  {
+    "id": 47,
+    "title": "Atlantide, l'empire perdu",
+    "year": 2001,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Atlantide"
+  },
+  {
+    "id": 48,
+    "title": "Monstres et Cie",
+    "year": 2001,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Monstres+et+Cie"
+  },
+  {
+    "id": 49,
+    "title": "Lilo et Stitch",
+    "year": 2002,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Lilo+et+Stitch"
+  },
+  {
+    "id": 50,
+    "title": "La Planète au trésor",
+    "year": 2002,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Plan%C3%A8te+au+tr%C3%A9sor"
+  },
+  {
+    "id": 51,
+    "title": "Frère des ours",
+    "year": 2003,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Fr%C3%A8re+des+ours"
+  },
+  {
+    "id": 52,
+    "title": "Le Monde de Nemo",
+    "year": 2003,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Le+Monde+de+Nemo"
+  },
+  {
+    "id": 53,
+    "title": "La ferme se rebelle",
+    "year": 2004,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=La+ferme+se+rebelle"
+  },
+  {
+    "id": 54,
+    "title": "Les Indestructibles",
+    "year": 2004,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Indestructibles"
+  },
+  {
+    "id": 55,
+    "title": "Chicken Little",
+    "year": 2005,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Chicken+Little"
+  },
+  {
+    "id": 56,
+    "title": "Cars",
+    "year": 2006,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Cars"
+  },
+  {
+    "id": 57,
+    "title": "Bienvenue chez les Robinson",
+    "year": 2007,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Robinson"
+  },
+  {
+    "id": 58,
+    "title": "Ratatouille",
+    "year": 2007,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Ratatouille"
+  },
+  {
+    "id": 59,
+    "title": "WALL-E",
+    "year": 2008,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=WALL-E"
+  },
+  {
+    "id": 60,
+    "title": "Volt, star malgré lui",
+    "year": 2008,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Volt"
+  },
+  {
+    "id": 61,
+    "title": "Là-haut",
+    "year": 2009,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=L%C3%A0-haut"
+  },
+  {
+    "id": 62,
+    "title": "La Princesse et la Grenouille",
+    "year": 2009,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Princesse+Grenouille"
+  },
+  {
+    "id": 63,
+    "title": "Toy Story 3",
+    "year": 2010,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story+3"
+  },
+  {
+    "id": 64,
+    "title": "Raiponce",
+    "year": 2010,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Raiponce"
+  },
+  {
+    "id": 65,
+    "title": "Winnie l'ourson",
+    "year": 2011,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Winnie"
+  },
+  {
+    "id": 66,
+    "title": "Cars 2",
+    "year": 2011,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Cars+2"
+  },
+  {
+    "id": 67,
+    "title": "Rebelle",
+    "year": 2012,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Rebelle"
+  },
+  {
+    "id": 68,
+    "title": "Les Mondes de Ralph",
+    "year": 2012,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Ralph"
+  },
+  {
+    "id": 69,
+    "title": "Monstres Academy",
+    "year": 2013,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Monstres+Academy"
+  },
+  {
+    "id": 70,
+    "title": "La Reine des neiges",
+    "year": 2013,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Reine+des+Neiges"
+  },
+  {
+    "id": 71,
+    "title": "Les Nouveaux Héros",
+    "year": 2014,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Nouveaux+H%C3%A9ros"
+  },
+  {
+    "id": 72,
+    "title": "Vice-versa",
+    "year": 2015,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Vice-versa"
+  },
+  {
+    "id": 73,
+    "title": "Le Voyage d'Arlo",
+    "year": 2015,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Arlo"
+  },
+  {
+    "id": 74,
+    "title": "Zootopie",
+    "year": 2016,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Zootopie"
+  },
+  {
+    "id": 75,
+    "title": "Le Monde de Dory",
+    "year": 2016,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Le+Monde+de+Dory"
+  },
+  {
+    "id": 76,
+    "title": "Vaiana",
+    "year": 2016,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Vaiana"
+  },
+  {
+    "id": 77,
+    "title": "Cars 3",
+    "year": 2017,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Cars+3"
+  },
+  {
+    "id": 78,
+    "title": "Coco",
+    "year": 2017,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Coco"
+  },
+  {
+    "id": 79,
+    "title": "Les Indestructibles 2",
+    "year": 2018,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Indestructibles+2"
+  },
+  {
+    "id": 80,
+    "title": "Ralph 2.0",
+    "year": 2018,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Ralph+2"
+  },
+  {
+    "id": 81,
+    "title": "Toy Story 4",
+    "year": 2019,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Toy+Story+4"
+  },
+  {
+    "id": 82,
+    "title": "La Reine des neiges 2",
+    "year": 2019,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Reine+des+neiges+2"
+  },
+  {
+    "id": 83,
+    "title": "En avant",
+    "year": 2020,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=En+avant"
+  },
+  {
+    "id": 84,
+    "title": "Soul",
+    "year": 2020,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Soul"
+  },
+  {
+    "id": 85,
+    "title": "Raya et le Dernier Dragon",
+    "year": 2021,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Raya"
+  },
+  {
+    "id": 86,
+    "title": "Luca",
+    "year": 2021,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Luca"
+  },
+  {
+    "id": 87,
+    "title": "Encanto",
+    "year": 2021,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Encanto"
+  },
+  {
+    "id": 88,
+    "title": "Alerte rouge",
+    "year": 2022,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Alerte+rouge"
+  },
+  {
+    "id": 89,
+    "title": "Buzz l'Éclair",
+    "year": 2022,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Buzz"
+  },
+  {
+    "id": 90,
+    "title": "Avalonia",
+    "year": 2022,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Avalonia"
+  },
+  {
+    "id": 91,
+    "title": "Élémentaire",
+    "year": 2023,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=%C3%89l%C3%A9mentaire"
+  },
+  {
+    "id": 92,
+    "title": "Wish",
+    "year": 2023,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Wish"
+  },
+  {
+    "id": 93,
+    "title": "Vice-versa 2",
+    "year": 2024,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Vice-versa+2"
+  },
+  {
+    "id": 94,
+    "title": "Vaiana 2",
+    "year": 2024,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Vaiana+2"
+  },
+  {
+    "id": 95,
+    "title": "Elio",
+    "year": 2025,
+    "studio": "Pixar",
+    "poster": "https://placehold.co/300x450/D8D8D8/000000?text=Elio"
+  },
+  {
+    "id": 96,
+    "title": "Zootopie 2",
+    "year": 2025,
+    "studio": "Disney",
+    "poster": "https://placehold.co/300x450/113CCF/ffffff?text=Zootopie+2"
+  }
+]

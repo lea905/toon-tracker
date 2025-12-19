@@ -1,0 +1,40 @@
+:root {
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-primary: #e1306c; /* Disney-ish pink/red or maybe blue? Let's go with a vibrant gradient base */
+  --color-primary-gradient: linear-gradient(135deg, #FF6B6B 0%, #556270 100%); /* Placeholder */
+  --color-text: #ffffff;
+  --color-text-secondary: #aaaaaa;
+  
+  --color-disney: #113CCF;
+  --color-pixar: #D8D8D8; /* Luxo lamp color */
+
+  --font-family: 'Inter', system-ui, sans-serif;
+  
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  --border-radius: 12px;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.2);
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
