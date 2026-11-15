@@ -1,0 +1,111 @@
+.sync-section + .sync-section {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sync-section h3 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.sync-help {
+    display: block;
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.45;
+    margin: 0 0 var(--spacing-sm);
+}
+
+.sync-code-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.sync-code {
+    font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+    font-size: clamp(0.95rem, 4.6vw, 1.35rem);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    user-select: all;
+}
+
+.sync-input {
+    width: 100%;
+    font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}
+
+.sync-status {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    margin: 0 0 var(--spacing-sm);
+}
+
+.sync-last {
+    color: var(--color-text-secondary);
+}
+
+.sync-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--color-text-secondary);
+    flex-shrink: 0;
+}
+
+.sync-status-ok .sync-dot { background: var(--color-seen); }
+.sync-status-syncing .sync-dot { background: #f2c94c; }
+.sync-status-offline .sync-dot { background: #f2994a; }
+.sync-status-error .sync-dot { background: #eb5757; }
+
+.sync-warning {
+    font-size: 0.75rem;
+    color: #f2c94c;
+    margin: 0 0 var(--spacing-md);
+}
+
+.sync-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.sync-actions button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.sync-error {
+    color: #ff8a8a;
+    font-size: 0.85rem;
+    margin: var(--spacing-sm) 0 0;
+}
+
+/* Pastille d'état sur le bouton de l'en-tête */
+.sync-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sync-btn .sync-dot {
+    width: 7px;
+    height: 7px;
+}
+
+.sync-dot-ok { background: var(--color-seen); }
+.sync-dot-syncing { background: #f2c94c; }
+.sync-dot-offline { background: #f2994a; }
+.sync-dot-error { background: #eb5757; }

@@ -25,3 +25,6 @@ dist-ssr
 
 # Claude Code (config locale)
 .claude/
+
+# Wrangler (tests locaux Cloudflare)
+.wrangler/

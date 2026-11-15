@@ -5,6 +5,8 @@ import Toolbar from './components/Toolbar';
 import StatsPanel from './components/StatsPanel';
 import RandomPicker from './components/RandomPicker';
 import MovieDetail from './components/MovieDetail';
+import SyncPanel from './components/SyncPanel';
+import { useSync } from './sync';
 import { isUpcoming } from './categories';
 import { COLLECTIONS_BY_VALUE } from './collections';
 import { computeBadges } from './badges';
@@ -45,6 +47,7 @@ function App() {
   const [sort, setSort] = useState('year-asc');
   const [message, setMessage] = useState(null);
   const [showStats, setShowStats] = useState(false);
+  const [showSync, setShowSync] = useState(false);
   // Liste figée au moment du tirage, pour que « Je l'ai vu » ne change pas le tirage en cours.
   const [randomPool, setRandomPool] = useState(null);
   const [detailMovie, setDetailMovie] = useState(null);
@@ -53,6 +56,7 @@ function App() {
   const skipBadgeToast = useRef(false);
 
   useEffect(() => saveObject('disney-seen', seenState), [seenState]);
+  const sync = useSync(seenState, setSeenState);
 
   useEffect(() => {
     if (!message) return;
@@ -80,6 +84,7 @@ function App() {
   };
 
   const closeStats = useCallback(() => setShowStats(false), []);
+  const closeSync = useCallback(() => setShowSync(false), []);
   const closeRandom = useCallback(() => setRandomPool(null), []);
   const closeDetail = useCallback(() => setDetailMovie(null), []);
 
@@ -176,11 +181,13 @@ function App() {
             >
               🎲 Au hasard
             </button>
-            <button className="header-btn" onClick={handleExport} title="Télécharger ma progression">
-              Exporter
-            </button>
-            <button className="header-btn" onClick={() => fileInputRef.current?.click()} title="Charger une sauvegarde">
-              Importer
+            <button
+              className="header-btn sync-btn"
+              onClick={() => setShowSync(true)}
+              title="Synchro entre appareils et sauvegarde"
+            >
+              {sync.code && <span className={`sync-dot sync-dot-${sync.status}`} aria-hidden="true" />}
+              ☁️ Synchro
             </button>
             <input
               ref={fileInputRef}
@@ -210,6 +217,15 @@ function App() {
           resultCount={displayedMovies.length}
         />
       </header>
+
+      {showSync && (
+        <SyncPanel
+          sync={sync}
+          onExport={handleExport}
+          onImport={() => fileInputRef.current?.click()}
+          onClose={closeSync}
+        />
+      )}
 
       {showStats && (
         <StatsPanel movies={movies} seenState={seenState} badges={badges} onClose={closeStats} />

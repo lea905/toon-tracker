@@ -19,10 +19,11 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 - Statistiques (clic sur le compteur) : progression globale, Grands Classiques, catégories, sagas, décennies
 - 22 badges à débloquer, et une image de ta progression à télécharger ou partager
 - Bouton « Au hasard » : tire au sort un film pas encore vu, en tenant compte des filtres
-- Export / import de la progression dans un fichier JSON, pour changer d'appareil ou la sauvegarder
+- **Synchro entre appareils** avec un simple code (bouton « Synchro »), sans compte ni mot de passe
+- Export / import de la progression dans un fichier JSON
 
-La progression est enregistrée uniquement dans le navigateur (`localStorage`) : rien n'est envoyé sur un serveur.
-Pense à l'exporter de temps en temps.
+La progression est enregistrée dans le navigateur (`localStorage`). Elle n'est envoyée sur un serveur
+que si la synchro est activée.
 
 ## Lancer le projet en local
 
@@ -81,6 +82,26 @@ pas rattaché au studio sur TMDB.
 Copie ensuite les affiches dans `public/posters/`, puis lance `npm run optimize-images` et `npm run fetch-details`.
 Pense à ajouter la nouvelle catégorie dans `src/categories.js` (et sa couleur dans `MovieCard.css`).
 
+## Synchro entre appareils
+
+Le bouton « Synchro » crée un code de 12 caractères (ex. `XP2J-8KVA-M66J`) à taper sur les autres appareils.
+
+- **Serveur** : une fonction Cloudflare Pages (`functions/api/sync/[[path]].js`) et une base **D1** liée sous le nom `DB`
+  (la table est créée automatiquement au premier appel).
+  - `POST /api/sync` crée un code, `GET /api/sync/<code>` lit la progression, `PUT /api/sync/<code>` envoie et fusionne.
+- **Fusion** : chaque coche / décoche est horodatée ; pour chaque film, la modification la plus récente l'emporte.
+- **Côté app** : `src/sync.js` (envoi 1,5 s après un changement, synchro à l'ouverture, au retour sur l'onglet et au retour du réseau).
+
+Mise en place sur Cloudflare (une fois) : *Storage & Databases → D1 → Create* (base `toon-tracker-sync`), puis dans le
+projet Pages *Settings → Bindings → Add → D1 database* : nom de variable `DB`, base `toon-tracker-sync`.
+
+Test en local (fonctions + base D1 simulée) :
+
+```bash
+npm run build
+npx wrangler@4.40.0 pages dev dist --d1 DB
+```
+
 ## Mise à jour automatique
 
 Chaque lundi, la tâche GitHub `.github/workflows/update-catalog.yml` lance `scripts/update-catalog.mjs`, qui :
@@ -132,6 +153,8 @@ src/categories.js       Catégories, films à venir et compte à rebours
 src/collections.js      Grands Classiques, studios et sagas (ordres de visionnage)
 src/badges.js           Badges à débloquer
 src/storage.js          Sauvegarde locale et export/import
+src/sync.js             Synchro entre appareils (côté app)
+functions/api/sync/     Synchro entre appareils (côté serveur Cloudflare)
 ```
 
 ## Déploiement
