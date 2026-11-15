@@ -4093,5 +4093,667 @@
     "releaseDate": "2027-03-31",
     "category": "illumination",
     "poster": "/posters/582.webp"
+  },
+  {
+    "id": 583,
+    "title": "Mission : Noël - Les Aventures de la famille Noël",
+    "year": 2011,
+    "category": "aardman",
+    "poster": "/posters/583.webp"
+  },
+  {
+    "id": 584,
+    "title": "Les Pirates ! Bons à rien, mauvais en tout",
+    "year": 2012,
+    "category": "aardman",
+    "poster": "/posters/584.webp"
+  },
+  {
+    "id": 585,
+    "title": "Shaun le Mouton, le film",
+    "year": 2015,
+    "category": "aardman",
+    "poster": "/posters/585.webp"
+  },
+  {
+    "id": 586,
+    "title": "Cro Man",
+    "year": 2018,
+    "category": "aardman",
+    "poster": "/posters/586.webp"
+  },
+  {
+    "id": 587,
+    "title": "Shaun le mouton, le film : La ferme contre-attaque",
+    "year": 2019,
+    "category": "aardman",
+    "poster": "/posters/587.webp"
+  },
+  {
+    "id": 588,
+    "title": "Chicken Run : La menace nuggets",
+    "year": 2023,
+    "category": "aardman",
+    "poster": "/posters/588.webp"
+  },
+  {
+    "id": 589,
+    "title": "Wallace et Gromit : La palme de la vengeance",
+    "year": 2024,
+    "category": "aardman",
+    "poster": "/posters/589.webp"
+  },
+  {
+    "id": 590,
+    "title": "Shaun le Mouton : La Bêêête d'Halloween",
+    "year": 2026,
+    "category": "aardman",
+    "poster": "/posters/590.webp"
+  },
+  {
+    "id": 591,
+    "title": "Les Rebelles de la forêt",
+    "year": 2006,
+    "category": "sony",
+    "poster": "/posters/591.webp"
+  },
+  {
+    "id": 592,
+    "title": "Les Rois de la glisse",
+    "year": 2007,
+    "category": "sony",
+    "poster": "/posters/592.webp"
+  },
+  {
+    "id": 593,
+    "title": "Les Rebelles de la forêt 2",
+    "year": 2008,
+    "category": "sony",
+    "poster": "/posters/593.webp"
+  },
+  {
+    "id": 594,
+    "title": "Tempête de boulettes géantes",
+    "year": 2009,
+    "category": "sony",
+    "poster": "/posters/594.webp"
+  },
+  {
+    "id": 595,
+    "title": "Les Rebelles de la forêt 3",
+    "year": 2011,
+    "category": "sony",
+    "poster": "/posters/595.webp"
+  },
+  {
+    "id": 596,
+    "title": "Les Schtroumpfs",
+    "year": 2011,
+    "category": "sony",
+    "poster": "/posters/596.webp"
+  },
+  {
+    "id": 597,
+    "title": "Hôtel Transylvanie",
+    "year": 2013,
+    "category": "sony",
+    "poster": "/posters/597.webp"
+  },
+  {
+    "id": 598,
+    "title": "Les Schtroumpfs 2",
+    "year": 2013,
+    "category": "sony",
+    "poster": "/posters/598.webp"
+  },
+  {
+    "id": 599,
+    "title": "L'Île des Miam-nimaux : Tempête de boulettes géantes 2",
+    "year": 2014,
+    "category": "sony",
+    "poster": "/posters/599.webp"
+  },
+  {
+    "id": 600,
+    "title": "Hôtel Transylvanie 2",
+    "year": 2015,
+    "category": "sony",
+    "poster": "/posters/600.webp"
+  },
+  {
+    "id": 601,
+    "title": "Les Rebelles de la forêt 4",
+    "year": 2015,
+    "category": "sony",
+    "poster": "/posters/601.webp"
+  },
+  {
+    "id": 602,
+    "title": "Angry Birds: Le film",
+    "year": 2016,
+    "category": "sony",
+    "poster": "/posters/602.webp"
+  },
+  {
+    "id": 603,
+    "title": "Les Rois de la glisse 2",
+    "year": 2017,
+    "category": "sony",
+    "poster": "/posters/603.webp"
+  },
+  {
+    "id": 604,
+    "title": "Les Schtroumpfs et le village perdu",
+    "year": 2017,
+    "category": "sony",
+    "poster": "/posters/604.webp"
+  },
+  {
+    "id": 605,
+    "title": "Le Monde secret des Emojis",
+    "year": 2017,
+    "category": "sony",
+    "poster": "/posters/605.webp"
+  },
+  {
+    "id": 606,
+    "title": "L'Étoile de Noël",
+    "year": 2017,
+    "category": "sony",
+    "poster": "/posters/606.webp"
+  },
+  {
+    "id": 607,
+    "title": "Pierre Lapin",
+    "year": 2018,
+    "category": "sony",
+    "poster": "/posters/607.webp"
+  },
+  {
+    "id": 608,
+    "title": "Hôtel Transylvanie 3 : Des vacances monstrueuses",
+    "year": 2018,
+    "category": "sony",
+    "poster": "/posters/608.webp"
+  },
+  {
+    "id": 609,
+    "title": "Spider-Man : New Generation",
+    "year": 2018,
+    "category": "sony",
+    "poster": "/posters/609.webp"
+  },
+  {
+    "id": 610,
+    "title": "Angry Birds : Copains comme cochons",
+    "year": 2019,
+    "category": "sony",
+    "poster": "/posters/610.webp"
+  },
+  {
+    "id": 611,
+    "title": "Le Dragon-Génie",
+    "year": 2021,
+    "category": "sony",
+    "poster": "/posters/611.webp"
+  },
+  {
+    "id": 612,
+    "title": "Les Mitchell contre les machines",
+    "year": 2021,
+    "category": "sony",
+    "poster": "/posters/612.webp"
+  },
+  {
+    "id": 613,
+    "title": "Vivo",
+    "year": 2021,
+    "category": "sony",
+    "poster": "/posters/613.webp"
+  },
+  {
+    "id": 614,
+    "title": "Hôtel Transylvanie : Changements monstres",
+    "year": 2022,
+    "category": "sony",
+    "poster": "/posters/614.webp"
+  },
+  {
+    "id": 615,
+    "title": "Spider-Man : Across the Spider-Verse",
+    "year": 2023,
+    "category": "sony",
+    "poster": "/posters/615.webp"
+  },
+  {
+    "id": 616,
+    "title": "KPop Demon Hunters",
+    "year": 2025,
+    "category": "sony",
+    "poster": "/posters/616.webp"
+  },
+  {
+    "id": 617,
+    "title": "Couic !",
+    "year": 2025,
+    "category": "sony",
+    "poster": "/posters/617.webp"
+  },
+  {
+    "id": 618,
+    "title": "GOAT : Rêver plus haut",
+    "year": 2026,
+    "category": "sony",
+    "poster": "/posters/618.webp"
+  },
+  {
+    "id": 619,
+    "title": "Spider-Man: Beyond the Spider-Verse",
+    "year": 2027,
+    "releaseDate": "2027-06-16",
+    "category": "sony",
+    "poster": "/posters/619.webp"
+  },
+  {
+    "id": 620,
+    "title": "The Haunting of Hotel Transylvania",
+    "year": 2027,
+    "releaseDate": "2027-10-07",
+    "category": "sony",
+    "poster": "/posters/620.webp"
+  },
+  {
+    "id": 621,
+    "title": "Buds",
+    "year": 2027,
+    "releaseDate": "2027-12-22",
+    "category": "sony",
+    "poster": "/posters/621.webp"
+  },
+  {
+    "id": 622,
+    "title": "L'Âge de glace",
+    "year": 2002,
+    "category": "blue-sky",
+    "poster": "/posters/622.webp"
+  },
+  {
+    "id": 623,
+    "title": "Robots",
+    "year": 2005,
+    "category": "blue-sky",
+    "poster": "/posters/623.webp"
+  },
+  {
+    "id": 624,
+    "title": "L'Âge de glace 2",
+    "year": 2006,
+    "category": "blue-sky",
+    "poster": "/posters/624.webp"
+  },
+  {
+    "id": 625,
+    "title": "Horton",
+    "year": 2008,
+    "category": "blue-sky",
+    "poster": "/posters/625.webp"
+  },
+  {
+    "id": 626,
+    "title": "L'Âge de glace 3 : Le Temps des dinosaures",
+    "year": 2009,
+    "category": "blue-sky",
+    "poster": "/posters/626.webp"
+  },
+  {
+    "id": 627,
+    "title": "Rio",
+    "year": 2011,
+    "category": "blue-sky",
+    "poster": "/posters/627.webp"
+  },
+  {
+    "id": 628,
+    "title": "L'Âge de glace 4 : La Dérive des continents",
+    "year": 2012,
+    "category": "blue-sky",
+    "poster": "/posters/628.webp"
+  },
+  {
+    "id": 629,
+    "title": "Epic : La Bataille du royaume secret",
+    "year": 2013,
+    "category": "blue-sky",
+    "poster": "/posters/629.webp"
+  },
+  {
+    "id": 630,
+    "title": "Rio 2",
+    "year": 2014,
+    "category": "blue-sky",
+    "poster": "/posters/630.webp"
+  },
+  {
+    "id": 631,
+    "title": "Snoopy et les Peanuts : Le film",
+    "year": 2015,
+    "category": "blue-sky",
+    "poster": "/posters/631.webp"
+  },
+  {
+    "id": 632,
+    "title": "L'Âge de glace : Les Lois de l'Univers",
+    "year": 2016,
+    "category": "blue-sky",
+    "poster": "/posters/632.webp"
+  },
+  {
+    "id": 633,
+    "title": "Ferdinand",
+    "year": 2017,
+    "category": "blue-sky",
+    "poster": "/posters/633.webp"
+  },
+  {
+    "id": 634,
+    "title": "Les Incognitos",
+    "year": 2019,
+    "category": "blue-sky",
+    "poster": "/posters/634.webp"
+  },
+  {
+    "id": 635,
+    "title": "Nausicaä de la vallée du vent",
+    "year": 1984,
+    "category": "ghibli",
+    "poster": "/posters/635.webp"
+  },
+  {
+    "id": 636,
+    "title": "Souvenirs goutte à goutte",
+    "year": 1991,
+    "category": "ghibli",
+    "poster": "/posters/636.webp"
+  },
+  {
+    "id": 637,
+    "title": "Je peux entendre l'océan",
+    "year": 1993,
+    "category": "ghibli",
+    "poster": "/posters/637.webp"
+  },
+  {
+    "id": 638,
+    "title": "Pompoko",
+    "year": 1994,
+    "category": "ghibli",
+    "poster": "/posters/638.webp"
+  },
+  {
+    "id": 639,
+    "title": "Porco Rosso",
+    "year": 1995,
+    "category": "ghibli",
+    "poster": "/posters/639.webp"
+  },
+  {
+    "id": 640,
+    "title": "Si tu tends l'oreille",
+    "year": 1995,
+    "category": "ghibli",
+    "poster": "/posters/640.webp"
+  },
+  {
+    "id": 641,
+    "title": "Le Tombeau des Lucioles",
+    "year": 1996,
+    "category": "ghibli",
+    "poster": "/posters/641.webp"
+  },
+  {
+    "id": 642,
+    "title": "Mon voisin Totoro",
+    "year": 1999,
+    "category": "ghibli",
+    "poster": "/posters/642.webp"
+  },
+  {
+    "id": 643,
+    "title": "Princesse Mononoké",
+    "year": 2000,
+    "category": "ghibli",
+    "poster": "/posters/643.webp"
+  },
+  {
+    "id": 644,
+    "title": "Mes voisins les Yamada",
+    "year": 2001,
+    "category": "ghibli",
+    "poster": "/posters/644.webp"
+  },
+  {
+    "id": 645,
+    "title": "Le Voyage de Chihiro",
+    "year": 2002,
+    "category": "ghibli",
+    "poster": "/posters/645.webp"
+  },
+  {
+    "id": 646,
+    "title": "Le Château dans le ciel",
+    "year": 2003,
+    "category": "ghibli",
+    "poster": "/posters/646.webp"
+  },
+  {
+    "id": 647,
+    "title": "Le Royaume des chats",
+    "year": 2003,
+    "category": "ghibli",
+    "poster": "/posters/647.webp"
+  },
+  {
+    "id": 648,
+    "title": "Kiki la petite sorcière",
+    "year": 2004,
+    "category": "ghibli",
+    "poster": "/posters/648.webp"
+  },
+  {
+    "id": 649,
+    "title": "Le Château ambulant",
+    "year": 2005,
+    "category": "ghibli",
+    "poster": "/posters/649.webp"
+  },
+  {
+    "id": 650,
+    "title": "Les Contes de Terremer",
+    "year": 2007,
+    "category": "ghibli",
+    "poster": "/posters/650.webp"
+  },
+  {
+    "id": 651,
+    "title": "Ponyo sur la falaise",
+    "year": 2009,
+    "category": "ghibli",
+    "poster": "/posters/651.webp"
+  },
+  {
+    "id": 652,
+    "title": "Arrietty, le petit monde des chapardeurs",
+    "year": 2011,
+    "category": "ghibli",
+    "poster": "/posters/652.webp"
+  },
+  {
+    "id": 653,
+    "title": "La colline aux coquelicots",
+    "year": 2012,
+    "category": "ghibli",
+    "poster": "/posters/653.webp"
+  },
+  {
+    "id": 654,
+    "title": "Le Vent se lève",
+    "year": 2014,
+    "category": "ghibli",
+    "poster": "/posters/654.webp"
+  },
+  {
+    "id": 655,
+    "title": "Le Conte de la princesse Kaguya",
+    "year": 2014,
+    "category": "ghibli",
+    "poster": "/posters/655.webp"
+  },
+  {
+    "id": 656,
+    "title": "Souvenirs de Marnie",
+    "year": 2015,
+    "category": "ghibli",
+    "poster": "/posters/656.webp"
+  },
+  {
+    "id": 657,
+    "title": "La Tortue rouge",
+    "year": 2016,
+    "category": "ghibli",
+    "poster": "/posters/657.webp"
+  },
+  {
+    "id": 658,
+    "title": "Aya et la sorcière",
+    "year": 2021,
+    "category": "ghibli",
+    "poster": "/posters/658.webp"
+  },
+  {
+    "id": 659,
+    "title": "Le Garçon et le Héron",
+    "year": 2023,
+    "category": "ghibli",
+    "poster": "/posters/659.webp"
+  },
+  {
+    "id": 660,
+    "title": "Coraline",
+    "year": 2009,
+    "category": "laika",
+    "poster": "/posters/660.webp"
+  },
+  {
+    "id": 661,
+    "title": "L'Étrange Pouvoir de Norman",
+    "year": 2012,
+    "category": "laika",
+    "poster": "/posters/661.webp"
+  },
+  {
+    "id": 662,
+    "title": "Les Boxtrolls",
+    "year": 2014,
+    "category": "laika",
+    "poster": "/posters/662.webp"
+  },
+  {
+    "id": 663,
+    "title": "Kubo et l'armure magique",
+    "year": 2016,
+    "category": "laika",
+    "poster": "/posters/663.webp"
+  },
+  {
+    "id": 664,
+    "title": "Monsieur Link",
+    "year": 2019,
+    "category": "laika",
+    "poster": "/posters/664.webp"
+  },
+  {
+    "id": 665,
+    "title": "Wildwood : La prophétie de la forêt",
+    "year": 2026,
+    "releaseDate": "2026-12-09",
+    "category": "laika",
+    "poster": "/posters/665.webp"
+  },
+  {
+    "id": 666,
+    "title": "La Grande Aventure LEGO",
+    "year": 2014,
+    "category": "warner",
+    "poster": "/posters/666.webp"
+  },
+  {
+    "id": 667,
+    "title": "Cigognes et compagnie",
+    "year": 2016,
+    "category": "warner",
+    "poster": "/posters/667.webp"
+  },
+  {
+    "id": 668,
+    "title": "Lego Batman, le film",
+    "year": 2017,
+    "category": "warner",
+    "poster": "/posters/668.webp"
+  },
+  {
+    "id": 669,
+    "title": "Lego Ninjago, le film",
+    "year": 2017,
+    "category": "warner",
+    "poster": "/posters/669.webp"
+  },
+  {
+    "id": 670,
+    "title": "Yéti & Compagnie",
+    "year": 2018,
+    "category": "warner",
+    "poster": "/posters/670.webp"
+  },
+  {
+    "id": 671,
+    "title": "La Grande Aventure LEGO 2",
+    "year": 2019,
+    "category": "warner",
+    "poster": "/posters/671.webp"
+  },
+  {
+    "id": 672,
+    "title": "Scooby !",
+    "year": 2020,
+    "category": "warner",
+    "poster": "/posters/672.webp"
+  },
+  {
+    "id": 673,
+    "title": "Tom & Jerry",
+    "year": 2021,
+    "category": "warner",
+    "poster": "/posters/673.webp"
+  },
+  {
+    "id": 674,
+    "title": "Space Jam : Nouvelle Ère",
+    "year": 2021,
+    "category": "warner",
+    "poster": "/posters/674.webp"
+  },
+  {
+    "id": 675,
+    "title": "Krypto et les Super-Animaux",
+    "year": 2022,
+    "category": "warner",
+    "poster": "/posters/675.webp"
+  },
+  {
+    "id": 676,
+    "title": "Coyote vs. Acme",
+    "year": 2026,
+    "category": "warner",
+    "poster": "/posters/676.webp"
   }
 ]

@@ -1,22 +1,22 @@
 # Toon Tracker
 
-Une petite application web pour suivre tous les films que tu as vus : Disney, Pixar, DreamWorks, Illumination, Marvel, Star Wars et plus encore.
+Une petite application web pour suivre tous les films que tu as vus : Disney, Pixar, DreamWorks, Illumination, Ghibli, Marvel, Star Wars et plus encore.
 Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une application (PWA) avec un accès hors-ligne.
 
 ## Fonctionnalités
 
-- 582 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
-- Classés par catégorie : Animation (Disney), Pixar, DreamWorks, Illumination, Live-action, Marvel, Lucasfilm (Star Wars, Indiana Jones), Documentaire
-- Filmographies des studios Pixar, DreamWorks Animation et Illumination, numérotées dans l'ordre de sortie
+- 676 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
+- Classés par catégorie : Animation (Disney), Pixar, DreamWorks, Illumination, Sony Animation, Blue Sky, Ghibli, Aardman, Laika, Warner Animation, Live-action, Marvel, Lucasfilm (Star Wars, Indiana Jones), Documentaire
+- Filmographies de 9 studios d'animation (Pixar, DreamWorks, Illumination, Sony, Blue Sky, Ghibli, Aardman, Laika, Warner), numérotées dans l'ordre de sortie
 - Une fiche par film (clic sur l'affiche) : résumé, durée, réalisation, genres, sagas et bande-annonce
 - Marquer un film comme vu ; les films pas encore sortis affichent un compte à rebours (« Dans 10 jours », « Le 26 mai 2027 »)
 - Les **Grands Classiques Disney** numérotés (n°1 *Blanche-Neige* → n°66 *La Reine des neiges 3*)
-- 48 **sagas** (Marvel, Star Wars, Toy Story, Shrek, Moi moche et méchant…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
+- 61 **sagas** (Marvel, Star Wars, Toy Story, Shrek, Moi moche et méchant, L'Âge de glace, Spider-Verse…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
 - Recherche par titre (sans tenir compte des accents)
 - Filtres par statut (à voir, vus, bientôt, tous), par saga, par catégorie et par décennie, tri par année ou titre
 - Affichage en grille d'affiches ou en liste compacte
 - Statistiques (clic sur le compteur) : progression globale, Grands Classiques, catégories, sagas, décennies
-- 19 badges à débloquer, et une image de ta progression à télécharger ou partager
+- 21 badges à débloquer, et une image de ta progression à télécharger ou partager
 - Bouton « Au hasard » : tire au sort un film pas encore vu, en tenant compte des filtres
 - Export / import de la progression dans un fichier JSON, pour changer d'appareil ou la sauvegarder
 
@@ -64,12 +64,16 @@ Autres commandes :
 ### Ajouter tout un studio d'un coup
 
 `scripts/import-studio.mjs` récupère tous les longs-métrages d'un studio sur TMDB (les courts-métrages, spéciaux TV
-et making-of sont écartés). Il faut l'identifiant TMDB du studio (DreamWorks Animation = 521, Illumination = 6704) :
+et making-of sont écartés). Il faut l'identifiant TMDB du studio (DreamWorks Animation = 521, Illumination = 6704, Sony Pictures Animation = 2251,
+Blue Sky = 9383, Ghibli = 10342, Aardman = 297, Laika = 11537, Warner Animation Group = 25120) :
 
 ```bash
 node scripts/import-studio.mjs 521 dreamworks                              # aperçu, ne modifie rien
 node scripts/import-studio.mjs 521 dreamworks --apply dossier-temporaire   # ajoute les films et télécharge les affiches
 ```
+
+Options : `--exclude 123,456` pour écarter des films (identifiants TMDB), `--extra 789` pour en ajouter un qui n'est
+pas rattaché au studio sur TMDB.
 
 Copie ensuite les affiches dans `public/posters/`, puis lance `npm run optimize-images` et `npm run fetch-details`.
 Pense à ajouter la nouvelle catégorie dans `src/categories.js` (et sa couleur dans `MovieCard.css`).

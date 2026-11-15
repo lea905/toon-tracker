@@ -24,9 +24,11 @@ export const classiqueNumber = (movieId) => CLASSIQUE_NUMBERS.get(movieId) ?? nu
 export const PIXAR_FEATURES = [151, 184, 206, 232, 248, 269, 281, 293, 305, 315, 326, 337, 348, 373, 378, 386, 399, 403, 412, 422, 428, 438, 442, 448, 451, 462, 468, 476, 481, 483, 487, 496, 500, 504];
 
 // Tous les films d'une catégorie, dans l'ordre de sortie.
-const byCategory = (category) => moviesData
-  .filter(m => m.category === category)
-  .sort((a, b) => (a.releaseDate ?? `${a.year}-99`).localeCompare(b.releaseDate ?? `${b.year}-99`))
+const dateKey = (m) => m.releaseDate ?? `${m.year}-99`;
+const MOVIES_BY_ID = new Map(moviesData.map(m => [m.id, m]));
+const byCategory = (category, extraIds = []) => moviesData
+  .filter(m => m.category === category || extraIds.includes(m.id))
+  .sort((a, b) => dateKey(a).localeCompare(dateKey(b)))
   .map(m => m.id);
 
 // Filmographies des studios d'animation, numérotées comme les Grands Classiques.
@@ -34,6 +36,13 @@ export const STUDIOS = [
   { value: 'studio-pixar', label: 'Pixar', release: PIXAR_FEATURES },
   { value: 'studio-dreamworks', label: 'DreamWorks Animation', release: byCategory('dreamworks') },
   { value: 'studio-illumination', label: 'Illumination', release: byCategory('illumination') },
+  { value: 'studio-sony', label: 'Sony Pictures Animation', release: byCategory('sony') },
+  { value: 'studio-blue-sky', label: 'Blue Sky Studios', release: byCategory('blue-sky') },
+  { value: 'studio-ghibli', label: 'Studio Ghibli', release: byCategory('ghibli') },
+  // Chicken Run, Wallace & Gromit et Souris City sont des films Aardman coproduits avec DreamWorks.
+  { value: 'studio-aardman', label: 'Aardman', release: byCategory('aardman', [509, 516, 518]) },
+  { value: 'studio-laika', label: 'Laika', release: byCategory('laika') },
+  { value: 'studio-warner', label: 'Warner Animation Group', release: byCategory('warner') },
 ];
 
 export const SAGAS = [
@@ -111,7 +120,32 @@ export const SAGAS = [
   { value: 'comme-des-betes', label: 'Comme des bêtes', release: [570, 574] },
   { value: 'tous-en-scene', label: 'Tous en scène', release: [571, 575] },
   { value: 'super-mario', label: 'Super Mario', release: [577, 580] },
+  // Sony Pictures Animation
+  { value: 'spider-verse', label: 'Spider-Verse', release: [609, 615, 619] },
+  { value: 'hotel-transylvanie', label: 'Hôtel Transylvanie', release: [597, 600, 608, 614, 620] },
+  { value: 'boulettes', label: 'Tempête de boulettes géantes', release: [594, 599] },
+  { value: 'rebelles-foret', label: 'Les Rebelles de la forêt', release: [591, 593, 595, 601] },
+  { value: 'rois-glisse', label: 'Les Rois de la glisse', release: [592, 603] },
+  { value: 'schtroumpfs', label: 'Les Schtroumpfs', release: [596, 598, 604] },
+  { value: 'angry-birds', label: 'Angry Birds', release: [602, 610] },
+  // Blue Sky
+  { value: 'age-de-glace', label: "L'Âge de glace", release: [622, 624, 626, 628, 632] },
+  { value: 'rio', label: 'Rio', release: [627, 630] },
+  // Aardman
+  { value: 'wallace-gromit', label: 'Wallace & Gromit', release: [516, 589] },
+  { value: 'chicken-run', label: 'Chicken Run', release: [509, 588] },
+  { value: 'shaun', label: 'Shaun le mouton', release: [585, 587, 590] },
+  // Warner Animation
+  { value: 'lego', label: 'La Grande Aventure LEGO', release: [666, 668, 669, 671] },
 ];
+
+// Vérification en développement : chaque identifiant doit exister dans movies.json.
+if (import.meta.env?.DEV) {
+  for (const c of [...STUDIOS, ...SAGAS]) {
+    const missing = [...c.release, ...(c.chrono ?? [])].filter(id => !MOVIES_BY_ID.has(id));
+    if (missing.length) console.warn(`Collection ${c.value} : films inconnus`, missing);
+  }
+}
 
 // Toutes les collections proposées dans le filtre, Grands Classiques en premier.
 export const COLLECTIONS = [

@@ -4,6 +4,10 @@
 //   node scripts/import-studio.mjs <id société TMDB> <catégorie>             → aperçu, ne modifie rien
 //   node scripts/import-studio.mjs <id société TMDB> <catégorie> --apply <dossier affiches>
 //
+// Options :
+//   --exclude 123,456   identifiants TMDB à écarter (film d'un autre studio, captation…)
+//   --extra 789         identifiants TMDB à ajouter même s'ils ne sont pas rattachés au studio
+//
 // Exemple : node scripts/import-studio.mjs 521 dreamworks
 //
 // Avec --apply : ajoute les films à src/data/movies.json (identifiants à la suite),
@@ -16,8 +20,12 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const [companyId, category, ...rest] = process.argv.slice(2);
-const apply = rest[0] === '--apply';
-const posterDir = rest[1];
+const option = (name) => { const i = rest.indexOf(name); return i >= 0 ? rest[i + 1] : undefined; };
+const idList = (value) => new Set((value ?? '').split(',').filter(Boolean).map(Number));
+const apply = rest.includes('--apply');
+const posterDir = option('--apply');
+const excluded = idList(option('--exclude'));
+const extras = idList(option('--extra'));
 if (!companyId || !category || (apply && !posterDir)) {
   console.error('Usage : node scripts/import-studio.mjs <id société> <catégorie> [--apply <dossier affiches>]');
   process.exit(1);
@@ -48,6 +56,7 @@ for (let page = 1; ; page++) {
   found.push(...data.results);
   if (page >= data.total_pages) break;
 }
+for (const id of extras) found.push({ id });
 
 // 2. Détails de chaque film pour ne garder que les vrais longs-métrages.
 const today = new Date().toISOString().slice(0, 10);
@@ -61,7 +70,7 @@ for (const r of found) {
   const upcoming = date ? date > today : true;
   const isDoc = d.genres?.some(g => g.id === 99);
   const isFeature = d.runtime >= 60 || (upcoming && !d.runtime);
-  const reason = !date ? 'sans date' : isDoc ? 'documentaire' : !isFeature ? `court (${d.runtime || '?'} min)` : null;
+  const reason = excluded.has(d.id) ? 'exclu à la main' : !date ? 'sans date' : isDoc ? 'documentaire' : !isFeature ? `court (${d.runtime || '?'} min)` : null;
   const entry = { tmdbId: d.id, title: d.title, original: d.original_title, date, upcoming, runtime: d.runtime, poster: d.poster_path };
   if (reason) skipped.push({ ...entry, reason }); else kept.push(entry);
 }

@@ -65,6 +65,12 @@
 .category-badge[data-category="lucasfilm"] { background-color: #1b1b1b; color: #e5b80b; box-shadow: inset 0 0 0 1px #e5b80b; }
 .category-badge[data-category="dreamworks"] { background-color: #0a8fc2; }
 .category-badge[data-category="illumination"] { background-color: #ffd400; color: #000; }
+.category-badge[data-category="sony"] { background-color: #6f4cc3; }
+.category-badge[data-category="blue-sky"] { background-color: #7cc8f0; color: #000; }
+.category-badge[data-category="ghibli"] { background-color: #2f6f4f; }
+.category-badge[data-category="aardman"] { background-color: #e8661c; }
+.category-badge[data-category="laika"] { background-color: #8c2f39; }
+.category-badge[data-category="warner"] { background-color: #1d4f9c; }
 .category-badge[data-category="documentary"] { background-color: #2e7d4f; }
 
 .upcoming-badge {

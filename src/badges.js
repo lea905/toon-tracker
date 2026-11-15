@@ -34,6 +34,15 @@ export const BADGES = [
   { id: 'pixar', icon: '💡', label: 'Collectionneur Pixar', description: 'Tous les longs-métrages Pixar déjà sortis', progress: listProgress(PIXAR_FEATURES) },
   { id: 'dreamworks', icon: '🌙', label: 'Collectionneur DreamWorks', description: 'Tous les films DreamWorks Animation déjà sortis', progress: listProgress(STUDIO['studio-dreamworks']) },
   { id: 'illumination', icon: '🍌', label: 'Collectionneur Illumination', description: 'Tous les films Illumination déjà sortis', progress: listProgress(STUDIO['studio-illumination']) },
+  { id: 'ghibli', icon: '🌳', label: 'Esprit de la forêt', description: 'Tous les films du Studio Ghibli', progress: listProgress(STUDIO['studio-ghibli']) },
+  {
+    id: 'world-tour', icon: '🌍', label: "Tour du monde de l'animation", description: "Au moins un film de chaque studio d'animation",
+    progress: ({ released, seen }) => {
+      const studios = [['animation-disney', CLASSIQUES], ...STUDIOS.map(s => [s.value, s.release])];
+      const done = studios.filter(([, ids]) => ids.some(id => released.has(id) && seen[id])).length;
+      return [done, studios.length];
+    },
+  },
   { id: 'toy-story', icon: '🚀', label: "Vers l'infini et au-delà", description: 'Toute la saga Toy Story', progress: listProgress(SAGA['toy-story']) },
   { id: 'shrek', icon: '🧅', label: 'Il était une fois…', description: 'Toute la saga Shrek', progress: listProgress(SAGA.shrek) },
   { id: 'star-wars', icon: '⚔️', label: 'Que la Force soit avec toi', description: 'Toute la saga Star Wars', progress: listProgress(SAGA['star-wars']) },
