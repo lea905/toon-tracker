@@ -28,26 +28,26 @@
   gap: var(--spacing-sm);
 }
 
-.toggle-seen-btn {
+.header-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--color-text-secondary);
   padding: 6px 12px;
   border-radius: 20px;
   cursor: pointer;
+  font: inherit;
   font-size: 0.85rem;
   transition: all 0.3s ease;
 }
 
-.toggle-seen-btn:hover {
+.header-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   color: var(--color-text);
 }
 
-.toggle-seen-btn.active {
-  background: var(--color-primary);
-  color: white;
-  border-color: var(--color-primary);
+.header-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .app-header h1 {
@@ -71,4 +71,51 @@
   .app-header h1 {
     font-size: 1.5rem;
   }
+}
+
+.header-content {
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.header-actions {
+  flex-wrap: wrap;
+}
+
+/* Sur téléphone, l'en-tête + la barre de filtres prendraient un tiers de l'écran :
+   on les laisse défiler avec la page. */
+@media (max-width: 599px) {
+  .app-header {
+    position: static;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+  color: var(--color-text-secondary);
+}
+
+.toast {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-md);
+  max-width: calc(100% - 32px);
+  text-align: center;
+}
+
+.toast-success {
+  background: #1f6f43;
+  color: #fff;
+}
+
+.toast-error {
+  background: #a3263a;
+  color: #fff;
 }
