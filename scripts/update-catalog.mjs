@@ -60,6 +60,7 @@ for (const s of studios) for (const id of s.exclude ?? []) known.add(id);
 const added = [];
 const posters = [];
 const dates = [];
+const titles = [];
 let nextId = Math.max(...movies.map(m => m.id)) + 1;
 
 // 1. Nouveaux films
@@ -114,6 +115,11 @@ for (const movie of movies) {
 
   const d = await tmdb(`/movie/${tmdbId}`, { language: 'fr-FR', append_to_response: 'release_dates' });
   const date = frenchDate(d);
+  // Titre français annoncé (on ignore les titres provisoires « Untitled… »).
+  if (isUpcoming(movie) && d.title && d.title !== movie.title && !/^(untitled|sans titre)/i.test(d.title)) {
+    titles.push(`${movie.title} → ${d.title}`);
+    movie.title = d.title;
+  }
   if (date && isUpcoming(movie) && date !== movie.releaseDate) {
     dates.push(`${movie.title} : ${movie.releaseDate ?? movie.year} → ${date}`);
     movie.releaseDate = date;
@@ -126,9 +132,12 @@ for (const movie of movies) {
     }
     posters.push(movie.title);
   }
-  // On redemande la fiche (résumé, durée, bande-annonce…) des films à venir.
+  // On redemande la fiche (résumé, durée, bande-annonce…) des films à venir, en gardant
+  // l'affiche connue pour ne pas la retélécharger la semaine prochaine.
   overrides[movie.id] ??= tmdbId;
-  if (isUpcoming(movie)) delete details[movie.id];
+  if (isUpcoming(movie)) {
+    details[movie.id] = { ...details[movie.id], tmdbId, posterPath: d.poster_path || null, stale: true };
+  }
 }
 
 const summary = [
@@ -136,7 +145,8 @@ const summary = [
   '',
   `**${added.length} nouveau(x) film(s)**`, ...added.map(t => `- ${t}`), '',
   `**${posters.length} affiche(s) ajoutée(s) ou mise(s) à jour**`, ...posters.map(t => `- ${t}`), '',
-  `**${dates.length} date(s) de sortie modifiée(s)**`, ...dates.map(t => `- ${t}`),
+  `**${dates.length} date(s) de sortie modifiée(s)**`, ...dates.map(t => `- ${t}`), '',
+  `**${titles.length} titre(s) français annoncé(s)**`, ...titles.map(t => `- ${t}`),
 ].join('\n');
 console.log(summary);
 

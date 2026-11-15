@@ -3389,7 +3389,7 @@
   },
   {
     "id": 485,
-    "title": "Hexed",
+    "title": "Billie, à la croisée des mondes",
     "year": 2026,
     "releaseDate": "2026-11-25",
     "category": "animation",
@@ -3405,24 +3405,27 @@
   },
   {
     "id": 487,
-    "title": "Gatto",
+    "title": "Nero, chat noir",
     "year": 2027,
     "category": "pixar",
-    "poster": "/posters/487.webp"
+    "poster": "/posters/487.webp",
+    "releaseDate": "2027-03-03"
   },
   {
     "id": 488,
-    "title": "La Reine des neiges 3",
+    "title": "La Reine des neiges III",
     "year": 2027,
     "category": "animation",
-    "poster": "/posters/488.webp"
+    "poster": "/posters/488.webp",
+    "releaseDate": "2027-11-24"
   },
   {
     "id": 489,
     "title": "Avengers: Secret Wars",
     "year": 2027,
     "category": "marvel",
-    "poster": "/posters/489.webp"
+    "poster": "/posters/489.webp",
+    "releaseDate": "2027-12-15"
   },
   {
     "id": 490,
@@ -3495,7 +3498,7 @@
   },
   {
     "id": 499,
-    "title": "Lilo & Stitch 2",
+    "title": "Lilo et Stitch 2",
     "year": 2028,
     "releaseDate": "2028-05-25",
     "category": "live-action",
@@ -5037,5 +5040,13 @@
     "year": 2023,
     "category": "comix-wave",
     "poster": "/posters/738.webp"
+  },
+  {
+    "id": 739,
+    "title": "Journal d’un dégonflé Noël : Sauve qui peut !",
+    "year": 2026,
+    "releaseDate": "2026-12-04",
+    "category": "animation",
+    "poster": "/posters/739.webp"
   }
 ]

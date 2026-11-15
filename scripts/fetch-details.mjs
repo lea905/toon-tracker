@@ -107,7 +107,8 @@ const details = JSON.parse(await readFile(DETAILS_JSON, 'utf8').catch(() => '{}'
 const overrides = JSON.parse(await readFile(OVERRIDES_JSON, 'utf8').catch(() => '{}'));
 const refreshAll = process.argv.includes('--all');
 
-const todo = movies.filter(m => refreshAll || !details[m.id]);
+// stale = fiche marquée « à rafraîchir » par update-catalog.mjs (films à venir).
+const todo = movies.filter(m => refreshAll || !details[m.id] || details[m.id].stale);
 console.log(`${todo.length} film(s) à traiter sur ${movies.length}…`);
 
 const unmatched = [];
