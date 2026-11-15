@@ -17,7 +17,7 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 - Filtres par statut (à voir, vus, bientôt, tous), par saga, par catégorie et par décennie, tri par année ou titre
 - Affichage en grille d'affiches ou en liste compacte
 - Statistiques (clic sur le compteur) : progression globale, Grands Classiques, catégories, sagas, décennies
-- 22 badges à débloquer, et une image de ta progression à télécharger ou partager
+- 22 badges à débloquer (bouton 🏆 dans l'en-tête), et une image de ta progression à télécharger ou partager
 - Bouton « Au hasard » : tire au sort un film pas encore vu, en tenant compte des filtres
 - **Synchro entre appareils** avec un simple code (bouton « Synchro »), sans compte ni mot de passe
 - Export / import de la progression dans un fichier JSON

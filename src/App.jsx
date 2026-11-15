@@ -6,6 +6,7 @@ import StatsPanel from './components/StatsPanel';
 import RandomPicker from './components/RandomPicker';
 import MovieDetail from './components/MovieDetail';
 import SyncPanel from './components/SyncPanel';
+import BadgesPanel from './components/BadgesPanel';
 import { useSync } from './sync';
 import { isUpcoming, matchesCategory } from './categories';
 import { COLLECTIONS_BY_VALUE } from './collections';
@@ -48,6 +49,7 @@ function App() {
   const [message, setMessage] = useState(null);
   const [showStats, setShowStats] = useState(false);
   const [showSync, setShowSync] = useState(false);
+  const [showBadges, setShowBadges] = useState(false);
   // Liste figée au moment du tirage, pour que « Je l'ai vu » ne change pas le tirage en cours.
   const [randomPool, setRandomPool] = useState(null);
   const [detailMovie, setDetailMovie] = useState(null);
@@ -87,6 +89,7 @@ function App() {
 
   const closeStats = useCallback(() => setShowStats(false), []);
   const closeSync = useCallback(() => setShowSync(false), []);
+  const closeBadges = useCallback(() => setShowBadges(false), []);
   const closeRandom = useCallback(() => setRandomPool(null), []);
   const closeDetail = useCallback(() => setDetailMovie(null), []);
 
@@ -177,6 +180,13 @@ function App() {
               {seenCount} / {releasedCount} vus · {Math.round((seenCount / releasedCount) * 100)} %
             </button>
             <button
+              className="header-btn badges-btn"
+              onClick={() => setShowBadges(true)}
+              title="Voir mes badges"
+            >
+              🏆 {badges.filter(b => b.unlocked).length}/{badges.length}
+            </button>
+            <button
               className="header-btn"
               onClick={() => setRandomPool(displayedMovies.filter(m => !seenState[m.id] && !m.upcoming))}
               title="Tirer au sort un film pas encore vu"
@@ -220,6 +230,8 @@ function App() {
         />
       </header>
 
+      {showBadges && <BadgesPanel badges={badges} onClose={closeBadges} />}
+
       {showSync && (
         <SyncPanel
           sync={sync}
@@ -230,7 +242,13 @@ function App() {
       )}
 
       {showStats && (
-        <StatsPanel movies={movies} seenState={seenState} badges={badges} onClose={closeStats} />
+        <StatsPanel
+          movies={movies}
+          seenState={seenState}
+          badges={badges}
+          onOpenBadges={() => { setShowStats(false); setShowBadges(true); }}
+          onClose={closeStats}
+        />
       )}
 
       {detailMovie && (
@@ -260,11 +278,19 @@ function App() {
         />
       )}
 
-      {message && (
+      {message && (message.type === 'badge' ? (
+        <button
+          className="toast toast-badge toast-clickable"
+          role="status"
+          onClick={() => { setMessage(null); setShowBadges(true); }}
+        >
+          {message.text} · Voir mes badges
+        </button>
+      ) : (
         <div className={`toast toast-${message.type}`} role="status">
           {message.text}
         </div>
-      )}
+      ))}
 
       <main>
         {displayedMovies.length > 0 ? (

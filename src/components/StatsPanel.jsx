@@ -38,7 +38,7 @@ const listStats = (ids, releasedIds, seenState) => {
     return { seen: available.filter(id => seenState[id]).length, total: available.length };
 };
 
-const StatsPanel = ({ movies, seenState, badges, onClose }) => {
+const StatsPanel = ({ movies, seenState, badges, onOpenBadges, onClose }) => {
     const [sharing, setSharing] = useState(false);
 
     // Les films pas encore sortis ne comptent pas.
@@ -84,19 +84,10 @@ const StatsPanel = ({ movies, seenState, badges, onClose }) => {
             <ProgressRow label="Total" {...{ seen: seenTotal, total: released.length }} />
             <ProgressRow label="⭐ Grands Classiques Disney" {...classiques} />
 
-            <h3 className="stats-section">Badges · {unlockedCount} / {badges.length}</h3>
-            <ul className="badge-grid">
-                {badges.map(badge => (
-                    <li key={badge.id} className={`badge ${badge.unlocked ? 'unlocked' : ''}`} title={badge.description}>
-                        <span className="badge-icon" aria-hidden="true">{badge.icon}</span>
-                        <span className="badge-label">{badge.label}</span>
-                        <span className="badge-desc">{badge.description}</span>
-                        <span className="badge-progress">
-                            {badge.unlocked ? 'Débloqué ✓' : `${badge.done} / ${badge.total}`}
-                        </span>
-                    </li>
-                ))}
-            </ul>
+            <button className="stats-badges-link" onClick={onOpenBadges}>
+                <span>🏆 Mes badges : <strong>{unlockedCount} / {badges.length}</strong> débloqués</span>
+                <span aria-hidden="true">→</span>
+            </button>
 
             <h3 className="stats-section">Par catégorie</h3>
             {CATEGORIES.filter(c => byCategory.has(c.value)).map(c => (
