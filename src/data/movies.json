@@ -4755,5 +4755,287 @@
     "year": 2026,
     "category": "warner",
     "poster": "/posters/676.webp"
+  },
+  {
+    "id": 677,
+    "title": "Brendan et le secret de Kells",
+    "year": 2009,
+    "category": "cartoon-saloon",
+    "poster": "/posters/677.webp"
+  },
+  {
+    "id": 678,
+    "title": "L'Apprenti père Noël",
+    "year": 2010,
+    "category": "cartoon-saloon",
+    "poster": "/posters/678.webp"
+  },
+  {
+    "id": 679,
+    "title": "Jean de la Lune",
+    "year": 2012,
+    "category": "cartoon-saloon",
+    "poster": "/posters/679.webp"
+  },
+  {
+    "id": 680,
+    "title": "Le Chant de la mer",
+    "year": 2014,
+    "category": "cartoon-saloon",
+    "poster": "/posters/680.webp"
+  },
+  {
+    "id": 681,
+    "title": "Parvana, une enfance en Afghanistan",
+    "year": 2018,
+    "category": "cartoon-saloon",
+    "poster": "/posters/681.webp"
+  },
+  {
+    "id": 682,
+    "title": "Le Peuple Loup",
+    "year": 2021,
+    "category": "cartoon-saloon",
+    "poster": "/posters/682.webp"
+  },
+  {
+    "id": 683,
+    "title": "Le Dragon de mon père",
+    "year": 2022,
+    "category": "cartoon-saloon",
+    "poster": "/posters/683.webp"
+  },
+  {
+    "id": 684,
+    "title": "Nouveaux copains à Puffin Rock",
+    "year": 2026,
+    "category": "cartoon-saloon",
+    "poster": "/posters/684.webp"
+  },
+  {
+    "id": 685,
+    "title": "Julián",
+    "year": 2026,
+    "category": "cartoon-saloon",
+    "poster": "/posters/685.webp"
+  },
+  {
+    "id": 699,
+    "title": "Klaus",
+    "year": 2019,
+    "category": "netflix",
+    "poster": "/posters/699.webp"
+  },
+  {
+    "id": 700,
+    "title": "La famille Willoughby",
+    "year": 2020,
+    "category": "netflix",
+    "poster": "/posters/700.webp"
+  },
+  {
+    "id": 701,
+    "title": "Voyage vers la Lune",
+    "year": 2020,
+    "category": "netflix",
+    "poster": "/posters/701.webp"
+  },
+  {
+    "id": 702,
+    "title": "Le Monstre des mers",
+    "year": 2022,
+    "category": "netflix",
+    "poster": "/posters/702.webp"
+  },
+  {
+    "id": 703,
+    "title": "Wendell et Wild",
+    "year": 2022,
+    "category": "netflix",
+    "poster": "/posters/703.webp"
+  },
+  {
+    "id": 704,
+    "title": "Pinocchio par Guillermo del Toro",
+    "year": 2022,
+    "category": "netflix",
+    "poster": "/posters/704.webp"
+  },
+  {
+    "id": 705,
+    "title": "Nimona",
+    "year": 2023,
+    "category": "netflix",
+    "poster": "/posters/705.webp"
+  },
+  {
+    "id": 706,
+    "title": "Leo",
+    "year": 2023,
+    "category": "netflix",
+    "poster": "/posters/706.webp"
+  },
+  {
+    "id": 707,
+    "title": "Thelma la licorne",
+    "year": 2024,
+    "category": "netflix",
+    "poster": "/posters/707.webp"
+  },
+  {
+    "id": 708,
+    "title": "Ultraman: Rising",
+    "year": 2024,
+    "category": "netflix",
+    "poster": "/posters/708.webp"
+  },
+  {
+    "id": 709,
+    "title": "Les Deux Gredins",
+    "year": 2025,
+    "category": "netflix",
+    "poster": "/posters/709.webp"
+  },
+  {
+    "id": 710,
+    "title": "Dans tes rêves",
+    "year": 2025,
+    "category": "netflix",
+    "poster": "/posters/710.webp"
+  },
+  {
+    "id": 711,
+    "title": "Soeurs de sort",
+    "year": 2026,
+    "releaseDate": "2026-11-20",
+    "category": "netflix",
+    "poster": "/posters/711.webp"
+  },
+  {
+    "id": 712,
+    "title": "Bob l'éponge, le film : Un héros sort de l'eau",
+    "year": 2015,
+    "category": "paramount",
+    "poster": "/posters/712.webp"
+  },
+  {
+    "id": 713,
+    "title": "Le Parc des merveilles",
+    "year": 2019,
+    "category": "paramount",
+    "poster": "/posters/713.webp"
+  },
+  {
+    "id": 714,
+    "title": "Bob l'éponge, le film: Éponge en eaux troubles",
+    "year": 2020,
+    "category": "paramount",
+    "poster": "/posters/714.webp"
+  },
+  {
+    "id": 715,
+    "title": "Steve, bête de combat",
+    "year": 2021,
+    "category": "paramount",
+    "poster": "/posters/715.webp"
+  },
+  {
+    "id": 716,
+    "title": "Sous la promenade",
+    "year": 2023,
+    "category": "paramount",
+    "poster": "/posters/716.webp"
+  },
+  {
+    "id": 717,
+    "title": "La Légende du Tigre",
+    "year": 2024,
+    "category": "paramount",
+    "poster": "/posters/717.webp"
+  },
+  {
+    "id": 718,
+    "title": "Transformers : Le Commencement",
+    "year": 2024,
+    "category": "paramount",
+    "poster": "/posters/718.webp"
+  },
+  {
+    "id": 719,
+    "title": "Les Schtroumpfs, le film",
+    "year": 2025,
+    "category": "paramount",
+    "poster": "/posters/719.webp"
+  },
+  {
+    "id": 720,
+    "title": "Bob l'éponge, le film : Un pour tous, tous pirates !",
+    "year": 2025,
+    "category": "paramount",
+    "poster": "/posters/720.webp"
+  },
+  {
+    "id": 721,
+    "title": "La Pat’ Patrouille : Le film mission Dino",
+    "year": 2026,
+    "category": "paramount",
+    "poster": "/posters/721.webp"
+  },
+  {
+    "id": 722,
+    "title": "Freddy the 13th",
+    "year": 2028,
+    "releaseDate": "2028-10-13",
+    "category": "paramount",
+    "poster": "/posters/722.webp"
+  },
+  {
+    "id": 732,
+    "title": "La Tour au-delà des nuages",
+    "year": 2004,
+    "category": "comix-wave",
+    "poster": "/posters/732.webp"
+  },
+  {
+    "id": 733,
+    "title": "5 centimètres par seconde",
+    "year": 2007,
+    "category": "comix-wave",
+    "poster": "/posters/733.webp"
+  },
+  {
+    "id": 734,
+    "title": "Voyage vers Agartha",
+    "year": 2012,
+    "category": "comix-wave",
+    "poster": "/posters/734.webp"
+  },
+  {
+    "id": 735,
+    "title": "Your Name.",
+    "year": 2016,
+    "category": "comix-wave",
+    "poster": "/posters/735.webp"
+  },
+  {
+    "id": 736,
+    "title": "Flavors of Youth",
+    "year": 2018,
+    "category": "comix-wave",
+    "poster": "/posters/736.webp"
+  },
+  {
+    "id": 737,
+    "title": "Les Enfants du temps",
+    "year": 2020,
+    "category": "comix-wave",
+    "poster": "/posters/737.webp"
+  },
+  {
+    "id": 738,
+    "title": "Suzume",
+    "year": 2023,
+    "category": "comix-wave",
+    "poster": "/posters/738.webp"
   }
 ]

@@ -43,6 +43,10 @@ export const STUDIOS = [
   { value: 'studio-aardman', label: 'Aardman', release: byCategory('aardman', [509, 516, 518]) },
   { value: 'studio-laika', label: 'Laika', release: byCategory('laika') },
   { value: 'studio-warner', label: 'Warner Animation Group', release: byCategory('warner') },
+  { value: 'studio-paramount', label: 'Paramount Animation', release: byCategory('paramount') },
+  { value: 'studio-netflix', label: 'Netflix Animation', release: byCategory('netflix') },
+  { value: 'studio-cartoon-saloon', label: 'Cartoon Saloon', release: byCategory('cartoon-saloon') },
+  { value: 'studio-comix-wave', label: 'CoMix Wave Films (Makoto Shinkai)', release: byCategory('comix-wave') },
 ];
 
 export const SAGAS = [
@@ -126,7 +130,7 @@ export const SAGAS = [
   { value: 'boulettes', label: 'Tempête de boulettes géantes', release: [594, 599] },
   { value: 'rebelles-foret', label: 'Les Rebelles de la forêt', release: [591, 593, 595, 601] },
   { value: 'rois-glisse', label: 'Les Rois de la glisse', release: [592, 603] },
-  { value: 'schtroumpfs', label: 'Les Schtroumpfs', release: [596, 598, 604] },
+  { value: 'schtroumpfs', label: 'Les Schtroumpfs', release: [596, 598, 604, 719] },
   { value: 'angry-birds', label: 'Angry Birds', release: [602, 610] },
   // Blue Sky
   { value: 'age-de-glace', label: "L'Âge de glace", release: [622, 624, 626, 628, 632] },
@@ -137,6 +141,8 @@ export const SAGAS = [
   { value: 'shaun', label: 'Shaun le mouton', release: [585, 587, 590] },
   // Warner Animation
   { value: 'lego', label: 'La Grande Aventure LEGO', release: [666, 668, 669, 671] },
+  // Paramount
+  { value: 'bob-eponge', label: "Bob l'éponge", release: [712, 714, 720] },
 ];
 
 // Vérification en développement : chaque identifiant doit exister dans movies.json.

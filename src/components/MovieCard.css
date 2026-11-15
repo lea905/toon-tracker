@@ -71,6 +71,10 @@
 .category-badge[data-category="aardman"] { background-color: #e8661c; }
 .category-badge[data-category="laika"] { background-color: #8c2f39; }
 .category-badge[data-category="warner"] { background-color: #1d4f9c; }
+.category-badge[data-category="netflix"] { background-color: #e50914; }
+.category-badge[data-category="paramount"] { background-color: #0a5bd6; }
+.category-badge[data-category="cartoon-saloon"] { background-color: #4a7d2a; }
+.category-badge[data-category="comix-wave"] { background-color: #3c3ca8; }
 .category-badge[data-category="documentary"] { background-color: #2e7d4f; }
 
 .upcoming-badge {

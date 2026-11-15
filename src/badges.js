@@ -36,6 +36,14 @@ export const BADGES = [
   { id: 'illumination', icon: '🍌', label: 'Collectionneur Illumination', description: 'Tous les films Illumination déjà sortis', progress: listProgress(STUDIO['studio-illumination']) },
   { id: 'ghibli', icon: '🌳', label: 'Esprit de la forêt', description: 'Tous les films du Studio Ghibli', progress: listProgress(STUDIO['studio-ghibli']) },
   {
+    id: 'japan', icon: '🌸', label: 'Voyage au Japon', description: 'Un film du Studio Ghibli et un film de Makoto Shinkai',
+    progress: ({ released, seen }) => {
+      const studios = ['studio-ghibli', 'studio-comix-wave'];
+      const done = studios.filter(s => STUDIO[s].some(id => released.has(id) && seen[id])).length;
+      return [done, studios.length];
+    },
+  },
+  {
     id: 'world-tour', icon: '🌍', label: "Tour du monde de l'animation", description: "Au moins un film de chaque studio d'animation",
     progress: ({ released, seen }) => {
       const studios = [['animation-disney', CLASSIQUES], ...STUDIOS.map(s => [s.value, s.release])];

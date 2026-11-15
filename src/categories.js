@@ -1,19 +1,29 @@
 // Catégories des films, dans l'ordre d'affichage du filtre.
+// `group` sert à les ranger en deux rubriques dans le menu.
 export const CATEGORIES = [
-  { value: 'animation', label: 'Animation' },
-  { value: 'pixar', label: 'Pixar' },
-  { value: 'dreamworks', label: 'DreamWorks' },
-  { value: 'illumination', label: 'Illumination' },
-  { value: 'sony', label: 'Sony Animation' },
-  { value: 'blue-sky', label: 'Blue Sky' },
-  { value: 'ghibli', label: 'Ghibli' },
-  { value: 'aardman', label: 'Aardman' },
-  { value: 'laika', label: 'Laika' },
-  { value: 'warner', label: 'Warner Animation' },
-  { value: 'live-action', label: 'Live-action' },
-  { value: 'marvel', label: 'Marvel' },
-  { value: 'lucasfilm', label: 'Lucasfilm' },
-  { value: 'documentary', label: 'Documentaire' },
+  { value: 'animation', label: 'Animation', group: 'disney' },
+  { value: 'pixar', label: 'Pixar', group: 'disney' },
+  { value: 'live-action', label: 'Live-action', group: 'disney' },
+  { value: 'marvel', label: 'Marvel', group: 'disney' },
+  { value: 'lucasfilm', label: 'Lucasfilm', group: 'disney' },
+  { value: 'documentary', label: 'Documentaire', group: 'disney' },
+  { value: 'dreamworks', label: 'DreamWorks', group: 'studios' },
+  { value: 'illumination', label: 'Illumination', group: 'studios' },
+  { value: 'sony', label: 'Sony Animation', group: 'studios' },
+  { value: 'blue-sky', label: 'Blue Sky', group: 'studios' },
+  { value: 'paramount', label: 'Paramount', group: 'studios' },
+  { value: 'warner', label: 'Warner Animation', group: 'studios' },
+  { value: 'netflix', label: 'Netflix', group: 'studios' },
+  { value: 'laika', label: 'Laika', group: 'studios' },
+  { value: 'aardman', label: 'Aardman', group: 'studios' },
+  { value: 'cartoon-saloon', label: 'Cartoon Saloon', group: 'studios' },
+  { value: 'ghibli', label: 'Ghibli', group: 'studios' },
+  { value: 'comix-wave', label: 'CoMix Wave', group: 'studios' },
+];
+
+export const CATEGORY_GROUPS = [
+  { value: 'disney', label: 'Disney' },
+  { value: 'studios', label: "Autres studios d'animation" },
 ];
 
 export const CATEGORY_LABELS = Object.fromEntries(CATEGORIES.map(c => [c.value, c.label]));

@@ -5,18 +5,19 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 
 ## Fonctionnalités
 
-- 676 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
-- Classés par catégorie : Animation (Disney), Pixar, DreamWorks, Illumination, Sony Animation, Blue Sky, Ghibli, Aardman, Laika, Warner Animation, Live-action, Marvel, Lucasfilm (Star Wars, Indiana Jones), Documentaire
-- Filmographies de 9 studios d'animation (Pixar, DreamWorks, Illumination, Sony, Blue Sky, Ghibli, Aardman, Laika, Warner), numérotées dans l'ordre de sortie
+- 716 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
+- Classés par catégorie : côté Disney (Animation, Pixar, Live-action, Marvel, Lucasfilm, Documentaire) et 12 autres studios d'animation
+  (DreamWorks, Illumination, Sony, Blue Sky, Paramount, Warner, Netflix, Laika, Aardman, Cartoon Saloon, Ghibli, CoMix Wave)
+- Filmographies de 13 studios d'animation, numérotées dans l'ordre de sortie
 - Une fiche par film (clic sur l'affiche) : résumé, durée, réalisation, genres, sagas et bande-annonce
 - Marquer un film comme vu ; les films pas encore sortis affichent un compte à rebours (« Dans 10 jours », « Le 26 mai 2027 »)
 - Les **Grands Classiques Disney** numérotés (n°1 *Blanche-Neige* → n°66 *La Reine des neiges 3*)
-- 61 **sagas** (Marvel, Star Wars, Toy Story, Shrek, Moi moche et méchant, L'Âge de glace, Spider-Verse…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
+- 62 **sagas** (Marvel, Star Wars, Toy Story, Shrek, Moi moche et méchant, L'Âge de glace, Spider-Verse…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
 - Recherche par titre (sans tenir compte des accents)
 - Filtres par statut (à voir, vus, bientôt, tous), par saga, par catégorie et par décennie, tri par année ou titre
 - Affichage en grille d'affiches ou en liste compacte
 - Statistiques (clic sur le compteur) : progression globale, Grands Classiques, catégories, sagas, décennies
-- 21 badges à débloquer, et une image de ta progression à télécharger ou partager
+- 22 badges à débloquer, et une image de ta progression à télécharger ou partager
 - Bouton « Au hasard » : tire au sort un film pas encore vu, en tenant compte des filtres
 - Export / import de la progression dans un fichier JSON, pour changer d'appareil ou la sauvegarder
 
@@ -65,7 +66,8 @@ Autres commandes :
 
 `scripts/import-studio.mjs` récupère tous les longs-métrages d'un studio sur TMDB (les courts-métrages, spéciaux TV
 et making-of sont écartés). Il faut l'identifiant TMDB du studio (DreamWorks Animation = 521, Illumination = 6704, Sony Pictures Animation = 2251,
-Blue Sky = 9383, Ghibli = 10342, Aardman = 297, Laika = 11537, Warner Animation Group = 25120) :
+Blue Sky = 9383, Ghibli = 10342, Aardman = 297, Laika = 11537, Warner Animation Group = 25120, Paramount Animation = 24955,
+Netflix Animation = 171251, Cartoon Saloon = 23948, CoMix Wave Films = 3756) :
 
 ```bash
 node scripts/import-studio.mjs 521 dreamworks                              # aperçu, ne modifie rien

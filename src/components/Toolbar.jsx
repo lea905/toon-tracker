@@ -1,5 +1,5 @@
 import React from 'react';
-import { CATEGORIES } from '../categories';
+import { CATEGORIES, CATEGORY_GROUPS } from '../categories';
 import { COLLECTIONS_BY_VALUE, STUDIOS, SAGAS } from '../collections';
 import './Toolbar.css';
 
@@ -91,8 +91,12 @@ const Toolbar = ({
                 </select>
                 <select value={category} onChange={(e) => onCategory(e.target.value)} aria-label="Filtrer par catégorie">
                     <option value="all">Toutes les catégories</option>
-                    {CATEGORIES.map(({ value, label }) => (
-                        <option key={value} value={value}>{label}</option>
+                    {CATEGORY_GROUPS.map(group => (
+                        <optgroup key={group.value} label={group.label}>
+                            {CATEGORIES.filter(c => c.group === group.value).map(({ value, label }) => (
+                                <option key={value} value={value}>{label}</option>
+                            ))}
+                        </optgroup>
                     ))}
                 </select>
                 <select value={decade} onChange={(e) => onDecade(e.target.value)} aria-label="Filtrer par décennie">
