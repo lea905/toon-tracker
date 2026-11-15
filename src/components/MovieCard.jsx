@@ -1,12 +1,14 @@
 import React from 'react';
 import { CATEGORY_LABELS, releaseCountdown } from '../categories';
 import { classiqueNumber } from '../collections';
+import { openProps } from '../openProps';
 import './MovieCard.css';
 
 export const SeenButton = ({ movie, isSeen, onToggleSeen }) => (
     <button
         className="seen-toggle"
-        onClick={() => onToggleSeen(movie.id)}
+        onClick={(e) => { e.stopPropagation(); onToggleSeen(movie.id); }}
+        onKeyDown={(e) => e.stopPropagation()}
         aria-label={isSeen ? `Marquer « ${movie.title} » comme non vu` : `Marquer « ${movie.title} » comme vu`}
         aria-pressed={isSeen}
     >
@@ -26,9 +28,9 @@ export const MovieMeta = ({ movie }) => {
     );
 };
 
-const MovieCard = ({ movie, isSeen, position, onToggleSeen }) => {
+const MovieCard = ({ movie, isSeen, position, onToggleSeen, onOpen }) => {
     return (
-        <div className={`movie-card ${isSeen ? 'seen' : ''} ${movie.upcoming ? 'upcoming' : ''}`}>
+        <div className={`movie-card ${isSeen ? 'seen' : ''} ${movie.upcoming ? 'upcoming' : ''}`} {...openProps(movie, onOpen)}>
             <div className="card-image-container">
                 {movie.poster ? (
                     <img src={movie.poster} alt={movie.title} loading="lazy" />

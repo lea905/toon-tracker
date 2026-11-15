@@ -4,6 +4,7 @@ import MovieList from './components/MovieList';
 import Toolbar from './components/Toolbar';
 import StatsPanel from './components/StatsPanel';
 import RandomPicker from './components/RandomPicker';
+import MovieDetail from './components/MovieDetail';
 import { isUpcoming } from './categories';
 import { COLLECTIONS_BY_VALUE } from './collections';
 import { computeBadges } from './badges';
@@ -46,6 +47,7 @@ function App() {
   const [showStats, setShowStats] = useState(false);
   // Liste figée au moment du tirage, pour que « Je l'ai vu » ne change pas le tirage en cours.
   const [randomPool, setRandomPool] = useState(null);
+  const [detailMovie, setDetailMovie] = useState(null);
   const fileInputRef = useRef(null);
   // Évite d'afficher les badges débloqués lors d'un import (le message d'import suffit).
   const skipBadgeToast = useRef(false);
@@ -79,6 +81,7 @@ function App() {
 
   const closeStats = useCallback(() => setShowStats(false), []);
   const closeRandom = useCallback(() => setRandomPool(null), []);
+  const closeDetail = useCallback(() => setDetailMovie(null), []);
 
   const handleExport = () => {
     downloadProgress(seenState);
@@ -212,6 +215,24 @@ function App() {
         <StatsPanel movies={movies} seenState={seenState} badges={badges} onClose={closeStats} />
       )}
 
+      {detailMovie && (
+        <MovieDetail
+          movie={detailMovie}
+          isSeen={!!seenState[detailMovie.id]}
+          onToggleSeen={handleToggleSeen}
+          onShowSaga={(value) => {
+            setDetailMovie(null);
+            setSearch('');
+            setCategory('all');
+            setDecade('all');
+            setStatus('all');
+            handleCollection(value);
+            window.scrollTo(0, 0);
+          }}
+          onClose={closeDetail}
+        />
+      )}
+
       {randomPool && (
         <RandomPicker
           pool={randomPool}
@@ -235,6 +256,7 @@ function App() {
             positions={sort.startsWith('collection') ? positions : null}
             view={view}
             onToggleSeen={handleToggleSeen}
+            onOpen={setDetailMovie}
           />
         ) : (
           <div className="empty-state">

@@ -7,6 +7,7 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 
 - 504 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
 - Classés par catégorie : Animation, Pixar, Live-action, Marvel, Lucasfilm (Star Wars, Indiana Jones), Documentaire
+- Une fiche par film (clic sur l'affiche) : résumé, durée, réalisation, genres, sagas et bande-annonce
 - Marquer un film comme vu ; les films pas encore sortis affichent un compte à rebours (« Dans 10 jours », « Le 26 mai 2027 »)
 - Les **Grands Classiques Disney** numérotés (n°1 *Blanche-Neige* → n°66 *La Reine des neiges 3*)
 - 34 **sagas** (Marvel, Star Wars, Toy Story…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
@@ -38,6 +39,7 @@ Autres commandes :
 | `npm run preview` | Sert la version compilée en local |
 | `npm run lint` | Vérifie le code avec ESLint |
 | `npm run optimize-images` | Convertit les nouvelles affiches en WebP et met à jour `movies.json` |
+| `npm run fetch-details` | Récupère depuis TMDB les fiches des films qui n'en ont pas encore (`-- --all` pour tout refaire) |
 
 ## Ajouter un film
 
@@ -56,6 +58,24 @@ Autres commandes :
    Si l'affiche n'est pas encore dévoilée, mets `"poster": null` : une carte « Affiche à venir » s'affiche.
    Pour un film pas encore sorti, tu peux ajouter `"releaseDate": "AAAA-MM-JJ"` : il sera marqué « Bientôt » jusqu'à cette date.
 3. Lance `npm run optimize-images` : l'affiche est redimensionnée, convertie en WebP, et le chemin dans `movies.json` est mis à jour.
+4. Lance `npm run fetch-details` pour récupérer sa fiche (résumé, durée…).
+
+## Fiches des films (TMDB)
+
+Les fiches viennent de [TMDB](https://www.themoviedb.org/) et sont enregistrées une fois pour toutes dans `src/data/details.json` :
+le site n'appelle jamais TMDB pendant la visite.
+
+Pour lancer `npm run fetch-details`, il faut une clé d'API TMDB gratuite (themoviedb.org → Paramètres → API),
+à mettre dans un fichier `.env.local` à la racine (ignoré par git, jamais publié) :
+
+```
+TMDB_API_KEY=ta_clé
+```
+
+Si un film est mal reconnu, indique le bon identifiant TMDB dans `scripts/tmdb-overrides.json`
+(`"id du film": id TMDB`, ou `null` s'il n'existe pas sur TMDB), puis relance avec `npm run fetch-details -- --all`.
+
+*Ce site utilise l'API TMDB sans être approuvé ni certifié par TMDB.*
 
 ## Structure
 
@@ -63,8 +83,9 @@ Autres commandes :
 public/posters/         Affiches des films (WebP)
 public/icon-*.png       Icônes de l'application
 assets-src/icon.png     Icône source (pour régénérer les icônes)
-scripts/                Script d'optimisation des images
+scripts/                Scripts : optimisation des images, récupération des fiches TMDB
 src/data/movies.json    Liste des films
+src/data/details.json   Fiches des films (résumé, durée…), générées depuis TMDB
 src/components/         Composants React (carte, liste, barre de filtres)
 src/categories.js       Catégories, films à venir et compte à rebours
 src/collections.js      Grands Classiques et sagas (ordres de visionnage)

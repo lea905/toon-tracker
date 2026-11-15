@@ -109,3 +109,16 @@
         display: none;
     }
 }
+
+.movie-row[role="button"] {
+    cursor: pointer;
+}
+
+.movie-row:hover {
+    background: #262626;
+}
+
+.movie-row:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}

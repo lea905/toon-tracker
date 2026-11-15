@@ -1,11 +1,12 @@
 import React from 'react';
 import MovieCard, { SeenButton, MovieMeta } from './MovieCard';
+import { openProps } from '../openProps';
 import { CATEGORY_LABELS, releaseCountdown } from '../categories';
 import './MovieList.css';
 
 // Ligne de l'affichage compact.
-const MovieRow = ({ movie, isSeen, position, onToggleSeen }) => (
-    <li className={`movie-row ${isSeen ? 'seen' : ''} ${movie.upcoming ? 'upcoming' : ''}`}>
+const MovieRow = ({ movie, isSeen, position, onToggleSeen, onOpen }) => (
+    <li className={`movie-row ${isSeen ? 'seen' : ''} ${movie.upcoming ? 'upcoming' : ''}`} {...openProps(movie, onOpen)}>
         {position && <span className="row-position">#{position}</span>}
         {movie.poster ? (
             <img className="row-thumb" src={movie.poster} alt="" loading="lazy" />
@@ -29,7 +30,7 @@ const MovieRow = ({ movie, isSeen, position, onToggleSeen }) => (
     </li>
 );
 
-const MovieList = ({ movies, seenState, positions, view, onToggleSeen }) => {
+const MovieList = ({ movies, seenState, positions, view, onToggleSeen, onOpen }) => {
     if (view === 'list') {
         return (
             <ul className="movie-rows">
@@ -40,6 +41,7 @@ const MovieList = ({ movies, seenState, positions, view, onToggleSeen }) => {
                         isSeen={!!seenState[movie.id]}
                         position={positions?.get(movie.id)}
                         onToggleSeen={onToggleSeen}
+                        onOpen={onOpen}
                     />
                 ))}
             </ul>
@@ -55,6 +57,7 @@ const MovieList = ({ movies, seenState, positions, view, onToggleSeen }) => {
                     isSeen={!!seenState[movie.id]}
                     position={positions?.get(movie.id)}
                     onToggleSeen={onToggleSeen}
+                    onOpen={onOpen}
                 />
             ))}
         </div>
