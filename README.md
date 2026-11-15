@@ -7,10 +7,14 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 
 - 504 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
 - Classés par catégorie : Animation, Pixar, Live-action, Marvel, Lucasfilm (Star Wars, Indiana Jones), Documentaire
-- Marquer un film comme vu ; les films pas encore sortis sont marqués « Bientôt »
+- Marquer un film comme vu ; les films pas encore sortis affichent un compte à rebours (« Dans 10 jours », « Le 26 mai 2027 »)
+- Les **Grands Classiques Disney** numérotés (n°1 *Blanche-Neige* → n°66 *La Reine des neiges 3*)
+- 34 **sagas** (Marvel, Star Wars, Toy Story…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
 - Recherche par titre (sans tenir compte des accents)
-- Filtres par statut (à voir, vus, bientôt, tous), par catégorie et par décennie, tri par année ou titre
-- Statistiques (clic sur le compteur) : progression globale, par catégorie et par décennie
+- Filtres par statut (à voir, vus, bientôt, tous), par saga, par catégorie et par décennie, tri par année ou titre
+- Affichage en grille d'affiches ou en liste compacte
+- Statistiques (clic sur le compteur) : progression globale, Grands Classiques, catégories, sagas, décennies
+- 16 badges à débloquer, et une image de ta progression à télécharger ou partager
 - Bouton « Au hasard » : tire au sort un film pas encore vu, en tenant compte des filtres
 - Export / import de la progression dans un fichier JSON, pour changer d'appareil ou la sauvegarder
 
@@ -62,7 +66,9 @@ assets-src/icon.png     Icône source (pour régénérer les icônes)
 scripts/                Script d'optimisation des images
 src/data/movies.json    Liste des films
 src/components/         Composants React (carte, liste, barre de filtres)
-src/categories.js       Liste des catégories et détection des films à venir
+src/categories.js       Catégories, films à venir et compte à rebours
+src/collections.js      Grands Classiques et sagas (ordres de visionnage)
+src/badges.js           Badges à débloquer
 src/storage.js          Sauvegarde locale et export/import
 ```
 

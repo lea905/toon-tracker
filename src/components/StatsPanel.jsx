@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Modal from './Modal';
+import ShareImage from './ShareImage';
 import { CATEGORIES } from '../categories';
+import { CLASSIQUES, SAGAS } from '../collections';
 import './StatsPanel.css';
 
 const ProgressRow = ({ label, seen, total }) => {
@@ -12,7 +14,7 @@ const ProgressRow = ({ label, seen, total }) => {
                 <span className="progress-numbers">{seen} / {total} · {percent} %</span>
             </div>
             <div className="progress-track" role="progressbar" aria-valuenow={percent} aria-valuemin={0} aria-valuemax={100} aria-label={label}>
-                <div className="progress-fill" style={{ width: `${percent}%` }} />
+                <div className={`progress-fill ${percent === 100 ? 'complete' : ''}`} style={{ width: `${percent}%` }} />
             </div>
         </div>
     );
@@ -30,13 +32,42 @@ const countBy = (movies, seenState, keyOf) => {
     return groups;
 };
 
-const StatsPanel = ({ movies, seenState, onClose }) => {
+// Progression sur une liste d'identifiants, sans les films pas encore sortis.
+const listStats = (ids, releasedIds, seenState) => {
+    const available = ids.filter(id => releasedIds.has(id));
+    return { seen: available.filter(id => seenState[id]).length, total: available.length };
+};
+
+const StatsPanel = ({ movies, seenState, badges, onClose }) => {
+    const [sharing, setSharing] = useState(false);
+
     // Les films pas encore sortis ne comptent pas.
     const released = movies.filter(movie => !movie.upcoming);
+    const releasedIds = new Set(released.map(movie => movie.id));
     const seenTotal = released.filter(movie => seenState[movie.id]).length;
     const byCategory = countBy(released, seenState, m => m.category);
     const byDecade = countBy(released, seenState, m => m.decade);
     const upcomingCount = movies.length - released.length;
+    const classiques = listStats(CLASSIQUES, releasedIds, seenState);
+    const sagas = SAGAS
+        .map(saga => ({ ...saga, ...listStats(saga.release, releasedIds, seenState) }))
+        .filter(saga => saga.total > 0)
+        .sort((a, b) => (b.seen / b.total) - (a.seen / a.total) || a.label.localeCompare(b.label, 'fr'));
+    const completedSagas = sagas.filter(s => s.seen === s.total).length;
+    const unlockedCount = badges.filter(b => b.unlocked).length;
+
+    if (sharing) {
+        return (
+            <Modal title="Partager ma progression" onClose={onClose}>
+                <ShareImage
+                    movies={movies}
+                    seenState={seenState}
+                    stats={{ seenTotal, releasedTotal: released.length, classiques, byCategory, unlockedCount, badgeCount: badges.length, completedSagas }}
+                    onBack={() => setSharing(false)}
+                />
+            </Modal>
+        );
+    }
 
     return (
         <Modal title="Mes statistiques" onClose={onClose}>
@@ -46,18 +77,45 @@ const StatsPanel = ({ movies, seenState, onClose }) => {
                     {seenTotal} films vus sur {released.length} sortis
                     {upcomingCount > 0 && <><br />{upcomingCount} films à venir</>}
                 </div>
+                <button className="primary-btn stats-share-btn" onClick={() => setSharing(true)}>
+                    Partager
+                </button>
             </div>
-            <ProgressRow label="Total" seen={seenTotal} total={released.length} />
+            <ProgressRow label="Total" {...{ seen: seenTotal, total: released.length }} />
+            <ProgressRow label="⭐ Grands Classiques Disney" {...classiques} />
+
+            <h3 className="stats-section">Badges · {unlockedCount} / {badges.length}</h3>
+            <ul className="badge-grid">
+                {badges.map(badge => (
+                    <li key={badge.id} className={`badge ${badge.unlocked ? 'unlocked' : ''}`} title={badge.description}>
+                        <span className="badge-icon" aria-hidden="true">{badge.icon}</span>
+                        <span className="badge-label">{badge.label}</span>
+                        <span className="badge-desc">{badge.description}</span>
+                        <span className="badge-progress">
+                            {badge.unlocked ? 'Débloqué ✓' : `${badge.done} / ${badge.total}`}
+                        </span>
+                    </li>
+                ))}
+            </ul>
 
             <h3 className="stats-section">Par catégorie</h3>
             {CATEGORIES.filter(c => byCategory.has(c.value)).map(c => (
                 <ProgressRow key={c.value} label={c.label} {...byCategory.get(c.value)} />
             ))}
 
-            <h3 className="stats-section">Par décennie</h3>
-            {[...byDecade.keys()].sort((a, b) => a - b).map(decade => (
-                <ProgressRow key={decade} label={`Années ${decade}`} {...byDecade.get(decade)} />
-            ))}
+            <details className="stats-details">
+                <summary>Par saga · {completedSagas} terminée{completedSagas > 1 ? 's' : ''} sur {sagas.length}</summary>
+                {sagas.map(saga => (
+                    <ProgressRow key={saga.value} label={saga.label} seen={saga.seen} total={saga.total} />
+                ))}
+            </details>
+
+            <details className="stats-details">
+                <summary>Par décennie</summary>
+                {[...byDecade.keys()].sort((a, b) => a - b).map(decade => (
+                    <ProgressRow key={decade} label={`Années ${decade}`} {...byDecade.get(decade)} />
+                ))}
+            </details>
         </Modal>
     );
 };

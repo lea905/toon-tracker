@@ -1,8 +1,32 @@
 import React from 'react';
-import { CATEGORY_LABELS } from '../categories';
+import { CATEGORY_LABELS, releaseCountdown } from '../categories';
+import { classiqueNumber } from '../collections';
 import './MovieCard.css';
 
-const MovieCard = ({ movie, isSeen, onToggleSeen }) => {
+export const SeenButton = ({ movie, isSeen, onToggleSeen }) => (
+    <button
+        className="seen-toggle"
+        onClick={() => onToggleSeen(movie.id)}
+        aria-label={isSeen ? `Marquer « ${movie.title} » comme non vu` : `Marquer « ${movie.title} » comme vu`}
+        aria-pressed={isSeen}
+    >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            {isSeen ? <polyline points="5 12.5 10 17.5 19 7" /> : <path d="M12 6v12M6 12h12" />}
+        </svg>
+    </button>
+);
+
+export const MovieMeta = ({ movie }) => {
+    const number = classiqueNumber(movie.id);
+    return (
+        <p className="year">
+            {movie.year}
+            {number && <span className="classique-tag" title={`${number}e Grand Classique Disney`}> · Classique n°{number}</span>}
+        </p>
+    );
+};
+
+const MovieCard = ({ movie, isSeen, position, onToggleSeen }) => {
     return (
         <div className={`movie-card ${isSeen ? 'seen' : ''} ${movie.upcoming ? 'upcoming' : ''}`}>
             <div className="card-image-container">
@@ -14,29 +38,23 @@ const MovieCard = ({ movie, isSeen, onToggleSeen }) => {
                         <span className="poster-placeholder-note">Affiche à venir</span>
                     </div>
                 )}
-                <div className="category-badge" data-category={movie.category}>
-                    {CATEGORY_LABELS[movie.category]}
+                <div className="card-badges">
+                    {position && <div className="position-badge" title="Position dans la saga">#{position}</div>}
+                    <div className="category-badge" data-category={movie.category}>
+                        {CATEGORY_LABELS[movie.category]}
+                    </div>
                 </div>
                 {movie.upcoming ? (
-                    <div className="upcoming-badge">Bientôt</div>
+                    <div className="upcoming-badge">{releaseCountdown(movie)}</div>
                 ) : (
-                    <button
-                        className="seen-toggle"
-                        onClick={() => onToggleSeen(movie.id)}
-                        aria-label={isSeen ? `Marquer « ${movie.title} » comme non vu` : `Marquer « ${movie.title} » comme vu`}
-                        aria-pressed={isSeen}
-                    >
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                            {isSeen ? <polyline points="5 12.5 10 17.5 19 7" /> : <path d="M12 6v12M6 12h12" />}
-                        </svg>
-                    </button>
+                    <SeenButton movie={movie} isSeen={isSeen} onToggleSeen={onToggleSeen} />
                 )}
                 {isSeen && !movie.upcoming && <div className="seen-ribbon">Vu</div>}
             </div>
 
             <div className="card-content">
                 <h3 title={movie.title}>{movie.title}</h3>
-                <p className="year">{movie.year}</p>
+                <MovieMeta movie={movie} />
             </div>
         </div>
     );

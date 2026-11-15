@@ -1,0 +1,31 @@
+.share-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.share-canvas {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+.share-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.share-actions button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.share-error {
+    color: #ff8a8a;
+    margin: 0;
+}

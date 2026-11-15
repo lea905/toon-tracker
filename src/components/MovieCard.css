@@ -27,10 +27,28 @@
     display: block;
 }
 
-.category-badge {
+.card-badges {
     position: absolute;
     top: 8px;
     left: 8px;
+    right: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+.position-badge {
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    background: #fff;
+    color: #000;
+}
+
+.category-badge {
+    display: inline-block;
     padding: 3px 7px;
     border-radius: 4px;
     font-size: 0.7rem;
@@ -63,10 +81,14 @@
     text-transform: uppercase;
 }
 
-.seen-toggle {
+.card-image-container .seen-toggle {
     position: absolute;
     top: 8px;
     right: 8px;
+}
+
+.seen-toggle {
+    flex-shrink: 0;
     background: rgba(0, 0, 0, 0.55);
     border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
@@ -180,4 +202,8 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.classique-tag {
+    color: #f2c94c;
 }

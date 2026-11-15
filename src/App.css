@@ -134,3 +134,10 @@
   background: #a3263a;
   color: #fff;
 }
+
+.toast-badge {
+  background: #3d3214;
+  border: 1px solid #f2c94c;
+  color: #f2c94c;
+  font-weight: 700;
+}

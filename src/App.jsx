@@ -5,6 +5,8 @@ import Toolbar from './components/Toolbar';
 import StatsPanel from './components/StatsPanel';
 import RandomPicker from './components/RandomPicker';
 import { isUpcoming } from './categories';
+import { COLLECTIONS_BY_VALUE } from './collections';
+import { computeBadges } from './badges';
 import { loadObject, saveObject, downloadProgress, parseProgress } from './storage';
 import './App.css';
 
@@ -21,9 +23,12 @@ const releasedCount = movies.filter(movie => !movie.upcoming).length;
 const validIds = new Set(movies.map(movie => String(movie.id)));
 const decades = [...new Set(movies.map(movie => movie.decade))].sort((a, b) => a - b);
 
+// Clé de date : la date de sortie si on la connaît, sinon la fin de l'année.
+const dateKey = (movie) => movie.releaseDate ?? `${movie.year}-99`;
+
 const SORTERS = {
-  'year-asc': (a, b) => a.year - b.year || a.title.localeCompare(b.title, 'fr'),
-  'year-desc': (a, b) => b.year - a.year || a.title.localeCompare(b.title, 'fr'),
+  'year-asc': (a, b) => dateKey(a).localeCompare(dateKey(b)) || a.title.localeCompare(b.title, 'fr'),
+  'year-desc': (a, b) => dateKey(b).localeCompare(dateKey(a)) || a.title.localeCompare(b.title, 'fr'),
   'title': (a, b) => a.title.localeCompare(b.title, 'fr'),
 };
 
@@ -33,6 +38,8 @@ function App() {
   const [search, setSearch] = useState('');
   const [status, setStatus] = useState('unseen');
   const [category, setCategory] = useState('all');
+  const [collection, setCollection] = useState('all');
+  const [view, setView] = useState('grid');
   const [decade, setDecade] = useState('all');
   const [sort, setSort] = useState('year-asc');
   const [message, setMessage] = useState(null);
@@ -40,6 +47,8 @@ function App() {
   // Liste figée au moment du tirage, pour que « Je l'ai vu » ne change pas le tirage en cours.
   const [randomPool, setRandomPool] = useState(null);
   const fileInputRef = useRef(null);
+  // Évite d'afficher les badges débloqués lors d'un import (le message d'import suffit).
+  const skipBadgeToast = useRef(false);
 
   useEffect(() => saveObject('disney-seen', seenState), [seenState]);
 
@@ -56,6 +65,12 @@ function App() {
       else next[id] = true;
       return next;
     });
+  };
+
+  const handleCollection = (value) => {
+    setCollection(value);
+    if (value !== 'all') setSort('collection-release');
+    else if (sort.startsWith('collection')) setSort('year-asc');
   };
 
   const handleMarkSeen = (id) => {
@@ -82,6 +97,7 @@ function App() {
         'Ta progression actuelle sur cet appareil sera remplacée.'
       );
       if (!ok) return;
+      skipBadgeToast.current = true;
       setSeenState(imported);
       setMessage({ type: 'success', text: `Import réussi : ${count} film(s) vu(s).` });
     } catch (error) {
@@ -91,10 +107,37 @@ function App() {
 
   const seenCount = movies.filter(movie => seenState[movie.id] && !movie.upcoming).length;
 
+  const badges = useMemo(() => computeBadges(movies, seenState), [seenState]);
+  const unlockedRef = useRef(null);
+  useEffect(() => {
+    const unlocked = badges.filter(b => b.unlocked);
+    const previous = unlockedRef.current;
+    unlockedRef.current = new Set(unlocked.map(b => b.id));
+    if (!previous || skipBadgeToast.current) {
+      skipBadgeToast.current = false;
+      return;
+    }
+    const fresh = unlocked.filter(b => !previous.has(b.id));
+    if (fresh.length === 1) {
+      setMessage({ type: 'badge', text: `${fresh[0].icon} Badge débloqué : ${fresh[0].label}` });
+    } else if (fresh.length > 1) {
+      setMessage({ type: 'badge', text: `🏆 ${fresh.length} badges débloqués !` });
+    }
+  }, [badges]);
+
+  const activeCollection = COLLECTIONS_BY_VALUE[collection];
+  // Position de chaque film dans la collection choisie, selon l'ordre de tri (sortie ou chronologique).
+  const positions = useMemo(() => {
+    if (!activeCollection) return null;
+    const order = sort === 'collection-chrono' && activeCollection.chrono ? activeCollection.chrono : activeCollection.release;
+    return new Map(order.map((id, index) => [id, index + 1]));
+  }, [activeCollection, sort]);
+
   const displayedMovies = useMemo(() => {
     const query = normalize(search.trim());
     const result = movies.filter(movie => {
       if (query && !movie.searchKey.includes(query)) return false;
+      if (positions && !positions.has(movie.id)) return false;
       if (category !== 'all' && movie.category !== category) return false;
       if (decade !== 'all' && movie.decade !== Number(decade)) return false;
       if (status === 'unseen' && (seenState[movie.id] || movie.upcoming)) return false;
@@ -102,10 +145,13 @@ function App() {
       if (status === 'upcoming' && !movie.upcoming) return false;
       return true;
     });
-    return result.sort(SORTERS[sort]);
-  }, [search, category, decade, status, sort, seenState]);
+    const sorter = sort.startsWith('collection') && positions
+      ? (a, b) => positions.get(a.id) - positions.get(b.id)
+      : SORTERS[sort] ?? SORTERS['year-asc'];
+    return result.sort(sorter);
+  }, [search, category, decade, status, sort, seenState, positions]);
 
-  const hasFilters = search || category !== 'all' || decade !== 'all' || status !== 'all';
+  const hasFilters = search || category !== 'all' || collection !== 'all' || decade !== 'all' || status !== 'all';
 
   return (
     <div className="app-container">
@@ -149,6 +195,10 @@ function App() {
           onStatus={setStatus}
           category={category}
           onCategory={setCategory}
+          collection={collection}
+          onCollection={handleCollection}
+          view={view}
+          onView={setView}
           decade={decade}
           onDecade={setDecade}
           decades={decades}
@@ -159,13 +209,13 @@ function App() {
       </header>
 
       {showStats && (
-        <StatsPanel movies={movies} seenState={seenState} onClose={closeStats} />
+        <StatsPanel movies={movies} seenState={seenState} badges={badges} onClose={closeStats} />
       )}
 
       {randomPool && (
         <RandomPicker
           pool={randomPool}
-          filtered={Boolean(search) || category !== 'all' || decade !== 'all' || status === 'seen' || status === 'upcoming'}
+          filtered={Boolean(search) || category !== 'all' || collection !== 'all' || decade !== 'all' || status === 'seen' || status === 'upcoming'}
           onMarkSeen={handleMarkSeen}
           onClose={closeRandom}
         />
@@ -182,6 +232,8 @@ function App() {
           <MovieList
             movies={displayedMovies}
             seenState={seenState}
+            positions={sort.startsWith('collection') ? positions : null}
+            view={view}
             onToggleSeen={handleToggleSeen}
           />
         ) : (
@@ -190,7 +242,7 @@ function App() {
             {hasFilters && (
               <button
                 className="header-btn"
-                onClick={() => { setSearch(''); setCategory('all'); setDecade('all'); setStatus('all'); }}
+                onClick={() => { setSearch(''); setCategory('all'); handleCollection('all'); setDecade('all'); setStatus('all'); }}
               >
                 Réinitialiser les filtres
               </button>

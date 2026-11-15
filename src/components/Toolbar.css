@@ -85,3 +85,31 @@
     color: var(--color-text-secondary);
     font-size: 0.85rem;
 }
+
+.toolbar select.is-active {
+    border-color: var(--color-primary);
+}
+
+.view-toggle {
+    flex-shrink: 0;
+}
+
+.view-toggle button {
+    display: flex;
+    align-items: center;
+    padding: 6px 9px;
+}
+
+.view-toggle svg {
+    width: 16px;
+    height: 16px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
