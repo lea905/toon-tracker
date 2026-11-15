@@ -7,7 +7,7 @@
 // - Les icônes PWA (192 et 512 px) sont générées à partir de assets-src/icon.png.
 //
 // Le script peut être relancé sans risque : il ne traite que les images pas encore converties.
-// Pour ajouter un film : déposer son affiche (ex. 490.jpg) dans public/posters, l'ajouter
+// Pour ajouter un film : déposer son affiche (ex. 505.jpg) dans public/posters, l'ajouter
 // dans movies.json, puis relancer le script.
 
 import { readdir, readFile, writeFile, unlink, stat } from 'node:fs/promises';

@@ -6,7 +6,14 @@ const MovieCard = ({ movie, isSeen, onToggleSeen }) => {
     return (
         <div className={`movie-card ${isSeen ? 'seen' : ''} ${movie.upcoming ? 'upcoming' : ''}`}>
             <div className="card-image-container">
-                <img src={movie.poster} alt={movie.title} loading="lazy" />
+                {movie.poster ? (
+                    <img src={movie.poster} alt={movie.title} loading="lazy" />
+                ) : (
+                    <div className="poster-placeholder" role="img" aria-label={`${movie.title} : affiche à venir`}>
+                        <span className="poster-placeholder-title">{movie.title}</span>
+                        <span className="poster-placeholder-note">Affiche à venir</span>
+                    </div>
+                )}
                 <div className="category-badge" data-category={movie.category}>
                     {CATEGORY_LABELS[movie.category]}
                 </div>

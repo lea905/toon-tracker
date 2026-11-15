@@ -3423,5 +3423,122 @@
     "year": 2027,
     "category": "marvel",
     "poster": "/posters/489.webp"
+  },
+  {
+    "id": 490,
+    "title": "Otaries des Galápagos",
+    "year": 2025,
+    "category": "documentary",
+    "poster": "/posters/490.webp"
+  },
+  {
+    "id": 491,
+    "title": "Orang-outan",
+    "year": 2026,
+    "category": "documentary",
+    "poster": "/posters/491.webp"
+  },
+  {
+    "id": 492,
+    "title": "Spider-Man : Brand New Day",
+    "year": 2026,
+    "category": "marvel",
+    "poster": "/posters/492.webp"
+  },
+  {
+    "id": 493,
+    "title": "Star Wars: Starfighter",
+    "year": 2027,
+    "releaseDate": "2027-05-26",
+    "category": "lucasfilm",
+    "poster": "/posters/493.webp"
+  },
+  {
+    "id": 494,
+    "title": "Bluey, le film",
+    "year": 2027,
+    "releaseDate": "2027-08-04",
+    "category": "animation",
+    "poster": "/posters/494.webp"
+  },
+  {
+    "id": 495,
+    "title": "Wolf",
+    "year": 2027,
+    "releaseDate": "2027-04-22",
+    "category": "documentary",
+    "poster": null
+  },
+  {
+    "id": 496,
+    "title": "Ghost Market",
+    "year": 2028,
+    "releaseDate": "2028-03-08",
+    "category": "pixar",
+    "poster": "/posters/496.webp"
+  },
+  {
+    "id": 497,
+    "title": "Raiponce",
+    "year": 2028,
+    "releaseDate": "2028-03-30",
+    "category": "live-action",
+    "poster": "/posters/497.webp"
+  },
+  {
+    "id": 498,
+    "title": "X-Men",
+    "year": 2028,
+    "releaseDate": "2028-05-04",
+    "category": "marvel",
+    "poster": "/posters/498.webp"
+  },
+  {
+    "id": 499,
+    "title": "Lilo & Stitch 2",
+    "year": 2028,
+    "releaseDate": "2028-05-25",
+    "category": "live-action",
+    "poster": "/posters/499.webp"
+  },
+  {
+    "id": 500,
+    "title": "Les Indestructibles 3",
+    "year": 2028,
+    "releaseDate": "2028-06-14",
+    "category": "pixar",
+    "poster": "/posters/500.webp"
+  },
+  {
+    "id": 501,
+    "title": "Ghost Rider",
+    "year": 2028,
+    "releaseDate": "2028-07-27",
+    "category": "marvel",
+    "poster": "/posters/501.webp"
+  },
+  {
+    "id": 502,
+    "title": "Clay",
+    "year": 2028,
+    "releaseDate": "2028-11-22",
+    "category": "animation",
+    "poster": "/posters/502.webp"
+  },
+  {
+    "id": 503,
+    "title": "Black Panther 3",
+    "year": 2028,
+    "releaseDate": "2028-12-13",
+    "category": "marvel",
+    "poster": "/posters/503.webp"
+  },
+  {
+    "id": 504,
+    "title": "Coco 2",
+    "year": 2029,
+    "releaseDate": "2029-11-20",
+    "category": "pixar",
+    "poster": "/posters/504.webp"
   }
 ]

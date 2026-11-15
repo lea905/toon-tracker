@@ -5,7 +5,7 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 
 ## Fonctionnalités
 
-- 489 films, de *Blanche-Neige* aux sorties à venir, avec leur affiche
+- 504 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
 - Classés par catégorie : Animation, Pixar, Live-action, Marvel, Lucasfilm (Star Wars, Indiana Jones), Documentaire
 - Marquer un film comme vu ; les films pas encore sortis sont marqués « Bientôt »
 - Recherche par titre (sans tenir compte des accents)
@@ -35,18 +35,19 @@ Autres commandes :
 
 ## Ajouter un film
 
-1. Dépose l'affiche dans `public/posters/` en la nommant avec le prochain identifiant libre (par ex. `490.jpg`).
+1. Dépose l'affiche dans `public/posters/` en la nommant avec le prochain identifiant libre (par ex. `505.jpg`).
 2. Ajoute le film à la fin de `src/data/movies.json` :
    ```json
    {
-     "id": 490,
+     "id": 505,
      "title": "Titre du film",
      "year": 2027,
      "category": "animation",
-     "poster": "/posters/490.jpg"
+     "poster": "/posters/505.jpg"
    }
    ```
    Catégories possibles : `animation`, `pixar`, `live-action`, `marvel`, `lucasfilm`, `documentary`.
+   Si l'affiche n'est pas encore dévoilée, mets `"poster": null` : une carte « Affiche à venir » s'affiche.
    Pour un film pas encore sorti, tu peux ajouter `"releaseDate": "AAAA-MM-JJ"` : il sera marqué « Bientôt » jusqu'à cette date.
 3. Lance `npm run optimize-images` : l'affiche est redimensionnée, convertie en WebP, et le chemin dans `movies.json` est mis à jour.
 
