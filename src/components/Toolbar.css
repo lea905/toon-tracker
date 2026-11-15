@@ -74,10 +74,24 @@
     font: inherit;
     font-size: 0.85rem;
     cursor: pointer;
+    /* Un menu prend la largeur de sa plus longue option : on la limite pour que
+       tous les menus gardent une taille proche. */
+    max-width: 14rem;
+    text-overflow: ellipsis;
 }
 
 .toolbar select option {
     background: var(--color-surface);
+    color: var(--color-text);
+}
+
+/* Titres des rubriques (« Disney », « Sagas »…) : sans ça, Windows les affiche
+   en blanc sur blanc, donc invisibles. */
+.toolbar select optgroup {
+    background: var(--color-bg);
+    color: var(--color-text-secondary);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .result-count {

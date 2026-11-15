@@ -119,7 +119,7 @@ export const SAGAS = [
   // Illumination
   {
     value: 'moi-moche-mechant',
-    label: 'Moi, moche et méchant & Les Minions',
+    label: 'Moi, moche et méchant',
     release: [565, 568, 569, 572, 576, 579, 581],
   },
   { value: 'comme-des-betes', label: 'Comme des bêtes', release: [570, 574] },
@@ -128,7 +128,7 @@ export const SAGAS = [
   // Sony Pictures Animation
   { value: 'spider-verse', label: 'Spider-Verse', release: [609, 615, 619] },
   { value: 'hotel-transylvanie', label: 'Hôtel Transylvanie', release: [597, 600, 608, 614, 620] },
-  { value: 'boulettes', label: 'Tempête de boulettes géantes', release: [594, 599] },
+  { value: 'boulettes', label: 'Tempête de boulettes', release: [594, 599] },
   { value: 'rebelles-foret', label: 'Les Rebelles de la forêt', release: [591, 593, 595, 601] },
   { value: 'rois-glisse', label: 'Les Rois de la glisse', release: [592, 603] },
   { value: 'schtroumpfs', label: 'Les Schtroumpfs', release: [596, 598, 604, 719] },

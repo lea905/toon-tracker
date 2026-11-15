@@ -1,4 +1,5 @@
 :root {
+  color-scheme: dark; /* menus, barres de défilement… du navigateur en version sombre */
   --color-bg: #121212;
   --color-surface: #1e1e1e;
   --color-primary: #e1306c; /* Disney-ish pink/red or maybe blue? Let's go with a vibrant gradient base */
