@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import moviesData from './data/movies.json';
 import MovieList from './components/MovieList';
 import Toolbar from './components/Toolbar';
+import { isUpcoming } from './categories';
 import { loadObject, saveObject, downloadProgress, parseProgress } from './storage';
 import './App.css';
 
@@ -12,7 +13,9 @@ const movies = moviesData.map(movie => ({
   ...movie,
   decade: Math.floor(movie.year / 10) * 10,
   searchKey: normalize(movie.title),
+  upcoming: isUpcoming(movie),
 }));
+const releasedCount = movies.filter(movie => !movie.upcoming).length;
 const validIds = new Set(movies.map(movie => String(movie.id)));
 const decades = [...new Set(movies.map(movie => movie.decade))].sort((a, b) => a - b);
 
@@ -24,17 +27,16 @@ const SORTERS = {
 
 function App() {
   const [seenState, setSeenState] = useState(() => loadObject('disney-seen'));
-  const [ratings, setRatings] = useState(() => loadObject('disney-ratings'));
 
   const [search, setSearch] = useState('');
   const [status, setStatus] = useState('unseen');
+  const [category, setCategory] = useState('all');
   const [decade, setDecade] = useState('all');
   const [sort, setSort] = useState('year-asc');
   const [message, setMessage] = useState(null);
   const fileInputRef = useRef(null);
 
   useEffect(() => saveObject('disney-seen', seenState), [seenState]);
-  useEffect(() => saveObject('disney-ratings', ratings), [ratings]);
 
   useEffect(() => {
     if (!message) return;
@@ -51,21 +53,8 @@ function App() {
     });
   };
 
-  const handleRate = (id, rating) => {
-    setRatings(prev => {
-      const next = { ...prev };
-      if (rating) next[id] = rating;
-      else delete next[id];
-      return next;
-    });
-    // Si on note un film, c'est qu'on l'a vu.
-    if (rating && !seenState[id]) {
-      setSeenState(prev => ({ ...prev, [id]: true }));
-    }
-  };
-
   const handleExport = () => {
-    downloadProgress(seenState, ratings);
+    downloadProgress(seenState);
     setMessage({ type: 'success', text: 'Sauvegarde téléchargée.' });
   };
 
@@ -75,40 +64,36 @@ function App() {
     if (!file) return;
     try {
       const imported = parseProgress(await file.text(), validIds);
-      const seenCount = Object.keys(imported.seen).length;
-      const ratedCount = Object.keys(imported.ratings).length;
+      const count = Object.keys(imported).length;
       const ok = window.confirm(
-        `Importer ${seenCount} film(s) vu(s) et ${ratedCount} note(s) ?\n` +
+        `Importer ${count} film(s) vu(s) ?\n` +
         'Ta progression actuelle sur cet appareil sera remplacée.'
       );
       if (!ok) return;
-      setSeenState(imported.seen);
-      setRatings(imported.ratings);
-      setMessage({ type: 'success', text: `Import réussi : ${seenCount} vu(s), ${ratedCount} note(s).` });
+      setSeenState(imported);
+      setMessage({ type: 'success', text: `Import réussi : ${count} film(s) vu(s).` });
     } catch (error) {
       setMessage({ type: 'error', text: error.message });
     }
   };
 
-  const seenCount = movies.filter(movie => seenState[movie.id]).length;
+  const seenCount = movies.filter(movie => seenState[movie.id] && !movie.upcoming).length;
 
   const displayedMovies = useMemo(() => {
     const query = normalize(search.trim());
     const result = movies.filter(movie => {
       if (query && !movie.searchKey.includes(query)) return false;
+      if (category !== 'all' && movie.category !== category) return false;
       if (decade !== 'all' && movie.decade !== Number(decade)) return false;
-      if (status === 'unseen' && seenState[movie.id]) return false;
+      if (status === 'unseen' && (seenState[movie.id] || movie.upcoming)) return false;
       if (status === 'seen' && !seenState[movie.id]) return false;
-      if (status === 'rated' && !ratings[movie.id]) return false;
+      if (status === 'upcoming' && !movie.upcoming) return false;
       return true;
     });
-    const sorter = sort === 'rating'
-      ? (a, b) => (ratings[b.id] || 0) - (ratings[a.id] || 0) || SORTERS['year-asc'](a, b)
-      : SORTERS[sort];
-    return result.sort(sorter);
-  }, [search, decade, status, sort, seenState, ratings]);
+    return result.sort(SORTERS[sort]);
+  }, [search, category, decade, status, sort, seenState]);
 
-  const hasFilters = search || decade !== 'all' || status !== 'all';
+  const hasFilters = search || category !== 'all' || decade !== 'all' || status !== 'all';
 
   return (
     <div className="app-container">
@@ -116,8 +101,8 @@ function App() {
         <div className="header-content">
           <h1>Disney & Pixar Tracker</h1>
           <div className="header-actions">
-            <div className="stats-badge" title={`${Math.round((seenCount / movies.length) * 100)} % vus`}>
-              <span>{seenCount} / {movies.length} vus</span>
+            <div className="stats-badge" title={`${Math.round((seenCount / releasedCount) * 100)} % vus`}>
+              <span>{seenCount} / {releasedCount} vus</span>
             </div>
             <button className="header-btn" onClick={handleExport} title="Télécharger ma progression">
               Exporter
@@ -139,6 +124,8 @@ function App() {
           onSearch={setSearch}
           status={status}
           onStatus={setStatus}
+          category={category}
+          onCategory={setCategory}
           decade={decade}
           onDecade={setDecade}
           decades={decades}
@@ -159,9 +146,7 @@ function App() {
           <MovieList
             movies={displayedMovies}
             seenState={seenState}
-            ratings={ratings}
             onToggleSeen={handleToggleSeen}
-            onRate={handleRate}
           />
         ) : (
           <div className="empty-state">
@@ -169,7 +154,7 @@ function App() {
             {hasFilters && (
               <button
                 className="header-btn"
-                onClick={() => { setSearch(''); setDecade('all'); setStatus('all'); }}
+                onClick={() => { setSearch(''); setCategory('all'); setDecade('all'); setStatus('all'); }}
               >
                 Réinitialiser les filtres
               </button>

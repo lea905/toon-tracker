@@ -18,15 +18,14 @@ export function saveObject(key, value) {
   }
 }
 
-const EXPORT_VERSION = 1;
+const EXPORT_VERSION = 2;
 
-export function downloadProgress(seen, ratings) {
+export function downloadProgress(seen) {
   const data = {
     app: 'disney-pixar-tracker',
     version: EXPORT_VERSION,
     exportedAt: new Date().toISOString(),
     seen,
-    ratings,
   };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -37,7 +36,8 @@ export function downloadProgress(seen, ratings) {
   URL.revokeObjectURL(url);
 }
 
-// Renvoie { seen, ratings } nettoyés, ou lève une erreur si le fichier n'est pas valide.
+// Renvoie les films vus, nettoyés, ou lève une erreur si le fichier n'est pas valide.
+// Les anciennes sauvegardes (avec des notes) restent acceptées : les notes sont ignorées.
 export function parseProgress(text, validIds) {
   let data;
   try {
@@ -45,17 +45,13 @@ export function parseProgress(text, validIds) {
   } catch {
     throw new Error("Ce fichier n'est pas un JSON valide.");
   }
-  if (!data || typeof data !== 'object' || typeof data.seen !== 'object' || typeof data.ratings !== 'object') {
+  if (!data || typeof data !== 'object' || !data.seen || typeof data.seen !== 'object') {
     throw new Error("Ce fichier ne ressemble pas à une sauvegarde du tracker.");
   }
 
   const seen = {};
-  for (const [id, value] of Object.entries(data.seen ?? {})) {
+  for (const [id, value] of Object.entries(data.seen)) {
     if (validIds.has(id) && value === true) seen[id] = true;
   }
-  const ratings = {};
-  for (const [id, value] of Object.entries(data.ratings ?? {})) {
-    if (validIds.has(id) && Number.isInteger(value) && value >= 1 && value <= 5) ratings[id] = value;
-  }
-  return { seen, ratings };
+  return seen;
 }

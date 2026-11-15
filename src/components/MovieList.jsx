@@ -2,7 +2,7 @@ import React from 'react';
 import MovieCard from './MovieCard';
 import './MovieList.css';
 
-const MovieList = ({ movies, seenState, ratings, onToggleSeen, onRate }) => {
+const MovieList = ({ movies, seenState, onToggleSeen }) => {
     return (
         <div className="movie-grid">
             {movies.map(movie => (
@@ -10,9 +10,7 @@ const MovieList = ({ movies, seenState, ratings, onToggleSeen, onRate }) => {
                     key={movie.id}
                     movie={movie}
                     isSeen={!!seenState[movie.id]}
-                    rating={ratings[movie.id] || 0}
                     onToggleSeen={onToggleSeen}
-                    onRate={onRate}
                 />
             ))}
         </div>

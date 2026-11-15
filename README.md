@@ -1,14 +1,15 @@
 # Disney & Pixar Tracker
 
-Une petite application web pour suivre les films Disney et Pixar que tu as vus et leur donner une note.
+Une petite application web pour suivre les films Disney et Pixar que tu as vus.
 Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une application (PWA) avec un accès hors-ligne.
 
 ## Fonctionnalités
 
 - 489 films, de *Blanche-Neige* aux sorties à venir, avec leur affiche
-- Marquer un film comme vu et le noter de 1 à 5 étoiles (recliquer sur la note la retire)
+- Classés par catégorie : Animation, Pixar, Live-action, Marvel, Lucasfilm (Star Wars, Indiana Jones), Documentaire
+- Marquer un film comme vu ; les films pas encore sortis sont marqués « Bientôt »
 - Recherche par titre (sans tenir compte des accents)
-- Filtres par statut (à voir, vus, notés, tous) et par décennie, tri par année, titre ou note
+- Filtres par statut (à voir, vus, bientôt, tous), par catégorie et par décennie, tri par année ou titre
 - Export / import de la progression dans un fichier JSON, pour changer d'appareil ou la sauvegarder
 
 La progression est enregistrée uniquement dans le navigateur (`localStorage`) : rien n'est envoyé sur un serveur.
@@ -41,10 +42,12 @@ Autres commandes :
      "id": 490,
      "title": "Titre du film",
      "year": 2027,
-     "studio": null,
+     "category": "animation",
      "poster": "/posters/490.jpg"
    }
    ```
+   Catégories possibles : `animation`, `pixar`, `live-action`, `marvel`, `lucasfilm`, `documentary`.
+   Pour un film pas encore sorti, tu peux ajouter `"releaseDate": "AAAA-MM-JJ"` : il sera marqué « Bientôt » jusqu'à cette date.
 3. Lance `npm run optimize-images` : l'affiche est redimensionnée, convertie en WebP, et le chemin dans `movies.json` est mis à jour.
 
 ## Structure
@@ -56,6 +59,7 @@ assets-src/icon.png     Icône source (pour régénérer les icônes)
 scripts/                Script d'optimisation des images
 src/data/movies.json    Liste des films
 src/components/         Composants React (carte, liste, barre de filtres)
+src/categories.js       Liste des catégories et détection des films à venir
 src/storage.js          Sauvegarde locale et export/import
 ```
 
