@@ -1,7 +1,7 @@
 // Catégories des films, dans l'ordre d'affichage du filtre.
-// `group` sert à les ranger en deux rubriques dans le menu.
+// `group` sert à les ranger en deux rubriques dans le menu ; `short` est le nom affiché sur les cartes.
 export const CATEGORIES = [
-  { value: 'animation', label: 'Animation', group: 'disney' },
+  { value: 'animation', label: 'Animation Disney', short: 'Disney', group: 'disney' },
   { value: 'pixar', label: 'Pixar', group: 'disney' },
   { value: 'live-action', label: 'Live-action', group: 'disney' },
   { value: 'marvel', label: 'Marvel', group: 'disney' },
@@ -9,10 +9,10 @@ export const CATEGORIES = [
   { value: 'documentary', label: 'Documentaire', group: 'disney' },
   { value: 'dreamworks', label: 'DreamWorks', group: 'studios' },
   { value: 'illumination', label: 'Illumination', group: 'studios' },
-  { value: 'sony', label: 'Sony Animation', group: 'studios' },
+  { value: 'sony', label: 'Sony Animation', short: 'Sony', group: 'studios' },
   { value: 'blue-sky', label: 'Blue Sky', group: 'studios' },
   { value: 'paramount', label: 'Paramount', group: 'studios' },
-  { value: 'warner', label: 'Warner Animation', group: 'studios' },
+  { value: 'warner', label: 'Warner Animation', short: 'Warner', group: 'studios' },
   { value: 'netflix', label: 'Netflix', group: 'studios' },
   { value: 'laika', label: 'Laika', group: 'studios' },
   { value: 'aardman', label: 'Aardman', group: 'studios' },
@@ -22,11 +22,18 @@ export const CATEGORIES = [
 ];
 
 export const CATEGORY_GROUPS = [
-  { value: 'disney', label: 'Disney' },
-  { value: 'studios', label: "Autres studios d'animation" },
+  { value: 'disney', label: 'Disney', allLabel: 'Tout Disney' },
+  { value: 'studios', label: "Autres studios d'animation", allLabel: 'Tous les autres studios' },
 ];
 
+// Filtre par catégorie : une catégorie précise, ou « group:disney » / « group:studios » pour tout un groupe.
+const CATEGORY_GROUP_OF = Object.fromEntries(CATEGORIES.map(c => [c.value, c.group]));
+export const matchesCategory = (movie, filter) => filter === 'all'
+  || movie.category === filter
+  || (filter.startsWith('group:') && CATEGORY_GROUP_OF[movie.category] === filter.slice(6));
+
 export const CATEGORY_LABELS = Object.fromEntries(CATEGORIES.map(c => [c.value, c.label]));
+export const CATEGORY_BADGES = Object.fromEntries(CATEGORIES.map(c => [c.value, c.short ?? c.label]));
 
 // Un film est « à venir » si sa date de sortie (ou, à défaut, son année) n'est pas encore passée.
 export function isUpcoming(movie, today = new Date()) {

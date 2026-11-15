@@ -7,7 +7,7 @@ import RandomPicker from './components/RandomPicker';
 import MovieDetail from './components/MovieDetail';
 import SyncPanel from './components/SyncPanel';
 import { useSync } from './sync';
-import { isUpcoming } from './categories';
+import { isUpcoming, matchesCategory } from './categories';
 import { COLLECTIONS_BY_VALUE } from './collections';
 import { computeBadges } from './badges';
 import { loadObject, saveObject, downloadProgress, parseProgress } from './storage';
@@ -146,7 +146,7 @@ function App() {
     const result = movies.filter(movie => {
       if (query && !movie.searchKey.includes(query)) return false;
       if (positions && !positions.has(movie.id)) return false;
-      if (category !== 'all' && movie.category !== category) return false;
+      if (!matchesCategory(movie, category)) return false;
       if (decade !== 'all' && movie.decade !== Number(decade)) return false;
       if (status === 'unseen' && (seenState[movie.id] || movie.upcoming)) return false;
       if (status === 'seen' && !seenState[movie.id]) return false;

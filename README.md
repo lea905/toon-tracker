@@ -6,8 +6,9 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 ## Fonctionnalités
 
 - 716 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
-- Classés par catégorie : côté Disney (Animation, Pixar, Live-action, Marvel, Lucasfilm, Documentaire) et 12 autres studios d'animation
-  (DreamWorks, Illumination, Sony, Blue Sky, Paramount, Warner, Netflix, Laika, Aardman, Cartoon Saloon, Ghibli, CoMix Wave)
+- Classés par catégorie : côté Disney (Animation Disney, Pixar, Live-action, Marvel, Lucasfilm, Documentaire) et 12 autres studios d'animation
+  (DreamWorks, Illumination, Sony, Blue Sky, Paramount, Warner, Netflix, Laika, Aardman, Cartoon Saloon, Ghibli, CoMix Wave),
+  avec les raccourcis « Tout Disney » et « Tous les autres studios » dans le filtre
 - Filmographies de 13 studios d'animation, numérotées dans l'ordre de sortie
 - Une fiche par film (clic sur l'affiche) : résumé, durée, réalisation, genres, sagas et bande-annonce
 - Marquer un film comme vu ; les films pas encore sortis affichent un compte à rebours (« Dans 10 jours », « Le 26 mai 2027 »)

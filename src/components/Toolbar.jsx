@@ -93,6 +93,7 @@ const Toolbar = ({
                     <option value="all">Toutes les catégories</option>
                     {CATEGORY_GROUPS.map(group => (
                         <optgroup key={group.value} label={group.label}>
+                            <option value={`group:${group.value}`}>{group.allLabel}</option>
                             {CATEGORIES.filter(c => c.group === group.value).map(({ value, label }) => (
                                 <option key={value} value={value}>{label}</option>
                             ))}

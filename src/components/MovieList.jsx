@@ -1,7 +1,7 @@
 import React from 'react';
 import MovieCard, { SeenButton, MovieMeta } from './MovieCard';
 import { openProps } from '../openProps';
-import { CATEGORY_LABELS, releaseCountdown } from '../categories';
+import { CATEGORY_BADGES, releaseCountdown } from '../categories';
 import './MovieList.css';
 
 // Ligne de l'affichage compact.
@@ -18,7 +18,7 @@ const MovieRow = ({ movie, isSeen, position, onToggleSeen, onOpen }) => (
             <MovieMeta movie={movie} />
         </div>
         <span className="category-badge row-category" data-category={movie.category}>
-            {CATEGORY_LABELS[movie.category]}
+            {CATEGORY_BADGES[movie.category]}
         </span>
         <div className="row-action">
             {movie.upcoming ? (

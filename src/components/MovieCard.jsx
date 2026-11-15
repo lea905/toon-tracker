@@ -1,5 +1,5 @@
 import React from 'react';
-import { CATEGORY_LABELS, releaseCountdown } from '../categories';
+import { CATEGORY_BADGES, releaseCountdown } from '../categories';
 import { classiqueNumber } from '../collections';
 import { openProps } from '../openProps';
 import './MovieCard.css';
@@ -43,7 +43,7 @@ const MovieCard = ({ movie, isSeen, position, onToggleSeen, onOpen }) => {
                 <div className="card-badges">
                     {position && <div className="position-badge" title="Position dans la saga">#{position}</div>}
                     <div className="category-badge" data-category={movie.category}>
-                        {CATEGORY_LABELS[movie.category]}
+                        {CATEGORY_BADGES[movie.category]}
                     </div>
                 </div>
                 {movie.upcoming ? (
