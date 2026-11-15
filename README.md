@@ -73,4 +73,4 @@ La configuration se trouve dans `netlify.toml`.
 
 ## Technologies
 
-React 19, Vite 7, vite-plugin-pwa, sharp (optimisation des images).
+React 19, Vite 7, vite-plugin-pwa, police Inter (hébergée avec le site via Fontsource), sharp (optimisation des images).
