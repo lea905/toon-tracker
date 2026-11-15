@@ -1,0 +1,14 @@
+# Règles de cache pour Cloudflare Pages.
+
+# Fichiers JS/CSS/polices générés par Vite : leur nom change à chaque modification,
+# on peut donc les garder en cache très longtemps.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Affiches : gardées une semaine (leur nom ne change pas quand on les remplace).
+/posters/*
+  Cache-Control: public, max-age=604800
+
+# Le service worker doit toujours être vérifié pour que les mises à jour arrivent vite.
+/sw.js
+  Cache-Control: no-cache

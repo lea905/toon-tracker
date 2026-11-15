@@ -113,8 +113,9 @@ src/storage.js          Sauvegarde locale et export/import
 
 ## Déploiement
 
-Le site est déployé sur [Netlify](https://www.netlify.com/) (offre gratuite) : chaque push sur `main` déclenche un nouveau déploiement.
-La configuration se trouve dans `netlify.toml`.
+Le site est hébergé gratuitement sur [Cloudflare Pages](https://pages.cloudflare.com/) : **https://toon-tracker.pages.dev**.
+Chaque push sur `main` déclenche un nouveau déploiement (réglages Cloudflare : commande `npm run build`,
+dossier `dist`, variable `NODE_VERSION=22`). Les règles de cache sont dans `public/_headers`.
 
 ## Technologies
 
