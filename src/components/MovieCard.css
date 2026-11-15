@@ -67,22 +67,58 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
+    background: rgba(0, 0, 0, 0.55);
+    border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(4px);
-    transition: background 0.3s;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.seen-toggle svg {
+    width: 18px;
+    height: 18px;
 }
 
 .seen-toggle:hover {
     background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.08);
+}
+
+.movie-card.seen .seen-toggle {
+    background: var(--color-seen);
+    border-color: var(--color-seen);
+    color: #fff;
+}
+
+/* Films vus : affiche atténuée + bandeau « Vu » */
+.movie-card.seen img {
+    filter: grayscale(0.7) brightness(0.6);
+}
+
+.seen-ribbon {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--color-seen);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.movie-card.seen .card-content h3 {
+    color: var(--color-text-secondary);
 }
 
 .card-content {

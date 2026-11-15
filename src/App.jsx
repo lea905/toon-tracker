@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import moviesData from './data/movies.json';
 import MovieList from './components/MovieList';
 import Toolbar from './components/Toolbar';
+import StatsPanel from './components/StatsPanel';
+import RandomPicker from './components/RandomPicker';
 import { isUpcoming } from './categories';
 import { loadObject, saveObject, downloadProgress, parseProgress } from './storage';
 import './App.css';
@@ -34,6 +36,9 @@ function App() {
   const [decade, setDecade] = useState('all');
   const [sort, setSort] = useState('year-asc');
   const [message, setMessage] = useState(null);
+  const [showStats, setShowStats] = useState(false);
+  // Liste figée au moment du tirage, pour que « Je l'ai vu » ne change pas le tirage en cours.
+  const [randomPool, setRandomPool] = useState(null);
   const fileInputRef = useRef(null);
 
   useEffect(() => saveObject('disney-seen', seenState), [seenState]);
@@ -52,6 +57,13 @@ function App() {
       return next;
     });
   };
+
+  const handleMarkSeen = (id) => {
+    setSeenState(prev => ({ ...prev, [id]: true }));
+  };
+
+  const closeStats = useCallback(() => setShowStats(false), []);
+  const closeRandom = useCallback(() => setRandomPool(null), []);
 
   const handleExport = () => {
     downloadProgress(seenState);
@@ -101,9 +113,20 @@ function App() {
         <div className="header-content">
           <h1>Disney & Pixar Tracker</h1>
           <div className="header-actions">
-            <div className="stats-badge" title={`${Math.round((seenCount / releasedCount) * 100)} % vus`}>
-              <span>{seenCount} / {releasedCount} vus</span>
-            </div>
+            <button
+              className="stats-badge"
+              onClick={() => setShowStats(true)}
+              title="Voir mes statistiques"
+            >
+              {seenCount} / {releasedCount} vus · {Math.round((seenCount / releasedCount) * 100)} %
+            </button>
+            <button
+              className="header-btn"
+              onClick={() => setRandomPool(displayedMovies.filter(m => !seenState[m.id] && !m.upcoming))}
+              title="Tirer au sort un film pas encore vu"
+            >
+              🎲 Au hasard
+            </button>
             <button className="header-btn" onClick={handleExport} title="Télécharger ma progression">
               Exporter
             </button>
@@ -134,6 +157,19 @@ function App() {
           resultCount={displayedMovies.length}
         />
       </header>
+
+      {showStats && (
+        <StatsPanel movies={movies} seenState={seenState} onClose={closeStats} />
+      )}
+
+      {randomPool && (
+        <RandomPicker
+          pool={randomPool}
+          filtered={Boolean(search) || category !== 'all' || decade !== 'all' || status === 'seen' || status === 'upcoming'}
+          onMarkSeen={handleMarkSeen}
+          onClose={closeRandom}
+        />
+      )}
 
       {message && (
         <div className={`toast toast-${message.type}`} role="status">

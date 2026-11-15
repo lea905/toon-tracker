@@ -10,6 +10,8 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 - Marquer un film comme vu ; les films pas encore sortis sont marqués « Bientôt »
 - Recherche par titre (sans tenir compte des accents)
 - Filtres par statut (à voir, vus, bientôt, tous), par catégorie et par décennie, tri par année ou titre
+- Statistiques (clic sur le compteur) : progression globale, par catégorie et par décennie
+- Bouton « Au hasard » : tire au sort un film pas encore vu, en tenant compte des filtres
 - Export / import de la progression dans un fichier JSON, pour changer d'appareil ou la sauvegarder
 
 La progression est enregistrée uniquement dans le navigateur (`localStorage`) : rien n'est envoyé sur un serveur.
