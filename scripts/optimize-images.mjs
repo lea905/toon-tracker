@@ -4,7 +4,7 @@
 // - Chaque affiche JPG/PNG de public/posters est redimensionnée (400 px de large max),
 //   convertie en WebP, puis l'original est supprimé (il reste dans l'historique git).
 // - src/data/movies.json est mis à jour pour pointer vers les fichiers .webp.
-// - Les icônes PWA (192 et 512 px) sont générées à partir de assets-src/icon.png.
+// - Avec --icons : les icônes PWA (192 et 512 px) sont régénérées à partir de assets-src/icon.png.
 //
 // Le script peut être relancé sans risque : il ne traite que les images pas encore converties.
 // Pour ajouter un film : déposer son affiche (ex. 505.jpg) dans public/posters, l'ajouter
@@ -86,4 +86,4 @@ async function generateIcons() {
 
 await optimizePosters();
 await updateMoviesJson();
-await generateIcons();
+if (process.argv.includes("--icons")) await generateIcons();

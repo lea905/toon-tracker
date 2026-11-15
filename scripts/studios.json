@@ -1,0 +1,23 @@
+{
+  "_info": "Studios surveillés par la mise à jour automatique (scripts/update-catalog.mjs). company = identifiant TMDB de la société, exclude = films TMDB à ne jamais ajouter. L'ordre compte : un film présent chez plusieurs studios prend la catégorie du premier.",
+  "studios": [
+    { "company": 3, "category": "pixar" },
+    { "company": 6125, "category": "animation" },
+    { "company": 420, "category": "marvel" },
+    { "company": 1, "category": "lucasfilm" },
+    { "company": 4436, "category": "documentary" },
+    { "company": 2, "category": "live-action" },
+    { "company": 521, "category": "dreamworks" },
+    { "company": 6704, "category": "illumination" },
+    { "company": 23948, "category": "cartoon-saloon" },
+    { "company": 297, "category": "aardman", "exclude": [332228] },
+    { "company": 2251, "category": "sony", "exclude": [257445, 442062] },
+    { "company": 9383, "category": "blue-sky" },
+    { "company": 10342, "category": "ghibli", "exclude": [12140, 1680858] },
+    { "company": 11537, "category": "laika", "exclude": [3933] },
+    { "company": 25120, "category": "warner" },
+    { "company": 24955, "category": "paramount", "exclude": [262841] },
+    { "company": 171251, "category": "netflix", "exclude": [940009] },
+    { "company": 3756, "category": "comix-wave", "exclude": [60131, 311054, 642538, 1359916] }
+  ]
+}

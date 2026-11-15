@@ -1,0 +1,61 @@
+# Chaque lundi, met à jour le catalogue depuis TMDB (nouveaux films, affiches, dates de sortie)
+# et ouvre une pull request à valider. Peut aussi être lancé à la main depuis l'onglet « Actions ».
+#
+# Prérequis (à faire une fois sur GitHub) :
+#   - Settings → Secrets and variables → Actions → New repository secret : TMDB_API_KEY
+#   - Settings → Actions → General → Workflow permissions :
+#       cocher « Allow GitHub Actions to create and approve pull requests »
+
+name: Mise à jour du catalogue
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # chaque lundi à 6 h (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Nouveaux films, affiches et dates
+        run: node scripts/update-catalog.mjs
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          SUMMARY_FILE: ${{ runner.temp }}/summary.md
+
+      - name: Conversion des affiches
+        run: npm run optimize-images
+
+      - name: Fiches des films
+        run: npm run fetch-details
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+
+      - name: Vérification du build
+        run: npm run build
+
+      - name: Pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: auto/catalog-update
+          delete-branch: true
+          commit-message: update catalog
+          title: Mise à jour du catalogue
+          body-path: ${{ runner.temp }}/summary.md
+          add-paths: |
+            public/posters
+            src/data
+            scripts/tmdb-overrides.json

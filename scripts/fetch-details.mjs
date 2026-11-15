@@ -98,6 +98,7 @@ async function fetchDetails(tmdbId) {
     director: directors.length ? [...new Set(directors)].join(', ') : null,
     genres: (fr.genres ?? []).map(g => g.name),
     trailer: pickTrailer(fr.videos?.results),
+    posterPath: fr.poster_path || null,
   };
 }
 

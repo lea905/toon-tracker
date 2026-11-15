@@ -41,6 +41,7 @@ Autres commandes :
 | `npm run preview` | Sert la version compilée en local |
 | `npm run lint` | Vérifie le code avec ESLint |
 | `npm run optimize-images` | Convertit les nouvelles affiches en WebP et met à jour `movies.json` |
+| `node scripts/update-catalog.mjs --dry` | Montre ce que la mise à jour automatique changerait |
 | `npm run fetch-details` | Récupère depuis TMDB les fiches des films qui n'en ont pas encore (`-- --all` pour tout refaire) |
 
 ## Ajouter un film
@@ -80,6 +81,25 @@ pas rattaché au studio sur TMDB.
 Copie ensuite les affiches dans `public/posters/`, puis lance `npm run optimize-images` et `npm run fetch-details`.
 Pense à ajouter la nouvelle catégorie dans `src/categories.js` (et sa couleur dans `MovieCard.css`).
 
+## Mise à jour automatique
+
+Chaque lundi, la tâche GitHub `.github/workflows/update-catalog.yml` lance `scripts/update-catalog.mjs`, qui :
+
+- ajoute les nouveaux longs-métrages des studios listés dans `scripts/studios.json` (films sortis depuis moins de 3 mois ou à venir) ;
+- met à jour la date de sortie française et l'affiche des films à venir, et redemande leur fiche ;
+
+puis ouvre une **pull request « Mise à jour du catalogue »** avec le résumé des changements. Cloudflare en publie un aperçu ;
+il suffit de la fusionner sur GitHub pour mettre le site à jour. On peut aussi la lancer à la main : onglet *Actions* →
+*Mise à jour du catalogue* → *Run workflow*.
+
+Pour tester en local sans rien modifier : `node scripts/update-catalog.mjs --dry`.
+
+Prérequis sur GitHub (une seule fois) :
+1. *Settings → Secrets and variables → Actions → New repository secret* : `TMDB_API_KEY` avec la clé TMDB.
+2. *Settings → Actions → General → Workflow permissions* : cocher *Allow GitHub Actions to create and approve pull requests*.
+
+Pour ne plus jamais ajouter un film, ajoute son identifiant TMDB dans le `exclude` de son studio (`scripts/studios.json`).
+
 ## Fiches des films (TMDB)
 
 Les fiches viennent de [TMDB](https://www.themoviedb.org/) et sont enregistrées une fois pour toutes dans `src/data/details.json` :
@@ -103,7 +123,8 @@ Si un film est mal reconnu, indique le bon identifiant TMDB dans `scripts/tmdb-o
 public/posters/         Affiches des films (WebP)
 public/icon-*.png       Icônes de l'application
 assets-src/icon.png     Icône source (pour régénérer les icônes)
-scripts/                Scripts : optimisation des images, fiches TMDB, import d'un studio
+scripts/                Scripts : optimisation des images, fiches TMDB, import d'un studio, mise à jour automatique
+.github/workflows/      Tâche GitHub hebdomadaire de mise à jour du catalogue
 src/data/movies.json    Liste des films
 src/data/details.json   Fiches des films (résumé, durée…), générées depuis TMDB
 src/components/         Composants React (carte, liste, barre de filtres)
