@@ -160,7 +160,7 @@ function App() {
     <div className="app-container">
       <header className="app-header">
         <div className="header-content">
-          <h1>Disney & Pixar Tracker</h1>
+          <h1>Toon Tracker</h1>
           <div className="header-actions">
             <button
               className="stats-badge"

@@ -73,7 +73,7 @@ async function drawProgressImage(canvas, { movies, seenState, stats }) {
     ctx.textAlign = 'center';
     ctx.fillStyle = '#ffffff';
     ctx.font = `800 52px ${FONT}`;
-    ctx.fillText('Mon tracker Disney & Pixar', WIDTH / 2, top);
+    ctx.fillText('Mon Toon Tracker', WIDTH / 2, top);
 
     const percent = stats.releasedTotal ? Math.round((stats.seenTotal / stats.releasedTotal) * 100) : 0;
     ctx.fillStyle = '#2e9d5b';
@@ -123,7 +123,7 @@ const ShareImage = ({ movies, seenState, stats, onBack }) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    const fileName = `ma-progression-disney-${new Date().toISOString().slice(0, 10)}.png`;
+    const fileName = `ma-progression-toon-tracker-${new Date().toISOString().slice(0, 10)}.png`;
     const file = blob ? new File([blob], fileName, { type: 'image/png' }) : null;
     const canShare = Boolean(file && navigator.canShare?.({ files: [file] }));
 
@@ -138,7 +138,7 @@ const ShareImage = ({ movies, seenState, stats, onBack }) => {
 
     const share = async () => {
         try {
-            await navigator.share({ files: [file], title: 'Ma progression Disney' });
+            await navigator.share({ files: [file], title: 'Ma progression Toon Tracker' });
         } catch {
             // Partage annulé : rien à faire.
         }

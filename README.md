@@ -1,6 +1,6 @@
-# Disney & Pixar Tracker
+# Toon Tracker
 
-Une petite application web pour suivre les films Disney et Pixar que tu as vus.
+Une petite application web pour suivre tous les films que tu as vus : Disney, Pixar, Marvel, Star Wars et plus encore.
 Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une application (PWA) avec un accès hors-ligne.
 
 ## Fonctionnalités

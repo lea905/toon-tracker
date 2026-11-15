@@ -22,7 +22,7 @@ const EXPORT_VERSION = 2;
 
 export function downloadProgress(seen) {
   const data = {
-    app: 'disney-pixar-tracker',
+    app: 'toon-tracker',
     version: EXPORT_VERSION,
     exportedAt: new Date().toISOString(),
     seen,
@@ -31,7 +31,7 @@ export function downloadProgress(seen) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `disney-tracker-${new Date().toISOString().slice(0, 10)}.json`;
+  a.download = `toon-tracker-${new Date().toISOString().slice(0, 10)}.json`;
   a.click();
   URL.revokeObjectURL(url);
 }

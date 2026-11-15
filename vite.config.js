@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon-192.png'],
       manifest: {
-        name: 'Disney Pixar Tracker',
-        short_name: 'DP Tracker',
-        description: 'Suis les films Disney et Pixar que tu as vus',
+        name: 'Toon Tracker',
+        short_name: 'Toon Tracker',
+        description: 'Suis tous les films que tu as vus : Disney, Pixar, Marvel, Star Wars et plus encore',
         lang: 'fr',
         theme_color: '#121212',
         background_color: '#121212',
