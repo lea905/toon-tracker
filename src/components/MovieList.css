@@ -122,3 +122,11 @@
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
+
+/* Repère en bas de liste : quand il approche de l'écran, les films suivants s'affichent. */
+.list-more {
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+    padding: var(--spacing-lg) 0;
+}

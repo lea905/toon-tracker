@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { CATEGORY_BADGES, releaseCountdown } from '../categories';
 import { classiqueNumber } from '../collections';
 import { openProps } from '../openProps';
@@ -62,4 +62,5 @@ const MovieCard = ({ movie, isSeen, position, onToggleSeen, onOpen }) => {
     );
 };
 
-export default MovieCard;
+// memo : quand on coche un film, seule sa carte est redessinée, pas les 700 autres.
+export default memo(MovieCard);

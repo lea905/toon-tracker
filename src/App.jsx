@@ -64,14 +64,16 @@ function App() {
     return () => clearTimeout(timer);
   }, [message]);
 
-  const handleToggleSeen = (id) => {
+  // useCallback : la fonction reste la même d'un rendu à l'autre, ce qui permet aux cartes
+  // de ne pas être redessinées inutilement.
+  const handleToggleSeen = useCallback((id) => {
     setSeenState(prev => {
       const next = { ...prev };
       if (next[id]) delete next[id];
       else next[id] = true;
       return next;
     });
-  };
+  }, []);
 
   const handleCollection = (value) => {
     setCollection(value);
@@ -273,6 +275,7 @@ function App() {
             view={view}
             onToggleSeen={handleToggleSeen}
             onOpen={setDetailMovie}
+            resetKey={[search, status, category, collection, decade, sort, view].join('|')}
           />
         ) : (
           <div className="empty-state">
