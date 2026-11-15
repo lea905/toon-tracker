@@ -5,15 +5,14 @@ Elle fonctionne sur ordinateur et sur téléphone, et peut s'installer comme une
 
 ## Fonctionnalités
 
-- 716 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
+- 717 films, de *Blanche-Neige* aux sorties annoncées jusqu'en 2029, avec leur affiche
 - Classés par catégorie : côté Disney (Animation Disney, Pixar, Live-action, Marvel, Lucasfilm, Documentaire) et 12 autres studios d'animation
   (DreamWorks, Illumination, Sony, Blue Sky, Paramount, Warner, Netflix, Laika, Aardman, Cartoon Saloon, Ghibli, CoMix Wave),
   avec les raccourcis « Tout Disney » et « Tous les autres studios » dans le filtre
-- Filmographies de 13 studios d'animation, numérotées dans l'ordre de sortie
 - Une fiche par film (clic sur l'affiche) : résumé, durée, réalisation, genres, sagas et bande-annonce
 - Marquer un film comme vu ; les films pas encore sortis affichent un compte à rebours (« Dans 10 jours », « Le 26 mai 2027 »)
 - Les **Grands Classiques Disney** numérotés (n°1 *Blanche-Neige* → n°66 *La Reine des neiges 3*)
-- 62 **sagas** (Marvel, Star Wars, Toy Story, Shrek, Moi moche et méchant, L'Âge de glace, Spider-Verse…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
+- 61 **sagas** (Marvel, Star Wars, Toy Story, Shrek, Moi moche et méchant, L'Âge de glace, Spider-Verse…) avec leur ordre de sortie et, quand il diffère, l'ordre chronologique de l'histoire
 - Recherche par titre (sans tenir compte des accents)
 - Filtres par statut (à voir, vus, bientôt, tous), par saga, par catégorie et par décennie, tri par année ou titre
 - Affichage en grille d'affiches ou en liste compacte

@@ -31,7 +31,8 @@ const byCategory = (category, extraIds = []) => moviesData
   .sort((a, b) => dateKey(a).localeCompare(dateKey(b)))
   .map(m => m.id);
 
-// Filmographies des studios d'animation, numérotées comme les Grands Classiques.
+// Filmographies des studios d'animation (utilisées par les badges ; pas dans le menu des sagas,
+// qui ferait doublon avec le filtre des catégories).
 export const STUDIOS = [
   { value: 'studio-pixar', label: 'Pixar', release: PIXAR_FEATURES },
   { value: 'studio-dreamworks', label: 'DreamWorks Animation', release: byCategory('dreamworks') },
@@ -156,7 +157,6 @@ if (import.meta.env?.DEV) {
 // Toutes les collections proposées dans le filtre, Grands Classiques en premier.
 export const COLLECTIONS = [
   { value: 'classiques', label: 'Grands Classiques Disney', release: CLASSIQUES },
-  ...STUDIOS,
   ...SAGAS,
 ];
 

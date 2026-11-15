@@ -1,6 +1,6 @@
 import React from 'react';
 import { CATEGORIES, CATEGORY_GROUPS } from '../categories';
-import { COLLECTIONS_BY_VALUE, STUDIOS, SAGAS } from '../collections';
+import { COLLECTIONS_BY_VALUE, SAGAS } from '../collections';
 import './Toolbar.css';
 
 const STATUSES = [
@@ -78,11 +78,6 @@ const Toolbar = ({
                 >
                     <option value="all">Toutes les sagas</option>
                     <option value="classiques">⭐ Grands Classiques Disney</option>
-                    <optgroup label="Studios">
-                        {STUDIOS.map(({ value, label, release }) => (
-                            <option key={value} value={value}>{label} ({release.length})</option>
-                        ))}
-                    </optgroup>
                     <optgroup label="Sagas">
                         {SAGAS.map(({ value, label, release }) => (
                             <option key={value} value={value}>{label} ({release.length})</option>
@@ -109,9 +104,7 @@ const Toolbar = ({
                 <select value={sort} onChange={(e) => onSort(e.target.value)} aria-label="Trier">
                     {activeCollection && (
                         <option value="collection-release">
-                            {collection === 'classiques'
-                                ? 'Numéro de classique'
-                                : collection.startsWith('studio-') ? 'Ordre de sortie du studio' : 'Ordre de sortie de la saga'}
+                            {collection === 'classiques' ? 'Numéro de classique' : 'Ordre de sortie de la saga'}
                         </option>
                     )}
                     {activeCollection?.chrono && (
