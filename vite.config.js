@@ -8,22 +8,40 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      includeAssets: ['icon-192.png'],
       manifest: {
         name: 'Disney Pixar Tracker',
         short_name: 'DP Tracker',
-        description: 'Track your watched Disney and Pixar movies',
-        theme_color: '#ffffff',
+        description: 'Suis les films Disney et Pixar que tu as vus',
+        lang: 'fr',
+        theme_color: '#121212',
+        background_color: '#121212',
+        display: 'standalone',
         icons: [
           {
-            src: 'icon.png',
+            src: 'icon-192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'icon.png',
+            src: 'icon-512.png',
             sizes: '512x512',
             type: 'image/png'
+          }
+        ]
+      },
+      workbox: {
+        // Les affiches ne sont pas pré-téléchargées : elles sont mises en cache
+        // au fur et à mesure qu'on les affiche, puis restent dispo hors-ligne.
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.startsWith('/posters/'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'posters',
+              expiration: { maxEntries: 600, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              cacheableResponse: { statuses: [0, 200] }
+            }
           }
         ]
       }
