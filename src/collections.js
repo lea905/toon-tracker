@@ -3,6 +3,8 @@
 //   - `release` : ordre de sortie
 //   - `chrono`  : ordre chronologique de l'histoire (seulement quand il diffère)
 
+import moviesData from './data/movies.json';
+
 // Les « Grands Classiques » : longs-métrages des Walt Disney Animation Studios, numérotés.
 export const CLASSIQUES = [
   1, 3, 4, 7, 9, 5, 8, 10, 12, 14, // 1–10
@@ -17,6 +19,22 @@ export const CLASSIQUES = [
 const CLASSIQUE_NUMBERS = new Map(CLASSIQUES.map((id, index) => [id, index + 1]));
 
 export const classiqueNumber = (movieId) => CLASSIQUE_NUMBERS.get(movieId) ?? null;
+
+// Longs-métrages Pixar (sans les courts), dans l'ordre de sortie.
+export const PIXAR_FEATURES = [151, 184, 206, 232, 248, 269, 281, 293, 305, 315, 326, 337, 348, 373, 378, 386, 399, 403, 412, 422, 428, 438, 442, 448, 451, 462, 468, 476, 481, 483, 487, 496, 500, 504];
+
+// Tous les films d'une catégorie, dans l'ordre de sortie.
+const byCategory = (category) => moviesData
+  .filter(m => m.category === category)
+  .sort((a, b) => (a.releaseDate ?? `${a.year}-99`).localeCompare(b.releaseDate ?? `${b.year}-99`))
+  .map(m => m.id);
+
+// Filmographies des studios d'animation, numérotées comme les Grands Classiques.
+export const STUDIOS = [
+  { value: 'studio-pixar', label: 'Pixar', release: PIXAR_FEATURES },
+  { value: 'studio-dreamworks', label: 'DreamWorks Animation', release: byCategory('dreamworks') },
+  { value: 'studio-illumination', label: 'Illumination', release: byCategory('illumination') },
+];
 
 export const SAGAS = [
   {
@@ -74,11 +92,31 @@ export const SAGAS = [
   { value: 'hocus-pocus', label: 'Hocus Pocus', release: [140, 454] },
   { value: 'il-etait-une-fois', label: 'Il était une fois', release: [284, 456] },
   { value: 'mary-poppins', label: 'Mary Poppins', release: [52, 416] },
+  // DreamWorks
+  { value: 'shrek', label: 'Shrek', release: [510, 513, 519, 525, 528, 548, 562, 564] },
+  { value: 'madagascar', label: 'Madagascar', release: [515, 522, 529, 535] },
+  { value: 'kung-fu-panda', label: 'Kung Fu Panda', release: [521, 527, 537, 552, 559] },
+  { value: 'dragons', label: 'Dragons', release: [524, 534, 541, 555, 561] },
+  { value: 'croods', label: 'Les Croods', release: [531, 544] },
+  { value: 'trolls', label: 'Les Trolls', release: [538, 543, 550] },
+  { value: 'baby-boss', label: 'Baby Boss', release: [539, 546] },
+  { value: 'spirit', label: 'Spirit', release: [511, 545] },
+  { value: 'bad-guys', label: 'Les Bad Guys', release: [547, 556] },
+  // Illumination
+  {
+    value: 'moi-moche-mechant',
+    label: 'Moi, moche et méchant & Les Minions',
+    release: [565, 568, 569, 572, 576, 579, 581],
+  },
+  { value: 'comme-des-betes', label: 'Comme des bêtes', release: [570, 574] },
+  { value: 'tous-en-scene', label: 'Tous en scène', release: [571, 575] },
+  { value: 'super-mario', label: 'Super Mario', release: [577, 580] },
 ];
 
 // Toutes les collections proposées dans le filtre, Grands Classiques en premier.
 export const COLLECTIONS = [
   { value: 'classiques', label: 'Grands Classiques Disney', release: CLASSIQUES },
+  ...STUDIOS,
   ...SAGAS,
 ];
 

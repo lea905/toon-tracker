@@ -3540,5 +3540,558 @@
     "releaseDate": "2029-11-20",
     "category": "pixar",
     "poster": "/posters/504.webp"
+  },
+  {
+    "id": 505,
+    "title": "Fourmiz",
+    "year": 1998,
+    "category": "dreamworks",
+    "poster": "/posters/505.webp"
+  },
+  {
+    "id": 506,
+    "title": "Le Prince d'Égypte",
+    "year": 1998,
+    "category": "dreamworks",
+    "poster": "/posters/506.webp"
+  },
+  {
+    "id": 507,
+    "title": "La Route d'El Dorado",
+    "year": 2000,
+    "category": "dreamworks",
+    "poster": "/posters/507.webp"
+  },
+  {
+    "id": 508,
+    "title": "Joseph, le roi des rêves",
+    "year": 2000,
+    "category": "dreamworks",
+    "poster": "/posters/508.webp"
+  },
+  {
+    "id": 509,
+    "title": "Chicken Run",
+    "year": 2000,
+    "category": "dreamworks",
+    "poster": "/posters/509.webp"
+  },
+  {
+    "id": 510,
+    "title": "Shrek",
+    "year": 2001,
+    "category": "dreamworks",
+    "poster": "/posters/510.webp"
+  },
+  {
+    "id": 511,
+    "title": "Spirit, l'étalon des plaines",
+    "year": 2002,
+    "category": "dreamworks",
+    "poster": "/posters/511.webp"
+  },
+  {
+    "id": 512,
+    "title": "Sinbad : La légende des sept mers",
+    "year": 2003,
+    "category": "dreamworks",
+    "poster": "/posters/512.webp"
+  },
+  {
+    "id": 513,
+    "title": "Shrek 2",
+    "year": 2004,
+    "category": "dreamworks",
+    "poster": "/posters/513.webp"
+  },
+  {
+    "id": 514,
+    "title": "Gang de Requins",
+    "year": 2004,
+    "category": "dreamworks",
+    "poster": "/posters/514.webp"
+  },
+  {
+    "id": 515,
+    "title": "Madagascar",
+    "year": 2005,
+    "category": "dreamworks",
+    "poster": "/posters/515.webp"
+  },
+  {
+    "id": 516,
+    "title": "Wallace & Gromit : Le Mystère du lapin-garou",
+    "year": 2005,
+    "category": "dreamworks",
+    "poster": "/posters/516.webp"
+  },
+  {
+    "id": 517,
+    "title": "Nos voisins, les hommes",
+    "year": 2006,
+    "category": "dreamworks",
+    "poster": "/posters/517.webp"
+  },
+  {
+    "id": 518,
+    "title": "Souris City",
+    "year": 2006,
+    "category": "dreamworks",
+    "poster": "/posters/518.webp"
+  },
+  {
+    "id": 519,
+    "title": "Shrek le troisième",
+    "year": 2007,
+    "category": "dreamworks",
+    "poster": "/posters/519.webp"
+  },
+  {
+    "id": 520,
+    "title": "Bee Movie : Drôle d'abeille",
+    "year": 2007,
+    "category": "dreamworks",
+    "poster": "/posters/520.webp"
+  },
+  {
+    "id": 521,
+    "title": "Kung Fu Panda",
+    "year": 2008,
+    "category": "dreamworks",
+    "poster": "/posters/521.webp"
+  },
+  {
+    "id": 522,
+    "title": "Madagascar 2",
+    "year": 2008,
+    "category": "dreamworks",
+    "poster": "/posters/522.webp"
+  },
+  {
+    "id": 523,
+    "title": "Monstres contre Aliens",
+    "year": 2009,
+    "category": "dreamworks",
+    "poster": "/posters/523.webp"
+  },
+  {
+    "id": 524,
+    "title": "Dragons",
+    "year": 2010,
+    "category": "dreamworks",
+    "poster": "/posters/524.webp"
+  },
+  {
+    "id": 525,
+    "title": "Shrek 4 : Il était une fin",
+    "year": 2010,
+    "category": "dreamworks",
+    "poster": "/posters/525.webp"
+  },
+  {
+    "id": 526,
+    "title": "Megamind",
+    "year": 2010,
+    "category": "dreamworks",
+    "poster": "/posters/526.webp"
+  },
+  {
+    "id": 527,
+    "title": "Kung Fu Panda 2",
+    "year": 2011,
+    "category": "dreamworks",
+    "poster": "/posters/527.webp"
+  },
+  {
+    "id": 528,
+    "title": "Le Chat Potté",
+    "year": 2011,
+    "category": "dreamworks",
+    "poster": "/posters/528.webp"
+  },
+  {
+    "id": 529,
+    "title": "Madagascar 3 : Bons baisers d'Europe",
+    "year": 2012,
+    "category": "dreamworks",
+    "poster": "/posters/529.webp"
+  },
+  {
+    "id": 530,
+    "title": "Les Cinq Légendes",
+    "year": 2012,
+    "category": "dreamworks",
+    "poster": "/posters/530.webp"
+  },
+  {
+    "id": 531,
+    "title": "Les Croods",
+    "year": 2013,
+    "category": "dreamworks",
+    "poster": "/posters/531.webp"
+  },
+  {
+    "id": 532,
+    "title": "Turbo",
+    "year": 2013,
+    "category": "dreamworks",
+    "poster": "/posters/532.webp"
+  },
+  {
+    "id": 533,
+    "title": "M. Peabody et Sherman : Les voyages dans le temps",
+    "year": 2014,
+    "category": "dreamworks",
+    "poster": "/posters/533.webp"
+  },
+  {
+    "id": 534,
+    "title": "Dragons 2",
+    "year": 2014,
+    "category": "dreamworks",
+    "poster": "/posters/534.webp"
+  },
+  {
+    "id": 535,
+    "title": "Les Pingouins de Madagascar",
+    "year": 2014,
+    "category": "dreamworks",
+    "poster": "/posters/535.webp"
+  },
+  {
+    "id": 536,
+    "title": "En route !",
+    "year": 2015,
+    "category": "dreamworks",
+    "poster": "/posters/536.webp"
+  },
+  {
+    "id": 537,
+    "title": "Kung Fu Panda 3",
+    "year": 2016,
+    "category": "dreamworks",
+    "poster": "/posters/537.webp"
+  },
+  {
+    "id": 538,
+    "title": "Les Trolls",
+    "year": 2016,
+    "category": "dreamworks",
+    "poster": "/posters/538.webp"
+  },
+  {
+    "id": 539,
+    "title": "Baby Boss",
+    "year": 2017,
+    "category": "dreamworks",
+    "poster": "/posters/539.webp"
+  },
+  {
+    "id": 540,
+    "title": "Capitaine Superslip",
+    "year": 2017,
+    "category": "dreamworks",
+    "poster": "/posters/540.webp"
+  },
+  {
+    "id": 541,
+    "title": "Dragons 3 : Le monde caché",
+    "year": 2019,
+    "category": "dreamworks",
+    "poster": "/posters/541.webp"
+  },
+  {
+    "id": 542,
+    "title": "Abominable",
+    "year": 2019,
+    "category": "dreamworks",
+    "poster": "/posters/542.webp"
+  },
+  {
+    "id": 543,
+    "title": "Les Trolls 2 : Tournée mondiale",
+    "year": 2020,
+    "category": "dreamworks",
+    "poster": "/posters/543.webp"
+  },
+  {
+    "id": 544,
+    "title": "Les Croods 2 : Une nouvelle ère",
+    "year": 2021,
+    "category": "dreamworks",
+    "poster": "/posters/544.webp"
+  },
+  {
+    "id": 545,
+    "title": "Spirit - L'indomptable",
+    "year": 2021,
+    "category": "dreamworks",
+    "poster": "/posters/545.webp"
+  },
+  {
+    "id": 546,
+    "title": "Baby Boss 2 : Une affaire de famille",
+    "year": 2021,
+    "category": "dreamworks",
+    "poster": "/posters/546.webp"
+  },
+  {
+    "id": 547,
+    "title": "Les Bad Guys",
+    "year": 2022,
+    "category": "dreamworks",
+    "poster": "/posters/547.webp"
+  },
+  {
+    "id": 548,
+    "title": "Le Chat Potté 2 : la dernière quête",
+    "year": 2022,
+    "category": "dreamworks",
+    "poster": "/posters/548.webp"
+  },
+  {
+    "id": 549,
+    "title": "Ruby, l'ado Kraken",
+    "year": 2023,
+    "category": "dreamworks",
+    "poster": "/posters/549.webp"
+  },
+  {
+    "id": 550,
+    "title": "Les Trolls 3",
+    "year": 2023,
+    "category": "dreamworks",
+    "poster": "/posters/550.webp"
+  },
+  {
+    "id": 551,
+    "title": "La Nuit d'Orion",
+    "year": 2024,
+    "category": "dreamworks",
+    "poster": "/posters/551.webp"
+  },
+  {
+    "id": 552,
+    "title": "Kung Fu Panda 4",
+    "year": 2024,
+    "category": "dreamworks",
+    "poster": "/posters/552.webp"
+  },
+  {
+    "id": 553,
+    "title": "Le Robot sauvage",
+    "year": 2024,
+    "category": "dreamworks",
+    "poster": "/posters/553.webp"
+  },
+  {
+    "id": 554,
+    "title": "Dog Man",
+    "year": 2025,
+    "category": "dreamworks",
+    "poster": "/posters/554.webp"
+  },
+  {
+    "id": 555,
+    "title": "Dragons",
+    "year": 2025,
+    "category": "dreamworks",
+    "poster": "/posters/555.webp"
+  },
+  {
+    "id": 556,
+    "title": "Les Bad Guys 2",
+    "year": 2025,
+    "category": "dreamworks",
+    "poster": "/posters/556.webp"
+  },
+  {
+    "id": 557,
+    "title": "Gabby et la Maison Magique - Le Film",
+    "year": 2025,
+    "category": "dreamworks",
+    "poster": "/posters/557.webp"
+  },
+  {
+    "id": 558,
+    "title": "L'île des souvenirs",
+    "year": 2026,
+    "category": "dreamworks",
+    "poster": "/posters/558.webp"
+  },
+  {
+    "id": 559,
+    "title": "Kung Fu Panda 5",
+    "year": 2027,
+    "releaseDate": "2027-01-21",
+    "category": "dreamworks",
+    "poster": null
+  },
+  {
+    "id": 560,
+    "title": "CoComelon : Le Film",
+    "year": 2027,
+    "releaseDate": "2027-02-10",
+    "category": "dreamworks",
+    "poster": "/posters/560.webp"
+  },
+  {
+    "id": 561,
+    "title": "Dragons 2",
+    "year": 2027,
+    "releaseDate": "2027-06-10",
+    "category": "dreamworks",
+    "poster": "/posters/561.webp"
+  },
+  {
+    "id": 562,
+    "title": "Shrek 5",
+    "year": 2027,
+    "releaseDate": "2027-06-30",
+    "category": "dreamworks",
+    "poster": "/posters/562.webp"
+  },
+  {
+    "id": 563,
+    "title": "Nico Bravo",
+    "year": 2027,
+    "releaseDate": "2027-09-24",
+    "category": "dreamworks",
+    "poster": null
+  },
+  {
+    "id": 564,
+    "title": "Donkey",
+    "year": 2028,
+    "releaseDate": "2028-06-28",
+    "category": "dreamworks",
+    "poster": "/posters/564.webp"
+  },
+  {
+    "id": 565,
+    "title": "Moi, moche et méchant",
+    "year": 2010,
+    "category": "illumination",
+    "poster": "/posters/565.webp"
+  },
+  {
+    "id": 566,
+    "title": "Hop",
+    "year": 2011,
+    "category": "illumination",
+    "poster": "/posters/566.webp"
+  },
+  {
+    "id": 567,
+    "title": "Le Lorax",
+    "year": 2012,
+    "category": "illumination",
+    "poster": "/posters/567.webp"
+  },
+  {
+    "id": 568,
+    "title": "Moi, moche et méchant 2",
+    "year": 2013,
+    "category": "illumination",
+    "poster": "/posters/568.webp"
+  },
+  {
+    "id": 569,
+    "title": "Les Minions",
+    "year": 2015,
+    "category": "illumination",
+    "poster": "/posters/569.webp"
+  },
+  {
+    "id": 570,
+    "title": "Comme des bêtes",
+    "year": 2016,
+    "category": "illumination",
+    "poster": "/posters/570.webp"
+  },
+  {
+    "id": 571,
+    "title": "Tous en scène",
+    "year": 2017,
+    "category": "illumination",
+    "poster": "/posters/571.webp"
+  },
+  {
+    "id": 572,
+    "title": "Moi, moche et méchant 3",
+    "year": 2017,
+    "category": "illumination",
+    "poster": "/posters/572.webp"
+  },
+  {
+    "id": 573,
+    "title": "Le Grinch",
+    "year": 2018,
+    "category": "illumination",
+    "poster": "/posters/573.webp"
+  },
+  {
+    "id": 574,
+    "title": "Comme des bêtes 2",
+    "year": 2019,
+    "category": "illumination",
+    "poster": "/posters/574.webp"
+  },
+  {
+    "id": 575,
+    "title": "Tous en scène 2",
+    "year": 2021,
+    "category": "illumination",
+    "poster": "/posters/575.webp"
+  },
+  {
+    "id": 576,
+    "title": "Les Minions 2 : Il était une fois Gru",
+    "year": 2022,
+    "category": "illumination",
+    "poster": "/posters/576.webp"
+  },
+  {
+    "id": 577,
+    "title": "Super Mario Bros., le film",
+    "year": 2023,
+    "category": "illumination",
+    "poster": "/posters/577.webp"
+  },
+  {
+    "id": 578,
+    "title": "Migration",
+    "year": 2023,
+    "category": "illumination",
+    "poster": "/posters/578.webp"
+  },
+  {
+    "id": 579,
+    "title": "Moi, moche et méchant 4",
+    "year": 2024,
+    "category": "illumination",
+    "poster": "/posters/579.webp"
+  },
+  {
+    "id": 580,
+    "title": "Super Mario Galaxy, le film",
+    "year": 2026,
+    "category": "illumination",
+    "poster": "/posters/580.webp"
+  },
+  {
+    "id": 581,
+    "title": "Des Minions et des Monstres",
+    "year": 2026,
+    "category": "illumination",
+    "poster": "/posters/581.webp"
+  },
+  {
+    "id": 582,
+    "title": "Not Alone",
+    "year": 2027,
+    "releaseDate": "2027-03-31",
+    "category": "illumination",
+    "poster": "/posters/582.webp"
   }
 ]

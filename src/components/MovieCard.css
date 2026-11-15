@@ -62,7 +62,9 @@
 .category-badge[data-category="pixar"] { background-color: var(--color-pixar); color: #000; }
 .category-badge[data-category="live-action"] { background-color: #7b3fa0; }
 .category-badge[data-category="marvel"] { background-color: #c8102e; }
-.category-badge[data-category="lucasfilm"] { background-color: #e5b80b; color: #000; }
+.category-badge[data-category="lucasfilm"] { background-color: #1b1b1b; color: #e5b80b; box-shadow: inset 0 0 0 1px #e5b80b; }
+.category-badge[data-category="dreamworks"] { background-color: #0a8fc2; }
+.category-badge[data-category="illumination"] { background-color: #ffd400; color: #000; }
 .category-badge[data-category="documentary"] { background-color: #2e7d4f; }
 
 .upcoming-badge {

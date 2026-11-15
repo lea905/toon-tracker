@@ -2,6 +2,8 @@
 export const CATEGORIES = [
   { value: 'animation', label: 'Animation' },
   { value: 'pixar', label: 'Pixar' },
+  { value: 'dreamworks', label: 'DreamWorks' },
+  { value: 'illumination', label: 'Illumination' },
   { value: 'live-action', label: 'Live-action' },
   { value: 'marvel', label: 'Marvel' },
   { value: 'lucasfilm', label: 'Lucasfilm' },

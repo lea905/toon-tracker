@@ -1,9 +1,9 @@
 // Badges à débloquer. Chaque badge calcule sa progression [fait, objectif]
 // à partir des films déjà sortis et des films vus.
 import { CATEGORIES } from './categories';
-import { CLASSIQUES, SAGAS } from './collections';
+import { CLASSIQUES, SAGAS, STUDIOS, PIXAR_FEATURES } from './collections';
 
-const PIXAR_FEATURES = [151, 184, 206, 232, 248, 269, 281, 293, 305, 315, 326, 337, 348, 373, 378, 386, 399, 403, 412, 422, 428, 438, 442, 448, 451, 462, 468, 476, 481, 483, 487, 496, 500, 504];
+const STUDIO = Object.fromEntries(STUDIOS.map(s => [s.value, s.release]));
 const SAGA = Object.fromEntries(SAGAS.map(s => [s.value, s.release]));
 // L'« Infinity Saga » : les 23 premiers films du MCU, d'Iron Man à Spider-Man : Far From Home.
 const INFINITY_SAGA = SAGA.mcu.slice(0, 23);
@@ -32,7 +32,10 @@ export const BADGES = [
   },
   { id: 'all-classiques', icon: '🏰', label: 'Tous les Grands Classiques', description: 'Tous les Grands Classiques déjà sortis', progress: listProgress(CLASSIQUES) },
   { id: 'pixar', icon: '💡', label: 'Collectionneur Pixar', description: 'Tous les longs-métrages Pixar déjà sortis', progress: listProgress(PIXAR_FEATURES) },
+  { id: 'dreamworks', icon: '🌙', label: 'Collectionneur DreamWorks', description: 'Tous les films DreamWorks Animation déjà sortis', progress: listProgress(STUDIO['studio-dreamworks']) },
+  { id: 'illumination', icon: '🍌', label: 'Collectionneur Illumination', description: 'Tous les films Illumination déjà sortis', progress: listProgress(STUDIO['studio-illumination']) },
   { id: 'toy-story', icon: '🚀', label: "Vers l'infini et au-delà", description: 'Toute la saga Toy Story', progress: listProgress(SAGA['toy-story']) },
+  { id: 'shrek', icon: '🧅', label: 'Il était une fois…', description: 'Toute la saga Shrek', progress: listProgress(SAGA.shrek) },
   { id: 'star-wars', icon: '⚔️', label: 'Que la Force soit avec toi', description: 'Toute la saga Star Wars', progress: listProgress(SAGA['star-wars']) },
   { id: 'infinity', icon: '💎', label: 'Infinity Saga', description: "Les 23 premiers films Marvel, d'Iron Man à Far From Home", progress: listProgress(INFINITY_SAGA) },
   {
